@@ -8,4 +8,8 @@ edition = "2021"
 name = "contains_duplicate"
 path = "src/array_hash/contains_duplicate.rs"
 
+[[bin]]
+name = "valid_anagram"
+path = "src/array_hash/valid_anagram.rs"
+
 [dependencies]
