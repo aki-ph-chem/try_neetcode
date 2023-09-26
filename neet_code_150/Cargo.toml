@@ -1,0 +1,11 @@
+[package]
+name = "neet_code_150"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "contains_duplicate"
+path = "src/array_hash/contains_duplicate.rs"
+
+[dependencies]
