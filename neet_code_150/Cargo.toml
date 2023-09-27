@@ -12,4 +12,8 @@ path = "src/array_hash/contains_duplicate.rs"
 name = "valid_anagram"
 path = "src/array_hash/valid_anagram.rs"
 
+[[bin]]
+name = "two_sum"
+path = "src/array_hash/two_sum.rs"
+
 [dependencies]
