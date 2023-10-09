@@ -1,5 +1,10 @@
 # NeetCode 150
 
+取り組む際の指針:
+    - 10月中に150問解く
+    - 15分考えてわからなかったら答えをみる 
+    - Leet Codeに課金しないと見れない問題は無視しても良しとする
+
 ## Array & Hashing
 
 1. Contains Duplicate
