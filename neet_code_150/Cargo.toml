@@ -16,6 +16,10 @@ path = "src/array_hash/valid_anagram.rs"
 name = "two_sum"
 path = "src/array_hash/two_sum.rs"
 
+[[bin]]
+name = "group_anagram"
+path = "src/array_hash/group_anagram.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
