@@ -20,6 +20,10 @@ path = "src/array_hash/two_sum.rs"
 name = "group_anagram"
 path = "src/array_hash/group_anagram.rs"
 
+[[bin]]
+name = "top_k_freq"
+path = "src/array_hash/top_k_freq.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
