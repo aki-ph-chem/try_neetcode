@@ -24,6 +24,10 @@ path = "src/array_hash/group_anagram.rs"
 name = "top_k_freq"
 path = "src/array_hash/top_k_freq.rs"
 
+[[bin]]
+name = "prod_array_except"
+path = "src/array_hash/product_of_array_except_self.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
