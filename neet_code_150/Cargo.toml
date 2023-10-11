@@ -28,6 +28,10 @@ path = "src/array_hash/top_k_freq.rs"
 name = "prod_array_except"
 path = "src/array_hash/product_of_array_except_self.rs"
 
+[[bin]]
+name = "valid_sudoku"
+path = "src/array_hash/valid_sudoku.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
