@@ -17,7 +17,7 @@ impl Solution {
 struct SolutionAns {}
 impl SolutionAns {
     pub fn is_anagram(s: String, t: String) -> bool {
-        if (t.len() != s.len()) {
+        if t.len() != s.len() {
             return false;
         }
 
