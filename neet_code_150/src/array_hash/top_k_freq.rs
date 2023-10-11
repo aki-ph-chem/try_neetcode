@@ -1,5 +1,3 @@
-use std::collections::{HashSet,HashMap};
-
 use std::collections::HashMap;
 use std::cmp::Ordering;
 
@@ -73,4 +71,13 @@ pub fn quick_select(slice: &mut [(i32, i32)], k: i32) -> &[(i32, i32)]{
 }
 
 fn main() {
+    let case_1 = vec![1,1,1,2,2,3];
+    let k_case_1 = 2; 
+    let res_1 = SolutionAns::top_k_frequent(case_1, k_case_1);
+    println!("case_1: {:?}", res_1);
+
+    let case_2 = vec![1];
+    let k_case_2 = 1; 
+    let res_2 = SolutionAns::top_k_frequent(case_2, k_case_2);
+    println!("case_1: {:?}", res_2);
 }
