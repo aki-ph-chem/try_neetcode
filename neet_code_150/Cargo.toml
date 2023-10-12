@@ -36,6 +36,10 @@ path = "src/array_hash/valid_sudoku.rs"
 name = "longest_consecutive"
 path = "src/array_hash/longest_consecutive_sequence.rs"
 
+[[bin]]
+name = "valid_palindrome"
+path = "src/two_pointers/valid_palindrome.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
