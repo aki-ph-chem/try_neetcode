@@ -32,6 +32,10 @@ path = "src/array_hash/product_of_array_except_self.rs"
 name = "valid_sudoku"
 path = "src/array_hash/valid_sudoku.rs"
 
+[[bin]]
+name = "longest_consecutive"
+path = "src/array_hash/longest_consecutive_sequence.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
