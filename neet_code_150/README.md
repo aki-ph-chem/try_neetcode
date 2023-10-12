@@ -41,6 +41,8 @@
     - 初見: x
     - 理解: o 
 
+## Two Pointers 
+
 10. Valid Palindrome
     - 初見: o
     - 理解: o
