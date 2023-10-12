@@ -40,6 +40,10 @@ path = "src/array_hash/longest_consecutive_sequence.rs"
 name = "valid_palindrome"
 path = "src/two_pointers/valid_palindrome.rs"
 
+[[bin]]
+name = "two_sum_2"
+path = "src/two_pointers/two_sum_2.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
