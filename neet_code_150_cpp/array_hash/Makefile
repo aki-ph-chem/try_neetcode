@@ -1,8 +1,11 @@
 CXX = g++
 file = ""
 
+ver = 20
+OPT = -Wall -std=c++${ver} 
+
 ${file}.out : ${file}.cpp
-	${CXX} -o $@ $<
+	${CXX} -o $@ $< ${OPT}
 
 run: ${file}.out
 	./${file}.out
