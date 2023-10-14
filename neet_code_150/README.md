@@ -17,11 +17,11 @@
 
 3. Two Sum
     - 初見: o
-    - 理解: △(解けたけどまだ模範解答がよくわからない) 
+    - 理解: o
 
 4. Group Anagrams
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 5. Top K Frequent Elements
     - 初見: x
