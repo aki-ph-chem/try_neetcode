@@ -20,7 +20,7 @@
     - 理解: o
 
 6. Product of Array Except Self
-    - 理解:
+    - 理解: o
 
 7. Valid Sudoku
     - 理解:
