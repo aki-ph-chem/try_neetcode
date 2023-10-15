@@ -28,7 +28,7 @@
 8. 要課金なため略
 
 9. Longest Consective Sequence
-    - 理解:
+    - 理解: o
 
 ## Two Pointers
 
