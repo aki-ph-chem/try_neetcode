@@ -56,6 +56,9 @@ name = "continer_water"
 path = "src/two_pointers/continer_with_most_water.rs"
 
 ## Sliding Window
+[[bin]]
+name = "buy_sell"
+path = "src/sliding_window/best_time_buy_sell.rs" 
 
 # appendix
 [[bin]]
