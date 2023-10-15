@@ -33,8 +33,8 @@
 ## Two Pointers
 
 10. Valid Palindrome
-    - 理解:
+    - 理解: o
 
 11. Two Sum II
-    - 理解:
+    - 理解: o
 
