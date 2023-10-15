@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+## Arrays & Hashing
 [[bin]]
 name = "contains_duplicate"
 path = "src/array_hash/contains_duplicate.rs"
@@ -36,6 +38,7 @@ path = "src/array_hash/valid_sudoku.rs"
 name = "longest_consecutive"
 path = "src/array_hash/longest_consecutive_sequence.rs"
 
+## Two & Pointers 
 [[bin]]
 name = "valid_palindrome"
 path = "src/two_pointers/valid_palindrome.rs"
@@ -51,6 +54,8 @@ path = "src/two_pointers/tree_sum.rs"
 [[bin]]
 name = "continer_water"
 path = "src/two_pointers/continer_with_most_water.rs"
+
+## Sliding Window
 
 # appendix
 [[bin]]
