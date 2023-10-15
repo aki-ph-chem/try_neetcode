@@ -44,6 +44,14 @@ path = "src/two_pointers/valid_palindrome.rs"
 name = "two_sum_2"
 path = "src/two_pointers/two_sum_2.rs"
 
+[[bin]]
+name = "tree_sum"
+path = "src/two_pointers/tree_sum.rs"
+
+[[bin]]
+name = "continer_water"
+path = "src/two_pointers/continer_with_most_water.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
