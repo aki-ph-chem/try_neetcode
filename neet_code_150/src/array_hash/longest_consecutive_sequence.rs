@@ -3,6 +3,7 @@ use std::iter::FromIterator;
 
 struct Solution {}
 impl Solution {
+    // 出来なかった
     fn longest_consecutive(nums: Vec<i32>) -> i32 {
         if nums.len() == 0 {
             return 0;
@@ -31,6 +32,7 @@ impl Solution {
         result
     }
 
+    // そもそも間違い
     // O(NlongN)かかるから解答としてはダメ
     fn use_sort(nums: Vec<i32>) -> i32 {
         if nums.len() == 0 {
