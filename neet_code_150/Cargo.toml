@@ -60,6 +60,10 @@ path = "src/two_pointers/continer_with_most_water.rs"
 name = "buy_sell"
 path = "src/sliding_window/best_time_buy_sell.rs" 
 
+[[bin]]
+name = "longest_substr"
+path = "src/sliding_window/longest_substring_no_repeat.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
