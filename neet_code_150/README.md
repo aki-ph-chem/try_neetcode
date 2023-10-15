@@ -31,7 +31,7 @@
     - 初見: x
     - 理解: ○
 
-7. Valid Sudoku
+7. Valid Sudoku: そもそも題意を間違って認識していた(その数独が解けるのかの判定ではなく、現在の段階で数独のルールを満たしているかさえ判定できればよい)
     - 初見: x
     - 理解: x
 
@@ -67,5 +67,8 @@
     - 初見: x
     - 理解: x
 
+16. Longest Substring Without Repeating Characters
+    - 初見:
+    - 理解:
 
 ## 解法などのメモ
