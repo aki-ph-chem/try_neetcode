@@ -1,4 +1,4 @@
-use std::collections::HashSet;
+use std::collections::{HashSet, VecDeque};
 
 struct Solution {}
 impl Solution {
@@ -57,7 +57,25 @@ impl Solution {
     }
 }
 
+// 模範解答
 struct SolutionAns {}
+impl SolutionAns {
+    pub fn length_of_longest_substring(s: String) -> i32 {
+        let mut set: VecDeque<char> = VecDeque::new();
+        let mut longest = 0;
+
+        for c in s.chars() {
+            while set.contains(&c) {
+                set.pop_front();
+            }
+
+            set.push_back(c);
+            longest = longest.max(set.len());
+        }
+
+        longest as i32
+    }
+}
 fn main() {
     let case_1 = "abcabcbb".to_string();
     let case_2 = "bbbbb".to_string();
@@ -125,5 +143,35 @@ fn main() {
     println!(
         "case_7: {}",
         Solution::length_of_longest_substring_sq(case_7.clone())
+    );
+
+    println!("模範解答");
+    println!(
+        "case_1: {}",
+        SolutionAns::length_of_longest_substring(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAns::length_of_longest_substring(case_2.clone())
+    );
+    println!(
+        "case_3: {}",
+        SolutionAns::length_of_longest_substring(case_3.clone())
+    );
+    println!(
+        "case_4: {}",
+        SolutionAns::length_of_longest_substring(case_4.clone())
+    );
+    println!(
+        "case_5: {}",
+        SolutionAns::length_of_longest_substring(case_5.clone())
+    );
+    println!(
+        "case_6: {}",
+        SolutionAns::length_of_longest_substring(case_6.clone())
+    );
+    println!(
+        "case_7: {}",
+        SolutionAns::length_of_longest_substring(case_7.clone())
     );
 }
