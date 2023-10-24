@@ -68,7 +68,19 @@
     - 理解: x
 
 16. Longest Substring Without Repeating Characters
+    - 初見: o
+    - 理解: x
+
+17. Longest Repeating Character Replacement
     - 初見:
     - 理解:
+
+18. Permutation In String
+    - 初見:
+    - 理解:
+
+19. Minimum Window Substring: Hardなため一旦飛ばす
+
+20. Sliding Window Maximum: Hardなため一旦飛ばす
 
 ## 解法などのメモ
