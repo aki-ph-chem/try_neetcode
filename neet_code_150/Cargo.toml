@@ -64,6 +64,10 @@ path = "src/sliding_window/best_time_buy_sell.rs"
 name = "longest_substr"
 path = "src/sliding_window/longest_substring_no_repeat.rs"
 
+[[bin]]
+name = "longest_repeating"
+path = "src/sliding_window/longest_repeating_char.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
