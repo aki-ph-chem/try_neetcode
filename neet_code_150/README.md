@@ -83,4 +83,15 @@
 
 20. Sliding Window Maximum: Hardなため一旦飛ばす
 
+## Stack
+
+## Binary Search
+
+xx. Binry Search
+    - 初見: o
+    - 理解: o
+xx. Seach a 2D Matrix
+    - 初見 o
+    - 理解 o
+
 ## 解法などのメモ
