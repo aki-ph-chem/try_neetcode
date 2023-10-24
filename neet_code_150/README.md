@@ -90,8 +90,13 @@
 xx. Binry Search
     - 初見: o
     - 理解: o
+
 xx. Seach a 2D Matrix
-    - 初見 o
-    - 理解 o
+    - 初見: o
+    - 理解: o
+
+xx. Koko Eating Bananas 
+    - 初見:
+    - 理解:
 
 ## 解法などのメモ

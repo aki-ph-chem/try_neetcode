@@ -81,6 +81,10 @@ path = "src/binary_search/bin_search.rs"
 name = "search_2dmat"
 path = "src/binary_search/search_2dmatrix.rs"
 
+[[bin]]
+name = "koko_banana"
+path = "src/binary_search/koko_banana.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
