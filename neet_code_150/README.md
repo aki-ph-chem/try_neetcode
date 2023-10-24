@@ -69,11 +69,11 @@
 
 16. Longest Substring Without Repeating Characters
     - 初見: o
-    - 理解: x
+    - 理解: o
 
 17. Longest Repeating Character Replacement
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: x
 
 18. Permutation In String
     - 初見:
