@@ -68,6 +68,10 @@ path = "src/sliding_window/longest_substring_no_repeat.rs"
 name = "longest_repeating"
 path = "src/sliding_window/longest_repeating_char.rs"
 
+[[bin]]
+name = "permutation_str"
+path = "src/sliding_window/permutation_in_str.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
