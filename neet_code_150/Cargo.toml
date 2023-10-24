@@ -77,9 +77,14 @@ path = "src/sliding_window/permutation_in_str.rs"
 name = "bin_search"
 path = "src/binary_search/bin_search.rs"
 
+[[bin]]
+name = "search_2dmat"
+path = "src/binary_search/search_2dmatrix.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
 path = "src/appendix/hash_map.rs"
+
 
 [dependencies]
