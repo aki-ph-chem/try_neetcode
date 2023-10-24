@@ -96,7 +96,7 @@ xx. Seach a 2D Matrix
     - 理解: o
 
 xx. Koko Eating Bananas 
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: x
 
 ## 解法などのメモ
