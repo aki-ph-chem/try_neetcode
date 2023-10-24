@@ -76,8 +76,8 @@
     - 理解: x
 
 18. Permutation In String
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: x
 
 19. Minimum Window Substring: Hardなため一旦飛ばす
 
