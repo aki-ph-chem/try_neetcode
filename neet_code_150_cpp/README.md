@@ -38,3 +38,11 @@
 11. Two Sum II
     - 理解: o
 
+
+## Binary Search
+
+x. Binary Search
+    - 理解: o
+
+xx. Seach a 2D Matrix
+    - 理解: o 
