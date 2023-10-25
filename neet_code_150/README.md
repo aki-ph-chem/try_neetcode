@@ -99,4 +99,8 @@ xx. Koko Eating Bananas
     - 初見: x
     - 理解: x
 
+xx. Find Minimum In Rotated Sorted Array
+    - 初見: o
+    - 理解: x
+
 ## 解法などのメモ

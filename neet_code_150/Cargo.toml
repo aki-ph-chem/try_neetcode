@@ -85,6 +85,10 @@ path = "src/binary_search/search_2dmatrix.rs"
 name = "koko_banana"
 path = "src/binary_search/koko_banana.rs"
 
+[[bin]]
+name = "sorted_rot"
+path = "src/binary_search/minimum_rotated_sorted_array.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
