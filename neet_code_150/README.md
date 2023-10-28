@@ -103,4 +103,13 @@ xx. Find Minimum In Rotated Sorted Array
     - 初見: o
     - 理解: x
 
+xx. Search In Rotated Sorted Array
+    - 初見: x
+    - 理解: o
+
 ## 解法などのメモ
+
+## Search In Rotated Sorted Array
+
+まず、中点が右側のソートされた領域に落ちるか、左側のソートされた領域に落ちるか場合分けする。
+次に中点とtargetの大小関係で場合わけしてlもしくはrを更新する
