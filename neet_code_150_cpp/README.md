@@ -38,23 +38,44 @@
 11. Two Sum II
     - 理解: o
 
+## Stack
+
+21. Valid Parentheses
+    - 理解:
+
+22. Min Stack 
+    - 理解:
+
+23. Evaluate Reverse Polish Notation 
+    - 理解:
+
+24.  Generate Parentheses
+    - 理解:
+
+25.  Daily Temperatures
+    - 理解:
+
+26.  Car Fleet 
+    - 理解:
+
+27. Largest Rectangle In Histogram: Hardなため一旦飛ばす
 
 ## Binary Search
 
-x. Binary Search
+28. Binary Search
     - 理解: o
 
-xx. Seach a 2D Matrix
+29. Seach a 2D Matrix
     - 理解: o 
 
-xx. Koko Eating Bananas 
+30. Koko Eating Bananas 
     - 理解: x
 
-xx. Find Minimum In Rotated Sorted Array
+31. Find Minimum In Rotated Sorted Array
     - 理解: o
 
-xx. Search In Rotated Sorted Array
+32. Search In Rotated Sorted Array
     - 理解: o
 
-xx. Time Based Key Value Store
+33. Time Based Key Value Store
     - 理解: o 
