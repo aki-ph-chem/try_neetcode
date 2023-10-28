@@ -101,6 +101,6 @@ xx. Koko Eating Bananas
 
 xx. Find Minimum In Rotated Sorted Array
     - 初見: o
-    - 理解: x
+    - 理解: o
 
 ## 解法などのメモ
