@@ -93,6 +93,10 @@ path = "src/binary_search/minimum_rotated_sorted_array.rs"
 name = "sorted_rot_search"
 path = "src/binary_search/search_rotated_sorted_array.rs"
 
+[[bin]]
+name = "timebase_key"
+path = "src/binary_search/timebase_key.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
