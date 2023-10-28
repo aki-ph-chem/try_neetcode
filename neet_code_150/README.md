@@ -1,7 +1,6 @@
 # NeetCode 150
 
 取り組む際の指針:
-- 10月中に150問解く
 - 15分考えてわからなかったら答えをみる 
 - Leet Codeに課金しないと見れない問題は無視しても良しとする
 
@@ -85,29 +84,55 @@
 
 ## Stack
 
+21. Valid Parentheses
+    - 初見:
+    - 理解:
+
+22. Min Stack 
+    - 初見:
+    - 理解:
+
+23. Evaluate Reverse Polish Notation 
+    - 初見:
+    - 理解:
+
+24.  Generate Parentheses
+    - 初見:
+    - 理解:
+
+25.  Daily Temperatures
+    - 初見:
+    - 理解:
+
+26.  Car Fleet 
+    - 初見:
+    - 理解:
+
+27. Largest Rectangle In Histogram: Hardなため一旦飛ばす
+
 ## Binary Search
 
-xx. Binry Search
+28. Binry Search
     - 初見: o
     - 理解: o
 
-xx. Seach a 2D Matrix
+29. Seach a 2D Matrix
     - 初見: o
     - 理解: o
 
-xx. Koko Eating Bananas 
+30. Koko Eating Bananas 
     - 初見: x
     - 理解: x
 
-xx. Find Minimum In Rotated Sorted Array
+31. Find Minimum In Rotated Sorted Array
     - 初見: o
     - 理解: o
 
-xx. Search In Rotated Sorted Array
+32. Search In Rotated Sorted Array
     - 初見: x
     - 理解: o
 
-xx. Time Based Key Value Store
+33. Time Based Key Value Store
     - 初見: o 
     - 理解: o
 
