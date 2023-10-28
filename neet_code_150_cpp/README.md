@@ -51,7 +51,7 @@ xx. Koko Eating Bananas
     - 理解: x
 
 xx. Find Minimum In Rotated Sorted Array
-    - 理解: x
+    - 理解: o
 
 xx. Search In Rotated Sorted Array
     - 理解: o
