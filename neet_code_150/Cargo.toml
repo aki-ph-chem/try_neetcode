@@ -5,7 +5,7 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-## Arrays & Hashing
+## Arrays & Hashing 
 [[bin]]
 name = "contains_duplicate"
 path = "src/array_hash/contains_duplicate.rs"
@@ -71,6 +71,11 @@ path = "src/sliding_window/longest_repeating_char.rs"
 [[bin]]
 name = "permutation_str"
 path = "src/sliding_window/permutation_in_str.rs"
+
+## Stack
+[[bin]]
+name = "valid_par"
+path = "src/stack/valid_par.rs"
 
 ## Binary Search
 [[bin]]
