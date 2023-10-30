@@ -47,7 +47,7 @@
     - 理解: o
 
 23. Evaluate Reverse Polish Notation 
-    - 理解:
+    - 理解: o
 
 24.  Generate Parentheses
     - 理解:
