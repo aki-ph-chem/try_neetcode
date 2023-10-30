@@ -81,6 +81,10 @@ path = "src/stack/valid_par.rs"
 name = "min_stack"
 path = "src/stack/min_stack.rs"
 
+[[bin]]
+name = "rev_polish"
+path = "src/stack/rev_polish.rs"
+
 ## Binary Search
 [[bin]]
 name = "bin_search"

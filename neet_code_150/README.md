@@ -93,8 +93,8 @@
     - 理解: o
 
 23. Evaluate Reverse Polish Notation 
-    - 初見:
-    - 理解:
+    - 初見: △(類題をけんちょ本で見たため)
+    - 理解: o
 
 24.  Generate Parentheses
     - 初見:
