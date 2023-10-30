@@ -44,7 +44,7 @@
     - 理解: o
 
 22. Min Stack 
-    - 理解:
+    - 理解: o
 
 23. Evaluate Reverse Polish Notation 
     - 理解:
