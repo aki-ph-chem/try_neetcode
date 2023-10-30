@@ -41,7 +41,7 @@
 ## Stack
 
 21. Valid Parentheses
-    - 理解:
+    - 理解: o
 
 22. Min Stack 
     - 理解:
