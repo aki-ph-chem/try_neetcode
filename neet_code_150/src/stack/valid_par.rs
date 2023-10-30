@@ -1,46 +1,164 @@
-use std::collections::HashSet;
+use std::collections::HashMap;
 
 #[derive(Debug)]
 struct Solution {}
 
 impl Solution {
+    // だめ: case_4に対応できない
     pub fn is_valid(s: String) -> bool {
-        let vec_char: Vec<char> = s.chars().collect();
+        let mut maru = vec![];
+        let mut nami = vec![];
+        let mut kaku = vec![];
 
-        let mut number_maru = 0; 
-        let mut number_nami = 0; 
-        let mut number_kaku = 0; 
-
-        for c in vec_char {
+        for c in s.chars() {
             match c {
-                '(' => {number_maru += 1},
-                ')' => {number_maru -= 1},
-                '{' => {number_nami += 1},
-                '}' => {number_nami -= 1},
-                '[' => {number_kaku += 1},
-                ']' => {number_kaku -= 1},
+                '(' => maru.push(c),
+                '{' => nami.push(c),
+                '[' => kaku.push(c),
+                ')' => match maru.pop() {
+                    Some(_t) => {}
+                    None => {
+                        return false;
+                    }
+                },
+                '}' => match nami.pop() {
+                    Some(_t) => {}
+                    None => {
+                        return false;
+                    }
+                },
+                ']' => match kaku.pop() {
+                    Some(_t) => {}
+                    None => {
+                        return false;
+                    }
+                },
                 _ => {
                     return false;
                 }
             }
         }
 
-        number_maru == 0 && number_nami == 0 && number_kaku == 0 }
+        if !maru.is_empty() {
+            return false;
+        }
+
+        if !nami.is_empty() {
+            return false;
+        }
+
+        if !kaku.is_empty() {
+            return false;
+        }
+
+        true
+    }
+
+    // AC
+    pub fn is_valid_2(s: String) -> bool {
+        let mut state = vec![];
+
+        for c in s.chars() {
+            match c {
+                '(' => state.push(c),
+                '{' => state.push(c),
+                '[' => state.push(c),
+                ')' => match state.pop() {
+                    Some(t) => {
+                        if t != '(' {
+                            return false;
+                        }
+                    }
+                    None => {
+                        return false;
+                    }
+                },
+                '}' => match state.pop() {
+                    Some(t) => {
+                        if t != '{' {
+                            return false;
+                        }
+                    }
+                    None => {
+                        return false;
+                    }
+                },
+                ']' => match state.pop() {
+                    Some(t) => {
+                        if t != '[' {
+                            return false;
+                        }
+                    }
+                    None => {
+                        return false;
+                    }
+                },
+                _ => {
+                    return false;
+                }
+            }
+        }
+        if !state.is_empty() {
+            return false;
+        }
+
+        true
+    }
 }
 
+// '(',')'のみ場合の判定
 pub fn is_valid_maru(s: &str) -> bool {
-    let vec_char: Vec<char> = s.chars().collect();
-    let mut number = 0;
+    let mut state = vec![];
 
-    for c in vec_char {
+    for c in s.chars() {
         if c == '(' {
-            number += 1;
+            state.push(c);
         } else {
-            number -= 1;
+            match state.pop() {
+                Some(t) => {
+                    if c != t {
+                        return false;
+                    }
+                }
+                None => {
+                    println!("Error");
+                    return false;
+                }
+            }
         }
     }
 
-    number == 0
+    if !state.is_empty() {
+        return false;
+    }
+
+    true
+}
+
+struct SolutionAns {}
+impl SolutionAns {
+    // 模範解答
+    pub fn is_valid(s: String) -> bool {
+        let mut stack: Vec<char> = Vec::new();
+        let opening = HashMap::from([(']', '['), (')', '('), ('}', '{')]);
+
+        for c in s.chars() {
+            match c {
+                '(' => stack.push(c),
+                '[' => stack.push(c),
+                '{' => stack.push(c),
+                _ => {
+                    if stack.iter().last() == opening.get(&c) {
+                        stack.pop();
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        stack.is_empty()
+    }
 }
 
 fn main() {
@@ -50,9 +168,20 @@ fn main() {
     let case_4 = "([)]".to_string();
 
     println!("case_1: {}", Solution::is_valid(case_1.clone())); // true
-    println!("case_2: {}", Solution::is_valid(case_2.clone())); // false 
-    println!("case_3: {}", Solution::is_valid(case_3.clone())); // false 
+    println!("case_2: {}", Solution::is_valid(case_2.clone())); // true
+    println!("case_3: {}", Solution::is_valid(case_3.clone())); // false
     println!("case_4: {}", Solution::is_valid(case_4.clone())); // false
+
+    println!("case_1: {}", Solution::is_valid_2(case_1.clone())); // true
+    println!("case_2: {}", Solution::is_valid_2(case_2.clone())); // true
+    println!("case_3: {}", Solution::is_valid_2(case_3.clone())); // false
+    // case_4の答えがおかしい
+    println!("case_4: {}", Solution::is_valid_2(case_4.clone())); // false
+                                                                  
+    println!("case_1: {}", SolutionAns::is_valid(case_1.clone())); // true
+    println!("case_2: {}", SolutionAns::is_valid(case_2.clone())); // true
+    println!("case_3: {}", SolutionAns::is_valid(case_3.clone())); // false
+    println!("case_4: {}", SolutionAns::is_valid(case_4.clone())); // false
 
     /*
     println!("()(): {}", is_valid_maru("()()"));

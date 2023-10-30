@@ -85,8 +85,8 @@
 ## Stack
 
 21. Valid Parentheses
-    - 初見:
-    - 理解:
+    - 初見: △(類題をけんちょ本で見たため)
+    - 理解: o
 
 22. Min Stack 
     - 初見:
