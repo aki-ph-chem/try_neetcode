@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <stack>
+#include <unordered_map>
 
 class Solution {
 public:
@@ -62,6 +64,37 @@ public:
     }
 };
 
+class SolutionAns {
+    public:
+        bool isValid(std::string s) {
+            std::stack<char> open;
+            std::unordered_map<char, char> parens = {
+                {')', '('},
+                {']', '['},
+                {'}', '{'},
+            };
+
+            for (const auto& c : s) {
+                if (parens.find(c) != parens.end()) {
+                    // if input starts with a closing bracket.
+                    if (open.empty()) {
+                        return false;
+                    }
+
+                    if (open.top() != parens[c]) {
+                        return false;
+                    }
+
+                    open.pop();
+                } else {
+                    open.push(c);
+                }
+            }
+
+            return open.empty();
+        }
+};
+
 int main(void) {
     auto case_1 = "()";
     auto case_2 = "()[]{}";
@@ -73,4 +106,10 @@ int main(void) {
     std::cout <<"case_2: {}" << s_1.is_valid(case_2) << std::endl;
     std::cout <<"case_3: {}" << s_1.is_valid(case_3) << std::endl;
     std::cout <<"case_4: {}" << s_1.is_valid(case_4) << std::endl;
+
+    SolutionAns s_ans;
+    std::cout <<"case_1: {}" << s_ans.isValid(case_1) << std::endl;
+    std::cout <<"case_2: {}" << s_ans.isValid(case_2) << std::endl;
+    std::cout <<"case_3: {}" << s_ans.isValid(case_3) << std::endl;
+    std::cout <<"case_4: {}" << s_ans.isValid(case_4) << std::endl;
 }
