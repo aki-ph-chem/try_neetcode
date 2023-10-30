@@ -77,6 +77,10 @@ path = "src/sliding_window/permutation_in_str.rs"
 name = "valid_par"
 path = "src/stack/valid_par.rs"
 
+[[bin]]
+name = "min_stack"
+path = "src/stack/min_stack.rs"
+
 ## Binary Search
 [[bin]]
 name = "bin_search"

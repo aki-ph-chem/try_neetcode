@@ -89,8 +89,8 @@
     - 理解: o
 
 22. Min Stack 
-    - 初見:
-    - 理解:
+    - 初見: o
+    - 理解: o
 
 23. Evaluate Reverse Polish Notation 
     - 初見:
