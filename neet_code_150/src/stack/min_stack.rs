@@ -63,13 +63,6 @@ impl MinStack {
 }
 
 #[derive(Debug)]
-struct MinStackB {
-    volume: Vec<i32>,
-    min_val_1: i32,
-    min_val_2: i32,
-}
-
-#[derive(Debug)]
 struct MinStackC {
     volume: Vec<(i32, i32)>,
 }
