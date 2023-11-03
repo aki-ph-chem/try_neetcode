@@ -50,10 +50,10 @@
     - 理解: o
 
 24.  Generate Parentheses
-    - 理解:
+    - 理解: o
 
 25.  Daily Temperatures
-    - 理解:
+    - 理解: o
 
 26.  Car Fleet 
     - 理解:
