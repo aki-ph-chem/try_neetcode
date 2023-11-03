@@ -97,8 +97,8 @@
     - 理解: o
 
 24.  Generate Parentheses
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: o
 
 25.  Daily Temperatures
     - 初見:
