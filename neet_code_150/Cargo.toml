@@ -127,6 +127,10 @@ path = "src/binary_search/timebase_key.rs"
 name = "rot_image"
 path = "src/math_and_geometry/rot_img.rs"
 
+[[bin]]
+name = "spiral_mat"
+path = "src/math_and_geometry/spiral_matrix.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
