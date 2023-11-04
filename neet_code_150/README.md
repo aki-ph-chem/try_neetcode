@@ -105,8 +105,8 @@
     - 理解: o
 
 26.  Car Fleet 
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: o
 
 27. Largest Rectangle In Histogram: Hardなため一旦飛ばす
 
