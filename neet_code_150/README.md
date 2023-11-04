@@ -138,6 +138,13 @@
 
 34. Median of Two Sorted Arrays: Hardなため一旦飛ばす
 
+## Math & Geometry
+
+9999. Rotate Image
+    - 初見: x
+    - 理解: o
+
+
 ## 解法などのメモ
 
 ## Search In Rotated Sorted Array
