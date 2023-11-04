@@ -101,12 +101,12 @@
     - 理解: o
 
 25.  Daily Temperatures
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: o
 
 26.  Car Fleet 
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: o
 
 27. Largest Rectangle In Histogram: Hardなため一旦飛ばす
 
@@ -136,7 +136,7 @@
     - 初見: o 
     - 理解: o
 
-xx. Median of Two Sorted Arrays: Hardなため一旦飛ばす
+34. Median of Two Sorted Arrays: Hardなため一旦飛ばす
 
 ## 解法などのメモ
 
