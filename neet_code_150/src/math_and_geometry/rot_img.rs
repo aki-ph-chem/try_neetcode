@@ -31,6 +31,7 @@ struct SolutionAns {}
 impl SolutionAns {
     pub fn rotate(matrix: &mut [Vec<i32>]) {
         matrix.reverse();
+        //println!("marix in func: {:#?}", matrix);
         let len = matrix.len();
         for i in 0..len {
             for j in i..len {
@@ -50,6 +51,20 @@ fn main() {
         .collect();
     // result
     /*
+      [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+      ]
+    reverse()
+    =>
+      [
+      [7, 8, 9]
+      [4, 5, 6],
+      [1, 2, 3],
+      ]
+    transpose
+    =>
     [
     [7,4,1],
     [8,5,2],
