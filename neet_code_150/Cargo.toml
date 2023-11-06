@@ -131,6 +131,10 @@ path = "src/math_and_geometry/rot_img.rs"
 name = "spiral_mat"
 path = "src/math_and_geometry/spiral_matrix.rs"
 
+[[bin]]
+name = "set_zero"
+path = "src/math_and_geometry/set_zero.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
