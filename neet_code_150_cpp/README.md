@@ -87,3 +87,9 @@
 
 999. Spiral Matrix
     - 理解: o 
+
+999. Set Matrix Zeroes
+    - 理解: o 
+
+999. Happy number 
+    - 理解: x 
