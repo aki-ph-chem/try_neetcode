@@ -139,6 +139,10 @@ path = "src/math_and_geometry/set_zero.rs"
 name = "happy_number"
 path = "src/math_and_geometry/happy_number.rs"
 
+[[bin]]
+name = "plus_one"
+path = "src/math_and_geometry/plus_one.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
