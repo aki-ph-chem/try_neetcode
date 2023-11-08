@@ -146,7 +146,11 @@
 
 9999. Spiral Matrix 
     - 初見: x
-    - 理解:
+    - 理解: o
+
+9999. Set Matrix Zeroes 
+    - 初見: x
+    - 理解: o
 
 
 ## 解法などのメモ
