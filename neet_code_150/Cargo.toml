@@ -135,6 +135,10 @@ path = "src/math_and_geometry/spiral_matrix.rs"
 name = "set_zero"
 path = "src/math_and_geometry/set_zero.rs"
 
+[[bin]]
+name = "happy_number"
+path = "src/math_and_geometry/happy_number.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
