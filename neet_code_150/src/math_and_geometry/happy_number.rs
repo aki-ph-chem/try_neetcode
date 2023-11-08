@@ -29,6 +29,29 @@ impl Solution {
 
         true
     }
+
+    // AC
+    // 配列を使わない分省メモリ
+    pub fn is_happy_no_array(n: i32) -> bool {
+        let mut m = n;
+        let mut set = HashSet::new();
+
+        while m != 1 {
+            let mut sq_sum = 0;
+            while m > 0 {
+                sq_sum += (m % 10).pow(2);
+                m /= 10;
+            }
+            m = sq_sum;
+            if set.contains(&m) {
+                return false;
+            } else {
+                set.insert(m);
+            }
+        }
+
+        true
+    }
 }
 
 // 模範解答
@@ -54,6 +77,10 @@ fn main() {
     println!("case_1: {}", Solution::is_happy(19));
     println!("case_2: {}", Solution::is_happy(2));
     println!("case_3: {}", Solution::is_happy(12));
+
+    println!("case_1: {}", Solution::is_happy_no_array(19));
+    println!("case_2: {}", Solution::is_happy_no_array(2));
+    println!("case_3: {}", Solution::is_happy_no_array(12));
 
     println!("case_1: {}", SolutionAns::is_happy(19));
     println!("case_2: {}", SolutionAns::is_happy(2));
