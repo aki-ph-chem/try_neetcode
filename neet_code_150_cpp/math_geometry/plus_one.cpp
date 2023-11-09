@@ -25,6 +25,44 @@ class Solution {
             std::reverse(res.begin(), res.end());
             return res;
         }
+
+        // reverse()を使わない実装
+        // AC
+        std::vector<int> plus_one_b(const std::vector<int>& digits) {
+            auto res = digits;
+            res.back() += 1;
+
+            for(int i = res.size() - 1; i >= 0; --i) {
+                if(res[i] == 10) {
+                    res[i] = 0;
+                    if(i - 1 >= 0) {
+                        res[i - 1] += 1;
+                    } else {
+                        res.insert(res.begin(), 1);
+                    }
+                }
+            }
+
+            return res;
+        }
+};
+
+// 模範解答
+class SolutionAns {
+    public:
+        std::vector<int> plusOne(std::vector<int>& digits) {
+        for (int i = digits.size() - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
+        }
+        
+        digits[0] = 1;
+        digits.push_back(0);
+        return digits;
+    }
 };
 
 int main(void) {
@@ -37,6 +75,7 @@ int main(void) {
 
    Solution s_1;
 
+   // plus_one()
    auto res_1 = s_1.plus_one(case_1);
    for(const auto& x: res_1) {
        std::cout << x << " ";
@@ -72,4 +111,44 @@ int main(void) {
        std::cout << x << " ";
    }
    std::cout << std::endl;
+
+   // plus_one_b()
+   auto res_1b = s_1.plus_one_b(case_1);
+   for(const auto& x: res_1b) {
+       std::cout << x << " ";
+   }
+   std::cout << std::endl;
+
+   auto res_2b = s_1.plus_one_b(case_2);
+   for(const auto& x: res_2b) {
+       std::cout << x << " ";
+   }
+   std::cout << std::endl;
+
+   auto res_6b = s_1.plus_one_b(case_6);
+   for(const auto& x: res_6b) {
+       std::cout << x << " ";
+   }
+   std::cout << std::endl;
+
+   // plusOne()
+   SolutionAns s_1_ans;
+   auto res_1_ans = s_1_ans.plusOne(case_1);
+   for(const auto& x: res_1_ans) {
+       std::cout << x << " ";
+   }
+   std::cout << std::endl;
+
+   auto res_2_ans = s_1_ans.plusOne(case_2);
+   for(const auto& x: res_2_ans) {
+       std::cout << x << " ";
+   }
+   std::cout << std::endl;
+
+   auto res_6_ans = s_1_ans.plusOne(case_6);
+   for(const auto& x: res_6_ans) {
+       std::cout << x << " ";
+   }
+   std::cout << std::endl;
+
 }
