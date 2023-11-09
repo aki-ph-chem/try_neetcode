@@ -42,6 +42,53 @@ impl Solution {
 
         res
     }
+
+    // AC
+    // reverse()が要らない分高速
+    pub fn plus_one_c(digits: Vec<i32>) -> Vec<i32> {
+        let mut res = digits;
+        match res.iter_mut().rev().next() {
+            Some(v) => *v += 1,
+            None => panic!("empyt"),
+        }
+
+        for i in (0..res.len()).rev() {
+            if res[i] == 10 {
+                res[i] = 0;
+                if i as i32 - 1 >= 0 {
+                    res[i - 1] += 1;
+                } else {
+                    res.insert(0, 1);
+                }
+            }
+        }
+
+        res
+    }
+}
+
+// 模範解答
+struct SolutionAns {}
+impl SolutionAns {
+    pub fn plus_one(mut digits: Vec<i32>) -> Vec<i32> {
+        let mut carry: u8 = 1;
+
+        digits = digits
+            .into_iter()
+            .rev()
+            .map(|digit| {
+                let val: u8 = digit as u8 + carry;
+                carry = val / 10;
+                (val % 10) as i32
+            })
+            .collect();
+        digits.reverse();
+
+        if carry == 1 {
+            digits.insert(0, 1);
+        }
+        digits
+    }
 }
 
 fn main() {
@@ -66,4 +113,12 @@ fn main() {
     println!("case_4: {:?}", Solution::plus_one(case_4.clone()));
     println!("case_5: {:?}", Solution::plus_one(case_5.clone()));
     println!("case_6: {:?}", Solution::plus_one(case_6.clone()));
+
+    println!("plus_one_c()");
+    println!("case_1: {:?}", Solution::plus_one_c(case_1.clone()));
+    println!("case_2: {:?}", Solution::plus_one_c(case_2.clone()));
+    println!("case_3: {:?}", Solution::plus_one_c(case_3.clone()));
+    println!("case_4: {:?}", Solution::plus_one_c(case_4.clone()));
+    println!("case_5: {:?}", Solution::plus_one_c(case_5.clone()));
+    println!("case_6: {:?}", Solution::plus_one_c(case_6.clone()));
 }
