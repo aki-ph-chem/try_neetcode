@@ -147,6 +147,10 @@ path = "src/math_and_geometry/plus_one.rs"
 name = "pow"
 path = "src/math_and_geometry/pow.rs"
 
+[[bin]]
+name = "mul_str"
+path = "src/math_and_geometry/mul_str.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
