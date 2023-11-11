@@ -93,3 +93,12 @@
 
 999. Happy number 
     - 理解: x 
+
+999. Plus One 
+    - 理解: x  
+
+999. Pow 
+    - 理解: x  
+
+999. Multiply Strings 
+    - 理解: o  
