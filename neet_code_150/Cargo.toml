@@ -151,6 +151,10 @@ path = "src/math_and_geometry/pow.rs"
 name = "mul_str"
 path = "src/math_and_geometry/mul_str.rs"
 
+[[bin]]
+name = "detect_square"
+path = "src/math_and_geometry/detect_square.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
