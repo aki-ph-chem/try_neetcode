@@ -64,6 +64,40 @@ impl DetectSquaresAns {
     }
 }
 
+// pointはなしでcountsだけでもできるのでは?
+// 今の所ACしない
+struct DetectSquareB {
+    counts: HashMap<(i32, i32), i32>,
+}
+
+impl DetectSquareB {
+    fn new() -> Self {
+        Self {
+            counts: HashMap::new(),
+        }
+    }
+
+    fn add(&mut self, point: Vec<i32>) {
+        let p = (point[0], point[1]);
+        *self.counts.entry(p).or_default() += 1;
+    }
+
+    fn count(&self, point: Vec<i32>) -> i32 {
+        let mut res = 0;
+        let (px, py) = (point[0], point[1]);
+        for ((x, y), _c) in self.counts.iter() {
+            if (py - y).abs() != (px - x).abs() || *x == px || *y == py {
+                continue;
+            }
+
+            res +=
+                self.counts.get(&(*x, py)).unwrap_or(&0) * self.counts.get(&(px, *y)).unwrap_or(&0);
+        }
+
+        res
+    }
+}
+
 fn main() {
     let mut p_1 = DetectSquares::new();
     p_1.add(vec![3, 10]);
@@ -85,4 +119,13 @@ fn main() {
     println!("{}", p_2.count(vec![14, 8]));
     p_2.add(vec![11, 2]);
     println!("{}", p_2.count(vec![11, 10]));
+
+    let mut p_3 = DetectSquareB::new();
+    p_3.add(vec![3, 10]);
+    p_3.add(vec![11, 2]);
+    p_3.add(vec![3, 2]);
+    println!("{}", p_3.count(vec![11, 10]));
+    println!("{}", p_3.count(vec![14, 8]));
+    p_3.add(vec![11, 2]);
+    println!("{}", p_3.count(vec![11, 10]));
 }
