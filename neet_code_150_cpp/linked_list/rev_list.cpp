@@ -14,6 +14,10 @@ struct ListNode {
 
 // リストを表示
 void show_list(const ListNode* const node) {
+    if(!node) {
+        return;
+    }
+
     auto node_current = node;
     while(node_current->next) {
         std::cout << node_current->val << "->"; 
@@ -22,17 +26,34 @@ void show_list(const ListNode* const node) {
     std::cout << node_current->val << std::endl;
 }
 
+//AC
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        auto node_prev = head;
-        auto node_current = head->next;
-        auto node_tmp = node_current;
+        if(!head) {
+            return nullptr;
+        } else if (!head->next) {
+            return head;
+        }
+        auto node_p = head;
+        auto node_c = head->next;
 
-        node_prev->next = nullptr;
-        node_current->next = node_prev;
+        node_p->next = nullptr;
+        while(node_c->next) {
+            auto node_tmp = node_c->next;
+            node_c->next = node_p;
+            node_p = node_c;
+            node_c = node_tmp;
+#ifdef DEBUG_HOGE
+            if(node_p && node_c ){
+                std::cout << "val_p " << node_p->val; 
+                std::cout << "val_c " << node_c->val << std::endl; 
+            }
+#endif
+        }
+        node_c->next = node_p;
 
-        node_tmp = node_current->next;
+        return node_c;
     }
 };
 int main(void) {
@@ -49,6 +70,22 @@ int main(void) {
     show_list(&l_1_0);
 
     Solution s_1;
-    auto rev_l_1_0 = s_1.reverseList(&l_1_0);
-    show_list(rev_l_1_0);
+    show_list(s_1.reverseList(&l_1_0));
+
+    // 11 -> 22 
+    ListNode l_2_0(11);
+    ListNode l_2_1(22);
+    l_2_0.next = &l_2_1;
+    show_list(&l_2_0);
+    show_list(s_1.reverseList(&l_2_0));
+
+    // 111
+    ListNode l_3_0(111);
+    show_list(&l_3_0);
+    show_list(s_1.reverseList(&l_3_0));
+
+    // nullptr
+    ListNode* l_4_0 = nullptr;
+    show_list(l_4_0);
+    show_list(s_1.reverseList(l_4_0));
 }
