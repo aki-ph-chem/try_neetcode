@@ -166,5 +166,9 @@ path = "src/math_and_geometry/detect_square.rs"
 name = "hash_map"
 path = "src/appendix/hash_map.rs"
 
+[[bin]]
+name = "impl_list"
+path = "src/appendix/impl_list.rs"
+
 
 [dependencies]
