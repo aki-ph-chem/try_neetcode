@@ -1,4 +1,4 @@
-#[derive(PartialEq,Eq,Debug)]
+#[derive(PartialEq, Eq, Debug, Clone)]
 pub struct ListNode {
     pub val: i32,
     pub next: Option<Box<ListNode>>,
@@ -7,22 +7,34 @@ pub struct ListNode {
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode{
-            next: None,
-            val,
-        }
+        ListNode { next: None, val }
     }
 }
 
-pub fn show_list(head: &ListNode) {
+pub fn show_list(head: ListNode) {
     let mut node_current = head;
     loop {
-        match &node_current.next {
-            None => break,
-            Some(v) =>{
-                print!("{} -> ",v.val);
-            }         
+        if let Some(_node) = &node_current.next {
+            print!("{} -> ", node_current.val);
+            node_current = *(node_current.next.unwrap());
+        } else {
+            break;
         }
+    }
+    println!("{}", node_current.val);
+}
+
+pub fn show_list_ref(head: Option<Box<ListNode>>) {
+    let mut node_current = head;
+
+    while let Some(node) = node_current {
+        print!("{} -> ", node.val);
+        node_current = node.next;
+    }
+}
+
+impl ListNode {
+    pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
     }
 }
 
@@ -31,12 +43,14 @@ fn main() {
     let mut l_1_1 = ListNode::new(2);
     let mut l_1_2 = ListNode::new(3);
     let mut l_1_3 = ListNode::new(4);
-    let  l_1_4 = ListNode::new(5);
-
+    let l_1_4 = ListNode::new(5);
     l_1_3.next = Some(Box::new(l_1_4));
     l_1_2.next = Some(Box::new(l_1_3));
     l_1_1.next = Some(Box::new(l_1_2));
     l_1_0.next = Some(Box::new(l_1_1));
 
-    println!("l_1_0: {:#?}",l_1_0);
+    show_list(l_1_0.clone());
+
+    let ref_l_1_0 = Some(Box::new(l_1_0));
+    show_list_ref(ref_l_1_0);
 }
