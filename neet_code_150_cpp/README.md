@@ -80,9 +80,14 @@
 33. Time Based Key Value Store
     - 理解: o 
 
-## Binary Search
+34. Median of Two Sorted Arrays: Hardなため一旦飛ばす
 
-36. Reverse Linked List 
+## Linked List 
+
+35. Reverse Linked List 
+    - 理解: o
+
+36. Merge Two Sorted Lists 
     - 理解: o
 
 ## Math & Geometry
