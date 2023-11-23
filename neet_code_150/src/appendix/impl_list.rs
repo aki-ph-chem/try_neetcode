@@ -25,9 +25,8 @@ where
 {
     let mut node_current = head;
     loop {
-        print!("{} -> ", node_current.val);
-
         if let Some(_node) = &node_current.next {
+            print!("{} -> ", node_current.val);
             node_current = *(node_current.next.unwrap());
         } else {
             break;
