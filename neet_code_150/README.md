@@ -138,6 +138,8 @@
 
 34. Median of Two Sorted Arrays: Hardなため一旦飛ばす
 
+## Linked List
+
 ## Math & Geometry
 
 9999. Rotate Image
