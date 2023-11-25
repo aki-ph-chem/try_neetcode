@@ -31,10 +31,20 @@ pub fn show_list_ref(head: Option<Box<ListNode>>) {
         print!("{} -> ", node.val);
         node_current = node.next;
     }
+    println!("");
 }
 
-impl ListNode {
+struct Solution {}
+// 模範解答
+impl Solution {
     pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        let (mut prev, mut current) = (None, head);
+        while let Some(mut node) = current {
+            current = node.next;
+            node.next = prev;
+            prev = Some(node);
+        }
+        prev
     }
 }
 
@@ -52,5 +62,8 @@ fn main() {
     show_list(l_1_0.clone());
 
     let ref_l_1_0 = Some(Box::new(l_1_0));
-    show_list_ref(ref_l_1_0);
+    show_list_ref(ref_l_1_0.clone());
+
+    let res_1 = Solution::reverse_list(ref_l_1_0); 
+    show_list_ref(res_1);
 }

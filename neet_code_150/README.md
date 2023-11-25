@@ -140,6 +140,10 @@
 
 ## Linked List
 
+35. Reverse Linked List 
+    - 初見: x 
+    - 理解: o
+
 ## Math & Geometry
 
 9999. Rotate Image
