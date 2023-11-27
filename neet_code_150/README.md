@@ -144,6 +144,10 @@
     - 初見: x 
     - 理解: o
 
+36. Merge Two Sorted Lists 
+    - 初見:  
+    - 理解: 
+
 ## Math & Geometry
 
 9999. Rotate Image
