@@ -128,6 +128,10 @@ path = "src/binary_search/timebase_key.rs"
 name = "rev_list"
 path = "src/linked_list/rev_list.rs"
 
+[[bin]]
+name = "merge_sorted_list"
+path = "src/linked_list/merge_sorted_list.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"
