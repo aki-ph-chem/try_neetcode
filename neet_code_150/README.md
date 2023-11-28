@@ -145,8 +145,8 @@
     - 理解: o
 
 36. Merge Two Sorted Lists 
-    - 初見:  
-    - 理解: 
+    - 初見: x 
+    - 理解: o 
 
 ## Math & Geometry
 
