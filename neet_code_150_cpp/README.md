@@ -90,6 +90,9 @@
 36. Merge Two Sorted Lists 
     - 理解: o
 
+37. Reorder List 
+    - 理解: o
+
 ## Math & Geometry
 
 999. Rot Image
