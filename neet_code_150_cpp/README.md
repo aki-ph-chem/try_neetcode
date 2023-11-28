@@ -82,7 +82,7 @@
 
 34. Median of Two Sorted Arrays: Hardなため一旦飛ばす
 
-## Linked List 
+## [Linked List](./linked_list) 
 
 35. Reverse Linked List 
     - 理解: o
