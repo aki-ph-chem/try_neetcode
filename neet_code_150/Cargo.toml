@@ -132,6 +132,11 @@ path = "src/linked_list/rev_list.rs"
 name = "merge_sorted_list"
 path = "src/linked_list/merge_sorted_list.rs"
 
+## Greedy
+[[bin]]
+name = "max_subarray"
+path = "src/greedy/max_subarray.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"

@@ -148,6 +148,12 @@
     - 初見: x 
     - 理解: o 
 
+## Greedy
+
+888. Maximum Subarray
+    - 初見: x
+    - 理解: x
+
 ## Math & Geometry
 
 9999. Rotate Image
