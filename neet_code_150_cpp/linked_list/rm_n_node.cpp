@@ -24,6 +24,7 @@ void show_list(const ListNode* const node) {
     std::cout << node_current->val << std::endl;
 }
 
+// 初見では解けなかった
 class Solution {
     public:
         ListNode* removeNthFromEnd(ListNode* head, int n) {
@@ -42,6 +43,10 @@ class Solution {
                 fast = fast->next;
             }
 
+            if (!fast) {
+                return head->next;
+            }
+
             // fastが最後尾に着くまでcurr,fastを進める
             while(fast->next) {
                 prev = curr;
@@ -56,6 +61,37 @@ class Solution {
             prev->next = curr->next;
 
             return result;
+        }
+};
+
+// 模範解答
+class SolutionAns {
+    public:
+        ListNode* removeNthFromEnd(ListNode* head, int n) {
+            if (head->next == NULL) {
+                return NULL;
+            }
+
+            ListNode* slow = head;
+            ListNode* fast = head;
+
+            //fastをn個先に進める
+            while (n > 0) {
+                fast = fast->next;
+                n--;
+            }
+
+            if (fast == NULL) {
+                return head->next;
+            }
+
+            while (fast->next != NULL) {
+                slow = slow->next;
+                fast = fast->next;
+            }
+
+            slow->next = slow->next->next;
+            return head;
         }
 };
 
@@ -76,16 +112,40 @@ int main(void) {
     show_list(res_1);
 
     ListNode c_2_0(10);
-    // NG
+    // OK 
     std::cout << "case_2" << std::endl;
     auto res_2 = s_1.removeNthFromEnd(&c_2_0, 1);
     show_list(res_2);
 
-    // OK
+    // NG 
     ListNode c_3_0(111);
     ListNode c_3_1(222);
     c_3_0.next = &c_3_1;
     std::cout << "case_3" << std::endl;
     auto res_3 = s_1.removeNthFromEnd(&c_3_0, 2);
     show_list(res_3);
+
+    // 模範解答
+    std::cout << "模範解答" << std::endl;
+    SolutionAns s_ans;
+
+    ListNode c_4_0(111);
+    ListNode c_4_1(222);
+    ListNode c_4_2(333);
+    ListNode c_4_3(444);
+    c_4_0.next = &c_4_1;
+    c_4_1.next = &c_4_2;
+    c_4_2.next = &c_4_3;
+    std::cout << "case_4" <<std::endl;
+    show_list(&c_4_0);
+    auto res_4 = s_ans.removeNthFromEnd(&c_4_0, 2);
+    show_list(res_4);
+
+    ListNode c_5_0(1212);
+    ListNode c_5_1(1313);
+    c_5_0.next = &c_5_1;
+    std::cout << "case_5" << std::endl;
+    show_list(&c_5_0);
+    auto res_5 = s_ans.removeNthFromEnd(&c_5_0, 2);
+    show_list(res_5);
 }

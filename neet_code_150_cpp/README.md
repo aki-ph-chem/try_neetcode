@@ -93,6 +93,9 @@
 37. Reorder List 
     - 理解: o
 
+38. Remove Nth Node From End of List
+    - 理解: o
+
 ## Math & Geometry
 
 999. Rot Image
