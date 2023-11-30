@@ -137,6 +137,10 @@ path = "src/linked_list/merge_sorted_list.rs"
 name = "max_subarray"
 path = "src/greedy/max_subarray.rs"
 
+[[bin]]
+name = "jmp_game"
+path = "src/greedy/jump_game.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"
