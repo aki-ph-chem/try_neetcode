@@ -96,6 +96,11 @@
 38. Remove Nth Node From End of List
     - 理解: o
 
+## Greedy
+
+888. Jump Game
+    - 理解: o
+
 ## Math & Geometry
 
 999. Rot Image
