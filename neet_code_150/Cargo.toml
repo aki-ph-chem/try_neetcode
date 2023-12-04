@@ -141,6 +141,10 @@ path = "src/greedy/max_subarray.rs"
 name = "jmp_game"
 path = "src/greedy/jump_game.rs"
 
+[[bin]]
+name = "jmp_game2"
+path = "src/greedy/jump_game_2.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"
