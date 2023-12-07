@@ -22,18 +22,15 @@ impl Solution {
         1
     }
 
-    /*
     pub fn can_complete_sq(gas: Vec<i32>, cost: Vec<i32>) -> i32 {
         let n = gas.len();
         for i in 0..n {
-            let mut gas_tot = 0;
-            for j in 0..n {
+            if Solution::start_from_k(gas.clone(), cost.clone(), i) {
+                return i as i32;
             }
         }
-
-        1
+        -1
     }
-    */
 
     pub fn circle_idx(num: &Vec<i32>, idx_ini: usize) {
         let n = num.len();
