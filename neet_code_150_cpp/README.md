@@ -105,6 +105,9 @@
     - 理解: x 
 
 888. Gas Station 
+    - 理解: x
+
+888. Hand of Straights 
     - 理解:
 
 ## Math & Geometry
