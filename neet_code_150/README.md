@@ -158,6 +158,14 @@
     - 初見: x
     - 理解: o
 
+888. Jump Game
+    - 初見: x
+    - 理解: x
+
+888. Gas Station
+    - 初見: x
+    - 理解: x
+
 ## Math & Geometry
 
 9999. Rotate Image
