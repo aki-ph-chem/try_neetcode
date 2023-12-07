@@ -57,7 +57,7 @@ impl Solution {
         for _i in 1..n {
             println!("gas_tot = {}", gas_tot);
 
-            gas_tot += if idx_current == 0{
+            gas_tot += if idx_current == 0 {
                 gas[idx_current] - cost[n - 1]
             } else {
                 gas[idx_current] - cost[idx_current - 1]
@@ -82,6 +82,38 @@ impl Solution {
     }
 }
 
+// C++の模範回答より
+// AC
+struct SolutionAns {}
+impl SolutionAns {
+    fn can_complete_circuit(gas: Vec<i32>, cost: Vec<i32>) -> i32 {
+        let n = gas.len();
+
+        let (mut total_gas, mut total_cost) = (0, 0);
+        // gas,costのtotalを計算
+        for i in 0..n {
+            total_gas += gas[i];
+            total_cost += cost[i];
+        }
+        if total_gas < total_cost {
+            return -1;
+        }
+
+        let (mut total, mut result) = (0, 0);
+
+        //?
+        for i in 0..n {
+            total += gas[i] - cost[i];
+            if total < 0 {
+                total = 0;
+                result = i + 1;
+            }
+        }
+
+        result as i32
+    }
+}
+
 fn main() {
     let case_1 = (vec![1, 2, 3, 4, 5], vec![3, 4, 5, 1, 2]);
     let case_2 = (vec![2, 3, 4], vec![3, 4, 3]);
@@ -101,4 +133,13 @@ fn main() {
     Solution::circle_idx(&a_0, 2);
     Solution::circle_idx(&a_0, 3);
     */
+
+    println!(
+        "{}",
+        SolutionAns::can_complete_circuit(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "{}",
+        SolutionAns::can_complete_circuit(case_2.0.clone(), case_2.1.clone())
+    );
 }
