@@ -108,7 +108,7 @@
     - 理解: x
 
 888. Hand of Straights 
-    - 理解:
+    - 理解: o
 
 ## Math & Geometry
 
