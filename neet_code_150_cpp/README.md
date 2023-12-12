@@ -110,6 +110,9 @@
 888. Hand of Straights 
     - 理解: o
 
+888. Merge Triplets to From Target Triplet 
+    - 理解: 
+
 ## Math & Geometry
 
 999. Rot Image
