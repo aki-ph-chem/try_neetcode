@@ -113,6 +113,9 @@
 888. Merge Triplets to From Target Triplet 
     - 理解: o
 
+888. Partition Labels  
+    - 理解: x
+
 ## Math & Geometry
 
 999. Rot Image
