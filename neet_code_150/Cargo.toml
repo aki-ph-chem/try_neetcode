@@ -132,6 +132,20 @@ path = "src/linked_list/rev_list.rs"
 name = "merge_sorted_list"
 path = "src/linked_list/merge_sorted_list.rs"
 
+## 1-D Dynamic Programming
+
+[[bin]]
+name = "climbing_stair"
+path = "src/one_d_dp/climbing_stair.rs"
+
+[[bin]]
+name = "climbing_stair_cost"
+path = "src/one_d_dp/climbing_stair_cost.rs"
+
+[[bin]]
+name = "house_robber"
+path = "src/one_d_dp/house_robber.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"

@@ -96,6 +96,17 @@
 38. Remove Nth Node From End of List
     - 理解: o
 
+## 1-D Dynamic Programming 
+
+777. Climbing Stairs 
+    - 理解: o
+
+777. Min Cost Climbing Stairs 
+    - 理解: o
+
+777. House Robber 
+    - 理解: x
+
 ## Greedy
 
 888. Jump Game
@@ -116,8 +127,8 @@
 888. Partition Labels  
     - 理解: x
 
-888. Valid Parenthesis String 
-    - 理解: 
+888. Valid Parenthesis String  
+    - 理解: o
 
 ## Math & Geometry
 
