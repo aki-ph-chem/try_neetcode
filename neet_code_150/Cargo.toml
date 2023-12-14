@@ -138,6 +138,10 @@ path = "src/linked_list/merge_sorted_list.rs"
 name = "climbing_stair"
 path = "src/one_d_dp/climbing_stair.rs"
 
+[[bin]]
+name = "climbing_stair_cost"
+path = "src/one_d_dp/climbing_stair_cost.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"
