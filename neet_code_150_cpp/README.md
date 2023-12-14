@@ -101,6 +101,9 @@
 777. Climbing Stairs 
     - 理解: o
 
+777. Min Cost Climbing Stairs 
+    - 理解: o
+
 ## Greedy
 
 888. Jump Game
