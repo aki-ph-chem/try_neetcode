@@ -116,6 +116,9 @@
 888. Partition Labels  
     - 理解: x
 
+888. Valid Parenthesis String  
+    - 理解: o
+
 ## Math & Geometry
 
 999. Rot Image
