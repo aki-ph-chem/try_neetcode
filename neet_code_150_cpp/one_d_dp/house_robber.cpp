@@ -4,26 +4,44 @@
 
 #define DEBUG
 
-// 模範解答
 class Solution {
-public:
-    int rob(std::vector<int>& nums) {
-        int prev = 0;
-        int curr = 0;
-        int next = 0;
-        
-        for (int i = 0; i < nums.size(); i++) {
-            next = std::max(prev + nums[i], curr);
-            prev = curr;
-            curr = next;
+    public:
+        // 模範解答
+        int rob(std::vector<int>& nums) {
+            int prev = 0;
+            int curr = 0;
+            int next = 0;
+
+            for (int i = 0; i < nums.size(); i++) {
+                next = std::max(prev + nums[i], curr);
+                prev = curr;
+                curr = next;
 
 #ifdef DEBUG
-            std::cout <<"prev, curr, next: " << prev << " ," <<  curr << ", " << next << std::endl;
+                std::cout <<"prev, curr, next: " << prev << " ," <<  curr << ", " << next << std::endl;
 #endif
+            }
+
+            return curr;
         }
-        
-        return curr;
-    }
+
+        // 別解 
+        int rob_2(std::vector<int>& nums) {
+            int n = nums.size();
+            std::vector<int> dp(n + 1, -(1<<30));
+
+            if(n == 1) {
+                return nums[0];
+            }
+
+            dp[0] = 0;
+            dp[1] = nums[0];
+            for(int i = 2; i < n + 1; ++i) {
+                dp[i] = std::max(dp[i - 1], dp[i - 2] + nums[i - 1]);
+            }
+
+            return dp[n];
+        }
 };
 
 int main(void) {
@@ -34,4 +52,7 @@ int main(void) {
 
     std::cout << s_ans.rob(case_1) << std::endl;
     std::cout << s_ans.rob(case_2) << std::endl;
+
+    std::cout << s_ans.rob_2(case_1) << std::endl;
+    std::cout << s_ans.rob_2(case_2) << std::endl;
 }
