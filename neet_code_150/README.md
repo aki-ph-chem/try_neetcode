@@ -154,6 +154,10 @@
     - 初見: o
     - 理解: o
 
+777. Min Cost Climbing Stairs 
+    - 初見: o
+    - 理解: o
+
 ## Greedy
 
 888. Maximum Subarray
