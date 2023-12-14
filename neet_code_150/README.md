@@ -158,6 +158,10 @@
     - 初見: o
     - 理解: o
 
+777. House Robber 
+    - 初見: x
+    - 理解: x 
+
 ## Greedy
 
 888. Maximum Subarray
