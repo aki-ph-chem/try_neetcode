@@ -96,6 +96,11 @@
 38. Remove Nth Node From End of List
     - 理解: o
 
+## 1-D Dynamic Programming 
+
+777. Climbing Stairs 
+    - 理解: o
+
 ## Greedy
 
 888. Jump Game
