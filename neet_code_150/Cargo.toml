@@ -142,6 +142,10 @@ path = "src/one_d_dp/climbing_stair.rs"
 name = "climbing_stair_cost"
 path = "src/one_d_dp/climbing_stair_cost.rs"
 
+[[bin]]
+name = "house_robber"
+path = "src/one_d_dp/house_robber.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"
