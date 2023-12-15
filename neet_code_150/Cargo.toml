@@ -175,6 +175,10 @@ path = "src/greedy/gas_station.rs"
 name = "hand_of_straight"
 path = "src/greedy/hand_of_straight.rs"
 
+[[bin]]
+name = "merge_triplet"
+path = "src/greedy/merge_triplet.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"
