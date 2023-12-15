@@ -164,7 +164,7 @@
 
 777. House Robber II
     - 初見: x
-    - 理解: x 
+    - 理解: o 
 
 ## Greedy
 
