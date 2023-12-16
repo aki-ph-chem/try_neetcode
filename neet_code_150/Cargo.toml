@@ -180,6 +180,10 @@ name = "merge_triplet"
 path = "src/greedy/merge_triplet.rs"
 
 [[bin]]
+name = "partition_label"
+path = "src/greedy/partition_label.rs"
+
+[[bin]]
 name = "valid_paren"
 path = "src/greedy/valid_paren.rs"
 
