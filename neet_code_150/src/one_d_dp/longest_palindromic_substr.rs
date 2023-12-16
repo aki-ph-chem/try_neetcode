@@ -106,6 +106,8 @@ impl SolutionAns {
             let (mut l, mut r) = (i, i);
 
             while l >= 0 && r < length && s[l as usize] == s[r as usize] {
+                // r - l: 新しい部分文字列の長さが right - left: 前の部分文字列の長さ
+                // より大きければ更新
                 if r - l > right - left {
                     left = l;
                     right = r;
@@ -118,6 +120,8 @@ impl SolutionAns {
             let (mut l, mut r) = (i, i + 1);
 
             while l >= 0 && r < length && s[l as usize] == s[r as usize] {
+                // r - l: 新しい部分文字列の長さが right - left: 前の部分文字列の長さ
+                // より大きければ更新
                 if r - l > right - left {
                     left = l;
                     right = r;
