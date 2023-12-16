@@ -179,6 +179,10 @@ path = "src/greedy/hand_of_straight.rs"
 name = "merge_triplet"
 path = "src/greedy/merge_triplet.rs"
 
+[[bin]]
+name = "valid_paren"
+path = "src/greedy/valid_paren.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"
