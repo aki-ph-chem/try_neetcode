@@ -176,7 +176,7 @@
     - 初見: x
     - 理解: o
 
-888. Jump Game
+888. Jump Game II
     - 初見: x
     - 理解: x
 
@@ -185,6 +185,18 @@
     - 理解: x
 
 888. Hand of Straight 
+    - 初見: x
+    - 理解: o
+
+888. Merge Triplets to From Target Triplet 
+    - 初見: x
+    - 理解: o
+
+888. Partition Labels  
+    - 初見: x
+    - 理解: x
+
+888. Valid Parenthesis String  
     - 初見: x
     - 理解: o
 
