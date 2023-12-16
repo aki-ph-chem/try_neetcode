@@ -105,9 +105,18 @@
     - 理解: o
 
 777. House Robber 
-    - 理解: x
+    - 理解: o
+
+777. House Robber II
+    - 理解: o 
+
+777. Longest Palindromic Substring 
+    - 理解: o 
 
 ## Greedy
+
+888. Maximum Subarray
+    - 理解: x
 
 888. Jump Game
     - 理解: o
