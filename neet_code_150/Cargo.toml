@@ -154,6 +154,10 @@ path = "src/one_d_dp/house_robber_2.rs"
 name = "longest_palindromic_substr"
 path = "src/one_d_dp/longest_palindromic_substr.rs"
 
+[[bin]]
+name = "palindromic_substr"
+path = "src/one_d_dp/palindromic_substr.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"
