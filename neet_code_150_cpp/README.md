@@ -38,6 +38,32 @@
 11. Two Sum II
     - 理解: o
 
+12. 3sum
+    - 理解: x
+
+13. Continer with Most Water
+    - 理解: o
+
+14. Trapping Rain Water : Hardなため一旦飛ばす
+
+## Sliding Window 
+
+15. Best Time to Buy And Sell Stock 
+    - 理解:
+
+16. Longest Substring Without Repeating Characters
+    - 理解:
+
+17. Longest Repeating Character Replacement
+    - 理解:
+
+18. Permutation In String
+    - 理解:
+
+19. Minimum Window Substring: Hardなため一旦飛ばす
+
+20. Sliding Window Maximum: Hardなため一旦飛ばす
+
 ## Stack
 
 21. Valid Parentheses
