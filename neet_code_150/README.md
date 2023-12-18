@@ -170,6 +170,10 @@
     - 初見: x
     - 理解: o 
 
+777. Palindromic Substring 
+    - 初見: x
+    - 理解: o
+
 ## Greedy
 
 888. Maximum Subarray
