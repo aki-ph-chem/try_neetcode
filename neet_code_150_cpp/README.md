@@ -49,7 +49,7 @@
 ## Sliding Window 
 
 15. Best Time to Buy And Sell Stock 
-    - 理解:
+    - 理解: x
 
 16. Longest Substring Without Repeating Characters
     - 理解:
