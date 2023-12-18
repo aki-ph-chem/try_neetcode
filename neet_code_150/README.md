@@ -174,6 +174,10 @@
     - 初見: x
     - 理解: o
 
+777. Decode Ways 
+    - 初見: x
+    - 理解: o
+
 ## Greedy
 
 888. Maximum Subarray
