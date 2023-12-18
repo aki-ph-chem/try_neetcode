@@ -162,6 +162,10 @@ path = "src/one_d_dp/palindromic_substr.rs"
 name = "decode_ways"
 path = "src/one_d_dp/decode_ways.rs"
 
+[[bin]]
+name = "coin_change"
+path = "src/one_d_dp/coin_change.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"
