@@ -166,6 +166,10 @@ path = "src/one_d_dp/decode_ways.rs"
 name = "coin_change"
 path = "src/one_d_dp/coin_change.rs"
 
+[[bin]]
+name = "max_prod_subarray"
+path = "src/one_d_dp/max_prod_subarray.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"

@@ -182,6 +182,10 @@
     - 初見: x
     - 理解: x
 
+777. Max Product Subarray
+    - 初見: x
+    - 理解: o
+
 ## Greedy
 
 888. Maximum Subarray
