@@ -186,6 +186,10 @@
     - 初見: x
     - 理解: o
 
+777. Word Break
+    - 初見: x
+    - 理解: o
+
 ## Greedy
 
 888. Maximum Subarray

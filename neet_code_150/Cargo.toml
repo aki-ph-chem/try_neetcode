@@ -170,6 +170,10 @@ path = "src/one_d_dp/coin_change.rs"
 name = "max_prod_subarray"
 path = "src/one_d_dp/max_prod_subarray.rs"
 
+[[bin]]
+name = "word_break"
+path = "src/one_d_dp/word_break.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"
