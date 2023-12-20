@@ -139,6 +139,9 @@
 777. Longest Palindromic Substring 
     - 理解: o 
 
+777. Max Product Subarray
+    - 理解: o
+
 ## Greedy
 
 888. Maximum Subarray
