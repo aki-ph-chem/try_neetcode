@@ -190,6 +190,10 @@
     - 初見: x
     - 理解: o
 
+777. Longest Increasing Subsequence
+    - 初見:
+    - 理解:
+
 ## Greedy
 
 888. Maximum Subarray
