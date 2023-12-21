@@ -9,3 +9,4 @@ NeetCodeにtryする
 
 [NeetCode-150(C++)](./neet_code_150_cpp)
 
+## [英単語のメモ](./word_list.md)
