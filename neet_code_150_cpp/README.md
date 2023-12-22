@@ -142,6 +142,9 @@
 777. Max Product Subarray
     - 理解: o
 
+777. Partition Equal Subset Sum 
+    - 理解:
+
 ## Greedy
 
 888. Maximum Subarray

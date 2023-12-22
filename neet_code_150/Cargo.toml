@@ -178,6 +178,10 @@ path = "src/one_d_dp/word_break.rs"
 name = "longest_inc_subseq"
 path = "src/one_d_dp/longest_inc_subseq.rs"
 
+[[bin]]
+name = "partition_eq_subset"
+path = "src/one_d_dp/partition_eq_subset.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"

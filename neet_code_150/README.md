@@ -194,6 +194,10 @@
     - 初見: x
     - 理解: o
 
+777. Partition Equal Subset Sum 
+    - 初見:
+    - 理解:
+
 ## Greedy
 
 888. Maximum Subarray
