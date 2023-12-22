@@ -195,8 +195,8 @@
     - 理解: o
 
 777. Partition Equal Subset Sum 
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: x
 
 ## Greedy
 
