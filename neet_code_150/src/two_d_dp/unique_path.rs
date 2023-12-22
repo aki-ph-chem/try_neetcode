@@ -35,6 +35,28 @@ impl SolutionAns {
 
         bottom[0]
     }
+
+    // AC
+    // C++の模範解答より
+    pub fn unique_paths_2(m: i32, n: i32) -> i32 {
+        let mut grid = vec![vec![0; n as usize]; m as usize];
+
+        for i in 0..m as usize {
+            grid[i][0] = 1;
+        }
+
+        for j in 0..n as usize {
+            grid[0][j] = 1;
+        }
+
+        for i in 1..m as usize {
+            for j in 1..n as usize {
+                grid[i][j] = grid[i - 1][j] + grid[i][j - 1];
+            }
+        }
+
+        grid[m as usize - 1][n as usize - 1]
+    }
 }
 
 fn main() {
@@ -49,4 +71,6 @@ fn main() {
     println!("case_1: {}", SolutionAns::unique_paths(case_1.0, case_1.1));
     println!("case_2: {}", SolutionAns::unique_paths(case_2.0, case_2.1));
 
+    println!("case_1: {}", SolutionAns::unique_paths_2(case_1.0, case_1.1));
+    println!("case_2: {}", SolutionAns::unique_paths_2(case_2.0, case_2.1));
 }
