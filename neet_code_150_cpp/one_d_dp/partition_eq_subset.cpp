@@ -1,6 +1,8 @@
 #include <iostream>
+#include <unordered_set>
 #include <vector>
 
+// 解けなかった
 class Solution {
     public:
         bool canPartition(std::vector<int>& nums) {
@@ -19,6 +21,38 @@ class Solution {
                 if(sum_part_1 == sum_part_2) {
                     return true;
                 }
+            }
+
+            return false;
+        }
+};
+
+// 模範解答
+class SolutionAns {
+    public:
+        bool canPartition(std::vector<int>& nums) {
+            int target = 0;
+            for (int i = 0; i < nums.size(); i++) {
+                target += nums[i];
+            }
+            if (target % 2 != 0) {
+                return false;
+            }
+            target /= 2;
+
+            std::unordered_set<int> dp;
+            dp.insert(0);
+
+            for (int i = 0; i < nums.size(); i++) {
+                std::unordered_set<int> dpNext;
+                for (auto it = dp.begin(); it != dp.end(); it++) {
+                    if (*it + nums[i] == target) {
+                        return true;
+                    }
+                    dpNext.insert(*it + nums[i]);
+                    dpNext.insert(*it);
+                }
+                dp = dpNext;
             }
 
             return false;
@@ -46,4 +80,10 @@ int main(void) {
     std::cout << s_1.canPartition(case_1) << std::endl;
     std::cout << s_1.canPartition(case_2) << std::endl;
     std::cout << s_1.canPartition(case_3) << std::endl;
+
+    SolutionAns s_ans;
+
+    std::cout << s_ans.canPartition(case_1) << std::endl;
+    std::cout << s_ans.canPartition(case_2) << std::endl;
+    std::cout << s_ans.canPartition(case_3) << std::endl;
 }

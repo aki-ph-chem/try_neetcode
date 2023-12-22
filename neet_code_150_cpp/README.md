@@ -143,7 +143,7 @@
     - 理解: o
 
 777. Partition Equal Subset Sum 
-    - 理解:
+    - 理解: x
 
 ## Greedy
 
