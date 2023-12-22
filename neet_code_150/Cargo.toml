@@ -182,6 +182,11 @@ path = "src/one_d_dp/longest_inc_subseq.rs"
 name = "partition_eq_subset"
 path = "src/one_d_dp/partition_eq_subset.rs"
 
+## 2-D Dynamic Programming
+[[bin]]
+name = "unique_path"
+path = "src/two_d_dp/unique_path.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"
