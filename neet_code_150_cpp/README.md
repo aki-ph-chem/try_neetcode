@@ -139,11 +139,20 @@
 777. Longest Palindromic Substring 
     - 理解: o 
 
+777. Palindromic Substring 
+    - 初見: o
+
+777. Decode Ways 
+    - 初見: o
+
+777. Coin Change
+    - 初見: o
+
 777. Max Product Subarray
     - 理解: o
 
 777. Partition Equal Subset Sum 
-    - 理解: x
+    - 理解: o
 
 ## 2-D Dynamic Programming 
 

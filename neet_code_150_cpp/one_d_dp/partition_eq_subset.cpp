@@ -31,6 +31,7 @@ class Solution {
 class SolutionAns {
     public:
         bool canPartition(std::vector<int>& nums) {
+            // numsの総和が2で割り切れなければそもそもだめ
             int target = 0;
             for (int i = 0; i < nums.size(); i++) {
                 target += nums[i];
@@ -38,6 +39,7 @@ class SolutionAns {
             if (target % 2 != 0) {
                 return false;
             }
+            // 総和の半分をターゲットにする
             target /= 2;
 
             std::unordered_set<int> dp;
@@ -51,6 +53,35 @@ class SolutionAns {
                     }
                     dpNext.insert(*it + nums[i]);
                     dpNext.insert(*it);
+                }
+                dp = dpNext;
+            }
+
+            return false;
+        }
+
+        // AC
+        bool canPartition2(std::vector<int>& nums) {
+            int target = 0;
+            for(const auto &num: nums) {
+                target += num;
+            }
+            if (target %2 != 0) {
+                return false;
+            }
+            target /= 2;
+
+            std::unordered_set<int> dp;
+            dp.insert(0);
+
+            for(const auto &num: nums) {
+                std::unordered_set<int> dpNext;
+                for(const auto &d: dp) {
+                    if(d + num == target) {
+                        return true;
+                    }
+                    dpNext.insert(d + num);
+                    dpNext.insert(d);
                 }
                 dp = dpNext;
             }
@@ -86,4 +117,8 @@ int main(void) {
     std::cout << s_ans.canPartition(case_1) << std::endl;
     std::cout << s_ans.canPartition(case_2) << std::endl;
     std::cout << s_ans.canPartition(case_3) << std::endl;
+
+    std::cout << s_ans.canPartition2(case_1) << std::endl;
+    std::cout << s_ans.canPartition2(case_2) << std::endl;
+    std::cout << s_ans.canPartition2(case_3) << std::endl;
 }
