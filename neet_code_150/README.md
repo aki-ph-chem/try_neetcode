@@ -180,7 +180,7 @@
 
 777. Coin Change
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 777. Max Product Subarray
     - 初見: x
@@ -203,6 +203,10 @@
 777. Unique Paths
     - 初見: x
     - 理解: x
+
+777. Longest Common Subsequence 
+    - 初見: o
+    - 理解: o
 
 ## Greedy
 

@@ -187,6 +187,10 @@ path = "src/one_d_dp/partition_eq_subset.rs"
 name = "unique_path"
 path = "src/two_d_dp/unique_path.rs"
 
+[[bin]]
+name = "longest_common_subseq"
+path = "src/two_d_dp/longest_common_subseq.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"
