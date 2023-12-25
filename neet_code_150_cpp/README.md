@@ -159,6 +159,15 @@
 777. Unique Paths
     - 理解: x
 
+777. Longest Common Subsequence 
+    - 理解: o
+
+777. Best Time to Buy And Sell Stock With Cooldown
+    - 理解: x
+
+777. Coin Change II 
+    - 理解: x
+
 ## Greedy
 
 888. Maximum Subarray
