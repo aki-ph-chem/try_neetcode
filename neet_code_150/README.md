@@ -209,8 +209,8 @@
     - 理解: o
 
 777. Best Time to Buy And Sell Stock With Cooldown
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: x
 
 ## Greedy
 
