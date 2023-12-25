@@ -195,6 +195,10 @@ path = "src/two_d_dp/longest_common_subseq.rs"
 name = "best_time_buy_sell_cooldown"
 path = "src/two_d_dp/best_time_buy_sell_cooldown.rs"
 
+[[bin]]
+name = "coin_change_2"
+path = "src/two_d_dp/coin_change_2.rs"
+
 ## Greedy
 [[bin]]
 name = "max_subarray"
