@@ -141,6 +141,10 @@
     - 初見: x
     - 理解: o
 
+666. Diameter of Binary Tree 
+    - 初見: x
+    - 理解: o
+
 666. Same Tree
     - 初見: x
     - 理解: o
@@ -148,6 +152,7 @@
 666. Subtree of Another Tree 
     - 初見: x
     - 理解: x
+
 
 ## 1-D Dynamic Programming 
 
