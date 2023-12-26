@@ -145,6 +145,10 @@
     - 初見: x
     - 理解: o
 
+666. Subtree of Another Tree 
+    - 初見: x
+    - 理解: x
+
 ## 1-D Dynamic Programming 
 
 777. Climbing Stairs 
