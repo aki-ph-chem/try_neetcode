@@ -122,6 +122,15 @@
 38. Remove Nth Node From End of List
     - 理解: o
 
+39. Copy List With Random Pointer
+    - 理解:
+
+40. Add Two Numbers
+    - 理解:
+
+41. Linked List Cycle
+    - 理解: o
+
 ## 1-D Dynamic Programming 
 
 777. Climbing Stairs 
