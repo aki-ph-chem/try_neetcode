@@ -32,7 +32,7 @@ void show_tree_depth(TreeNode* root) {
 // 解けなかった
 class Solution {
     public:
-        bool isSamaTree(TreeNode* p, TreeNode* q) {
+        bool isSameTree(TreeNode* p, TreeNode* q) {
             if(!p && !q) {
                 return true;
             } else if(!p || !q) {
@@ -43,7 +43,7 @@ class Solution {
                 return false;
             }
 
-            return isSamaTree(p->left, q->left) || isSamaTree(p->right, q->right);
+            return isSameTree(p->left, q->left) || isSameTree(p->right, q->right);
         }
 };
 
@@ -119,10 +119,10 @@ int main(void) {
     */
 
     Solution s_1;
-    std::cout << s_1.isSamaTree(&p_1, &q_1) << std::endl;
-    std::cout << s_1.isSamaTree(&p_2, &q_2) << std::endl;
+    std::cout << s_1.isSameTree(&p_1, &q_1) << std::endl;
+    std::cout << s_1.isSameTree(&p_2, &q_2) << std::endl;
 
-    Solution s_ans;
-    std::cout << s_ans.isSamaTree(&p_1, &q_1) << std::endl;
-    std::cout << s_ans.isSamaTree(&p_2, &q_2) << std::endl;
+    SolutionAns s_ans;
+    std::cout << s_ans.isSameTree(&p_1, &q_1) << std::endl;
+    std::cout << s_ans.isSameTree(&p_2, &q_2) << std::endl;
 }
