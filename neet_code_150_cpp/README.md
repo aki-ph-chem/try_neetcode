@@ -165,6 +165,10 @@
     - 初見: x
     - 理解: o
 
+666. Valid Binary Search Tree
+    - 初見: x
+    - 理解: x
+
 
 ## 1-D Dynamic Programming 
 
