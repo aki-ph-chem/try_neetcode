@@ -173,6 +173,10 @@
     - 初見: x
     - 理解: x
 
+666. Construct Binary Tree From Preorder And Inorder Traversal
+    - 初見: x
+    - 理解: x
+
 
 ## 1-D Dynamic Programming 
 
