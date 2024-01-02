@@ -177,6 +177,11 @@
     - 初見: x
     - 理解: x
 
+## Tries
+
+555. Implement Trie Prefix Tree
+    - 初見: x
+    - 理解: x
 
 ## 1-D Dynamic Programming 
 
