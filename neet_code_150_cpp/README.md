@@ -169,6 +169,10 @@
     - 初見: x
     - 理解: x
 
+666. Kth Smallest Element In a Bst 
+    - 初見: x
+    - 理解: x
+
 
 ## 1-D Dynamic Programming 
 
