@@ -151,8 +151,8 @@
 ## Backtracking
 
 666. Combination Sum
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: o
 
 ## 1-D Dynamic Programming 
 
