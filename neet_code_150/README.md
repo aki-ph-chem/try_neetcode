@@ -158,6 +158,12 @@
     - 初見: x
     - 理解: o
 
+## Graphs
+
+555. Number of Islands
+    - 初見: x
+    - 理解: o
+
 ## 1-D Dynamic Programming 
 
 777. Climbing Stairs 
