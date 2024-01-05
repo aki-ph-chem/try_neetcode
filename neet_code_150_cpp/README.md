@@ -198,7 +198,7 @@
 
 555. Clone Graph 
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 ## 1-D Dynamic Programming 
 
