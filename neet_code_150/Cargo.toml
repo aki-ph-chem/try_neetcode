@@ -148,6 +148,10 @@ path = "src/backtracking/word_search.rs"
 name = "number_of_island"
 path = "src/graphs/number_of_island.rs"
 
+[[bin]]
+name = "pacific_atlantic_water_flow"
+path = "src/graphs/pacific_atlantic_water_flow.rs"
+
 ## 1-D Dynamic Programming
 
 [[bin]]
