@@ -19,7 +19,7 @@ impl Solution {
 }
 
 // C++の模範解答より
-// runtime errorを修正中
+// runtime errorを修正中 => AC
 struct SolutionAns {}
 impl SolutionAns {
     pub fn can_finish(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> bool {
@@ -50,35 +50,23 @@ impl SolutionAns {
             return false;
         }
 
-        /*
-        if map[&course].is_empty() {
+        if let None = map.get(&course) {
             return true;
-        }
-        */
-
-        if let Some(map_couse) = map.get(&course) {
-            if map_couse.is_empty() {
-                return true;
-            }
         }
 
         visited.insert(course);
 
-        /*
         for i in 0..map[&course].len() {
             let next_couse = map[&course][i];
             if !Self::dfs(next_couse, map, visited) {
                 return false;
             }
         }
-        */
-
-        if let Some(map_course) = map.get(&course) {
-        }
 
         if let Some(v) =  map.get_mut(&course) {
             v.clear();
         }
+
         visited.take(&course);
         true
     }
