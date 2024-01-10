@@ -91,6 +91,49 @@ class SolutionAns {
         }
 };
 
+// AC
+class SolutionAns2 {
+    public:
+        bool canFinish(int numCourses, std::vector<std::vector<int>>& prerequisites) {
+            std::unordered_map<int, std::vector<int>> m;
+            for (int i = 0; i < prerequisites.size(); i++) {
+                m[prerequisites[i][0]].push_back(prerequisites[i][1]);
+            }
+            std::unordered_set<int> visited;
+
+            for (int course = 0; course < numCourses; course++) {
+                if (!dfs(course, m, visited)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+    private:
+        bool dfs(int course, std::unordered_map<int, std::vector<int>>& m, std::unordered_set<int>& visited) {
+            if (visited.find(course) != visited.end()) {
+                return false;
+            }
+
+            if(m.find(course) == m.end()) {
+                return true;
+            }
+
+            visited.insert(course);
+
+            for(auto &nextCourse: m[course]) {
+                if(!dfs(nextCourse, m, visited)) {
+                    return false;
+                }
+            }
+
+
+            m[course].clear();
+            visited.erase(course);
+            return true;
+        }
+};
+
 int main(void) {
     auto case_1 = std::pair(2, std::vector(1, std::vector{1, 0}));
     // => true
@@ -112,4 +155,10 @@ int main(void) {
     std::cout << s_ans.canFinish(case_2.first, case_2.second) << std::endl;
     std::cout << s_ans.canFinish(case_3.first, case_3.second) << std::endl;
     std::cout << s_ans.canFinish(case_4.first, case_4.second) << std::endl;
+
+    SolutionAns s_ans_2;
+    std::cout << s_ans_2.canFinish(case_1.first, case_1.second) << std::endl;
+    std::cout << s_ans_2.canFinish(case_2.first, case_2.second) << std::endl;
+    std::cout << s_ans_2.canFinish(case_3.first, case_3.second) << std::endl;
+    std::cout << s_ans_2.canFinish(case_4.first, case_4.second) << std::endl;
 }
