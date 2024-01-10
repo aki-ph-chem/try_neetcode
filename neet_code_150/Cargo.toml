@@ -298,5 +298,9 @@ path = "src/appendix/hash_map.rs"
 name = "impl_list"
 path = "src/appendix/impl_list.rs"
 
+[[bin]]
+name = "max_except_self"
+path = "src/appendix/max_except_self.rs"
+
 
 [dependencies]
