@@ -31,13 +31,7 @@ int main(void){
     auto case_3 = std::string{""}; 
 
     SolutionAns s_1;
-    if(s_1.is_palindrome(case_1)) {
-        std::cout << "valid" << std::endl;
-    }
-    if(s_1.is_palindrome(case_2)) {
-        std::cout << "valid" << std::endl;
-    }
-    if(s_1.is_palindrome(case_3)) {
-        std::cout << "valid" << std::endl;
-    }
+    std::cout << s_1.is_palindrome(case_1) << std::endl;
+    std::cout << s_1.is_palindrome(case_2) << std::endl;
+    std::cout << s_1.is_palindrome(case_3) << std::endl;
 }
