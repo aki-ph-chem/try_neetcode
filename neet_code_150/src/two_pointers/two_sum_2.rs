@@ -16,6 +16,32 @@ impl Solution {
         res[1] += 1;
         res
     }
+
+    // 二分探索を使う
+    fn two_sum_bin_search(nums: Vec<i32>, target: i32) -> Vec<i32> {
+        let n = nums.len() as i32;
+        let mut result = vec![];
+        for i in 0..n {
+            let diff = target - nums[i as usize];
+            let (mut idx_l, mut idx_r) = (i + 1, n - 1);
+
+            while idx_l <= idx_r {
+                let mid = (idx_l + idx_r) / 2;
+                if diff == nums[mid as usize] {
+                    result.push(i + 1);
+                    result.push(mid + 1);
+                }
+
+                if diff < nums[mid as usize] {
+                    idx_r = mid - 1;
+                } else {
+                    idx_l = mid + 1;
+                }
+            }
+        }
+
+        result
+    }
 }
 
 // 模範解答
@@ -47,4 +73,8 @@ fn main() {
     println!("case_1: {:?}", SolutionAns::two_sum(case_1.clone().0, case_1.clone().1));
     println!("case_2: {:?}", SolutionAns::two_sum(case_2.clone().0, case_2.clone().1));
     println!("case_3: {:?}", SolutionAns::two_sum(case_3.clone().0, case_3.clone().1));
+
+    println!("case_1: {:?}", Solution::two_sum_bin_search(case_1.clone().0, case_1.clone().1));
+    println!("case_2: {:?}", Solution::two_sum_bin_search(case_2.clone().0, case_2.clone().1));
+    println!("case_3: {:?}", Solution::two_sum_bin_search(case_3.clone().0, case_3.clone().1));
 }
