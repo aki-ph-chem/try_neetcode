@@ -1,5 +1,5 @@
+use std::cmp::Ordering::{Equal, Greater, Less};
 use std::collections::{HashMap, HashSet};
-use std::cmp::Ordering::{Less,Greater,Equal};
 
 struct Solution {}
 impl Solution {
@@ -24,30 +24,30 @@ impl Solution {
 
 struct SolutionAns {}
 impl SolutionAns {
-    pub fn three_sum(mut numbers: Vec<i32>) -> Vec<Vec<i32>> {
-        numbers.sort_unstable();
+    pub fn three_sum(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
+        nums.sort_unstable();
 
         let mut ans: Vec<Vec<i32>> = Vec::new();
 
-        for i in 0..numbers.len() {
-            if i > 0 && numbers[i] == numbers[i - 1] {
+        for i in 0..nums.len() {
+            if i > 0 && nums[i] == nums[i - 1] {
                 continue;
             }
 
-            let (mut l, mut r) = (i + 1, numbers.len() - 1);
+            let (mut l, mut r) = (i + 1, nums.len() - 1);
 
             while l < r {
-                match (numbers[i] + numbers[l] + numbers[r]).cmp(&0) {
+                match (nums[i] + nums[l] + nums[r]).cmp(&0) {
                     Less => l += 1,
                     Greater => r -= 1,
                     Equal => {
-                        ans.push(vec![numbers[i], numbers[l], numbers[r]]);
+                        ans.push(vec![nums[i], nums[l], nums[r]]);
                         l += 1;
-                        while numbers[l] == numbers[l - 1] && l < r {
+                        while nums[l] == nums[l - 1] && l < r {
                             l += 1;
                         }
                         r -= 1;
-                        while numbers[r] == numbers[r + 1] && l < r {
+                        while nums[r] == nums[r + 1] && l < r {
                             r -= 1;
                         }
                     }
@@ -56,6 +56,56 @@ impl SolutionAns {
         }
 
         ans
+    }
+}
+
+// C++の模範解答
+// AC
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    pub fn three_sum(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
+        let mut result = vec![];
+
+        let n = nums.len();
+        if n < 3 {
+            result.push(vec![]);
+            return result;
+        }
+
+        nums.sort();
+        for i in 0..(n - 2) {
+            if nums[i] > 0 {
+                break;
+            }
+            if i > 0 && nums[i - 1] == nums[i] {
+                continue;
+            }
+
+            let (mut j, mut k) = (i + 1, n - 1);
+            while j < k {
+                let sum = nums[i] + nums[j] + nums[k];
+
+                if sum < 0 {
+                    j += 1;
+                } else if sum > 0 {
+                    k -= 1;
+                } else {
+                    result.push(vec![nums[i], nums[j], nums[k]]);
+
+                    while j < k && nums[j] == nums[j + 1] {
+                        j += 1;
+                    }
+                    j += 1;
+
+                    while j < k && nums[k - 1] == nums[k] {
+                        k -= 1;
+                    }
+                    k -= 1;
+                }
+            }
+        }
+
+        result
     }
 }
 
@@ -74,4 +124,9 @@ fn main() {
     println!("case_2: {:?}", SolutionAns::three_sum(case_2.clone()));
     println!("case_3: {:?}", SolutionAns::three_sum(case_3.clone()));
     println!("case_4: {:?}", SolutionAns::three_sum(case_4.clone()));
+
+    println!("case_1: {:?}", SolutionAnsCpp::three_sum(case_1.clone()));
+    println!("case_2: {:?}", SolutionAnsCpp::three_sum(case_2.clone()));
+    println!("case_3: {:?}", SolutionAnsCpp::three_sum(case_3.clone()));
+    println!("case_4: {:?}", SolutionAnsCpp::three_sum(case_4.clone()));
 }
