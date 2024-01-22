@@ -52,7 +52,7 @@
 
 12. 3sum
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 13. Continer with Most Water
     - 初見: x 

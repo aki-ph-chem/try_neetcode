@@ -39,7 +39,7 @@
     - 理解: o
 
 12. 3sum
-    - 理解: x
+    - 理解: o
 
 13. Continer with Most Water
     - 理解: o
