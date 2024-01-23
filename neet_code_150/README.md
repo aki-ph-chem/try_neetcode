@@ -72,7 +72,7 @@
 
 17. Longest Repeating Character Replacement
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 18. Permutation In String
     - 初見: x

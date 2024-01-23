@@ -55,7 +55,7 @@
     - 理解: o
 
 17. Longest Repeating Character Replacement
-    - 理解:
+    - 理解: o
 
 18. Permutation In String
     - 理解:
