@@ -64,7 +64,7 @@
 
 15. Best Time to Buy And Sell Stock 
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 16. Longest Substring Without Repeating Characters
     - 初見: o
