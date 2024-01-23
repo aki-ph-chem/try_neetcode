@@ -18,8 +18,12 @@ class SolutionAnsRust {
                     count.insert({s[r], 1});
                 }
 
+                // max_f: r番目までで一番多く含まれている文字の文字数
                 max_f = std::max(max_f, count[s[r]]);
 
+                // r - l + 1 - max_f: [r,l]の部分文字列をmax_f個含まれる文字で置き換えるのに必要な回数
+                // この値がkより大きければその置き換えは不可能
+                // この回数がkに等しくなるまでlを増やす(部分文字列の開始点を先に進める)
                 while(r - l + 1 - max_f > k) {
                     --count[s[l]];
                     ++l;
