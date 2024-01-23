@@ -66,10 +66,203 @@ impl SolutionAns {
     }
 }
 
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    // AC
+    pub fn check_inclusion(s1: String, s2: String) -> bool {
+        let (m, n) = (s1.len(), s2.len());
+        if m > n {
+            return false;
+        }
+
+        let vec_char_1: Vec<char> = s1.chars().collect();
+        let vec_char_2: Vec<char> = s2.chars().collect();
+
+        let mut count_map: HashMap<char, i32> = HashMap::new();
+        // 0 ~ m - 1 文字目まで
+        for i in 0..m {
+            *count_map.entry(vec_char_1[i]).or_default() += 1;
+            *count_map.entry(vec_char_2[i]).or_default() -= 1;
+        }
+        if Self::is_permutation(&count_map) {
+            return true;
+        }
+
+        // m ~ n - 1文字目まで
+        for i in m..n {
+            *count_map.entry(vec_char_2[i]).or_default() -= 1;
+            // i - m: 0 ~ n - 1 - m
+            *count_map.entry(vec_char_2[i - m]).or_default() += 1;
+            if Self::is_permutation(&count_map) {
+                return true;
+            }
+        }
+
+        false
+    }
+
+    // AC
+    pub fn check_inclusion_byte(s1: String, s2: String) -> bool {
+        let (m, n) = (s1.len(), s2.len());
+        if m > n {
+            return false;
+        }
+
+        let vec_char_1: Vec<u8> = s1.bytes().collect();
+        let vec_char_2: Vec<u8> = s2.bytes().collect();
+
+        let mut count_map: HashMap<u8, i32> = HashMap::new();
+        // 0 ~ m - 1 文字目まで
+        for i in 0..m {
+            *count_map.entry(vec_char_1[i]).or_default() += 1;
+            *count_map.entry(vec_char_2[i]).or_default() -= 1;
+        }
+        if Self::is_permutation_byte(&count_map) {
+            return true;
+        }
+
+        // m ~ n - 1文字目まで
+        for i in m..n {
+            *count_map.entry(vec_char_2[i]).or_default() -= 1;
+            // i - m: 0 ~ n - 1 - m
+            *count_map.entry(vec_char_2[i - m]).or_default() += 1;
+            if Self::is_permutation_byte(&count_map) {
+                return true;
+            }
+        }
+
+        false
+    }
+
+    // AC
+    // .chars().nth(i)を呼ぶと毎回O(i)かかるため遅くなる
+    pub fn check_inclusion_2(s1: String, s2: String) -> bool {
+        let (m, n) = (s1.len(), s2.len());
+        if m > n {
+            return false;
+        }
+
+        let mut count_map: HashMap<char, i32> = HashMap::new();
+        // 0 ~ m - 1 文字目まで
+        for i in 0..m {
+            *count_map.entry(s1.chars().nth(i).unwrap()).or_default() += 1;
+            *count_map.entry(s2.chars().nth(i).unwrap()).or_default() -= 1;
+        }
+        if Self::is_permutation(&count_map) {
+            return true;
+        }
+
+        // m ~ n - 1文字目まで
+        for i in m..n {
+            *count_map.entry(s2.chars().nth(i).unwrap()).or_default() -= 1;
+            // i - m: 0 ~ n - m
+            *count_map.entry(s2.chars().nth(i - m).unwrap()).or_default() += 1;
+            if Self::is_permutation(&count_map) {
+                return true;
+            }
+        }
+
+        false
+    }
+
+    // AC
+    // .chars().nth(i)を排除したため速くなった
+    pub fn check_inclusion_3(s1: String, s2: String) -> bool {
+        let (m, n) = (s1.len(), s2.len());
+        if m > n {
+            return false;
+        }
+
+        let mut count_map: HashMap<char, i32> = HashMap::new();
+        for (a, b) in s1.chars().zip(s2.chars().take(m)) {
+            *count_map.entry(a).or_default() += 1;
+            *count_map.entry(b).or_default() -= 1;
+        }
+
+        if Self::is_permutation(&count_map) {
+            return true;
+        }
+
+        // m ~ n - 1文字目まで
+        for (b_1, b_2) in s2.chars().skip(m).zip(s2.chars().take(n - m)) {
+            *count_map.entry(b_1).or_default() -= 1;
+            // i - m: 0 ~ n - 1 - m
+            *count_map.entry(b_2).or_default() += 1;
+            if Self::is_permutation(&count_map) {
+                return true;
+            }
+        }
+
+        false
+    }
+
+    fn is_permutation(map: &HashMap<char, i32>) -> bool {
+        for (_i, x) in map {
+            if *x != 0 {
+                return false;
+            }
+        }
+
+        true
+    }
+
+    fn is_permutation_byte(map: &HashMap<u8, i32>) -> bool {
+        for (_i, x) in map {
+            if *x != 0 {
+                return false;
+            }
+        }
+
+        true
+    }
+}
+
 fn main() {
     let case_1 = ("ab".to_string(), "eidbaooo".to_string());
     let case_2 = ("ab".to_string(), "eidboaoo".to_string());
 
-    println!("case_1: {}", SolutionAns::check_inclusion(case_1.0, case_1.1));
-    println!("case_2: {}", SolutionAns::check_inclusion(case_2.0, case_2.1));
+    println!(
+        "case_1: {}",
+        SolutionAns::check_inclusion(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAns::check_inclusion(case_2.0.clone(), case_2.1.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp::check_inclusion(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp::check_inclusion(case_2.0.clone(), case_2.1.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp::check_inclusion_2(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp::check_inclusion_2(case_2.0.clone(), case_2.1.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp::check_inclusion_3(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp::check_inclusion_3(case_2.0.clone(), case_2.1.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp::check_inclusion_byte(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp::check_inclusion_byte(case_2.0.clone(), case_2.1.clone())
+    );
 }
