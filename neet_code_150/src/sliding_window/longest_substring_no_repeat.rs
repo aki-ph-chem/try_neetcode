@@ -76,6 +76,32 @@ impl SolutionAns {
         longest as i32
     }
 }
+
+// AC
+// C++の模範解答より
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    pub fn length_of_longest_substring(s: String) -> i32 {
+        let vec_char:Vec<char> = s.chars().collect();
+        let mut set:HashSet<char> = HashSet::new();
+        let mut result = 0;
+        let (mut i, mut j) = (0, 0);
+
+        while j < vec_char.len() {
+            while set.contains(&vec_char[j]) {
+                set.remove(&vec_char[i]);
+                i += 1;
+            }
+
+            result = result.max(j - i + 1);
+            set.insert(vec_char[j]);
+            j += 1;
+        }
+
+        result as i32
+    }
+}
+
 fn main() {
     let case_1 = "abcabcbb".to_string();
     let case_2 = "bbbbb".to_string();
@@ -173,5 +199,35 @@ fn main() {
     println!(
         "case_7: {}",
         SolutionAns::length_of_longest_substring(case_7.clone())
+    );
+
+    println!("C++の模範解答より");
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp::length_of_longest_substring(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp::length_of_longest_substring(case_2.clone())
+    );
+    println!(
+        "case_3: {}",
+        SolutionAnsCpp::length_of_longest_substring(case_3.clone())
+    );
+    println!(
+        "case_4: {}",
+        SolutionAnsCpp::length_of_longest_substring(case_4.clone())
+    );
+    println!(
+        "case_5: {}",
+        SolutionAnsCpp::length_of_longest_substring(case_5.clone())
+    );
+    println!(
+        "case_6: {}",
+        SolutionAnsCpp::length_of_longest_substring(case_6.clone())
+    );
+    println!(
+        "case_7: {}",
+        SolutionAnsCpp::length_of_longest_substring(case_7.clone())
     );
 }
