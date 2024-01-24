@@ -58,7 +58,7 @@
     - 理解: o
 
 18. Permutation In String
-    - 理解:
+    - 理解: o
 
 19. Minimum Window Substring: Hardなため一旦飛ばす
 
@@ -300,3 +300,8 @@
 
 999. Multiply Strings 
     - 理解: o  
+
+## Bit Manipulation
+
+9999. Number of 1 Bits 
+    - 理解: o
