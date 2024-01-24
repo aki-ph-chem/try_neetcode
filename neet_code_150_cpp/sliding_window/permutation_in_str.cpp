@@ -95,6 +95,8 @@ int main(void) {
     // => true
     auto case_2 = std::pair(std::string{"ab"}, std::string{"eidboaoo"});
     // => false
+    auto case_3 = std::pair(std::string{"ab"}, std::string{"xyzabc"});
+    auto case_4 = std::pair(std::string{"ab"}, std::string{"xyzawbc"});
 
     SolutionAns s_ans;
     std::cout << s_ans.checkInclusion(case_1.first, case_1.second) << std::endl;
@@ -103,4 +105,6 @@ int main(void) {
     SolutionMine s_mine;
     std::cout << s_mine.checkInclusion(case_1.first, case_1.second) << std::endl;
     std::cout << s_mine.checkInclusion(case_2.first, case_2.second) << std::endl;
+    std::cout << s_mine.checkInclusion(case_3.first, case_3.second) << std::endl;
+    std::cout << s_mine.checkInclusion(case_4.first, case_4.second) << std::endl;
 }
