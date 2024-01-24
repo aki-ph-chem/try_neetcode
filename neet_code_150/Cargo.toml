@@ -289,6 +289,11 @@ path = "src/math_and_geometry/mul_str.rs"
 name = "detect_square"
 path = "src/math_and_geometry/detect_square.rs"
 
+## Bit Manipulation
+[[bin]]
+name = "number_of_1bit"
+path = "src/bit_manipulation/number_of_1bit.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"

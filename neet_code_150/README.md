@@ -311,6 +311,11 @@
     - 初見: x
     - 理解: o 
 
+## Bit Manipulation
+
+9999. Number of 1 Bits 
+    - 初見: o
+    - 理解: o
 
 ## 解法などのメモ
 
