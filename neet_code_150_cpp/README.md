@@ -305,3 +305,6 @@
 
 9999. Number of 1 Bits 
     - 理解: o
+
+9999. Counting Bits 
+    - 理解: o
