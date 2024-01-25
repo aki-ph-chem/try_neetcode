@@ -325,6 +325,10 @@
     - 初見: o
     - 理解: o
 
+9999. Missing Number 
+    - 初見: o
+    - 理解: x
+
 ## 解法などのメモ
 
 ## Search In Rotated Sorted Array

@@ -303,6 +303,10 @@ path = "src/bit_manipulation/counting_bits.rs"
 name = "reverse_bits"
 path = "src/bit_manipulation/reverse_bits.rs"
 
+[[bin]]
+name = "missing_number"
+path = "src/bit_manipulation/missing_number.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
