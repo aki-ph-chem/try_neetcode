@@ -329,6 +329,10 @@
     - 初見: o
     - 理解: x
 
+9999. Sum of Two Integers 
+    - 初見: x
+    - 理解: o
+
 ## 解法などのメモ
 
 ## Search In Rotated Sorted Array
