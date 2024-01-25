@@ -321,6 +321,10 @@
     - 初見: o
     - 理解: o
 
+9999. Reverse Bits 
+    - 初見: o
+    - 理解: o
+
 ## 解法などのメモ
 
 ## Search In Rotated Sorted Array
