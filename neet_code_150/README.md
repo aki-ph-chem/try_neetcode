@@ -313,6 +313,10 @@
 
 ## Bit Manipulation
 
+9999. Single Number 
+    - 初見:
+    - 理解:
+
 9999. Number of 1 Bits 
     - 初見: o
     - 理解: o

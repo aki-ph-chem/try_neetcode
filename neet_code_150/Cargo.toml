@@ -292,6 +292,10 @@ path = "src/math_and_geometry/detect_square.rs"
 ## Bit Manipulation
 
 [[bin]]
+name = "single_number"
+path = "src/bit_manipulation/single_number.rs"
+
+[[bin]]
 name = "number_of_1bit"
 path = "src/bit_manipulation/number_of_1bit.rs"
 
