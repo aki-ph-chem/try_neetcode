@@ -314,8 +314,8 @@
 ## Bit Manipulation
 
 9999. Single Number 
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: o
 
 9999. Number of 1 Bits 
     - 初見: o
