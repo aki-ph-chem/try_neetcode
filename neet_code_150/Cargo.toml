@@ -256,6 +256,11 @@ path = "src/greedy/partition_label.rs"
 name = "valid_paren"
 path = "src/greedy/valid_paren.rs"
 
+## Intervals
+[[bin]]
+name = "insert_interval"
+path = "src/intervals/insert_interval.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"
