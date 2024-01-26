@@ -337,6 +337,10 @@
     - 初見: x
     - 理解: o
 
+9999. Reverse Integers 
+    - 初見: x
+    - 理解: o
+
 ## 解法などのメモ
 
 ## Search In Rotated Sorted Array

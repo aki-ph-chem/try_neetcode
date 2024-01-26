@@ -315,6 +315,11 @@ path = "src/bit_manipulation/missing_number.rs"
 name = "sum_of_two_integers"
 path = "src/bit_manipulation/sum_of_two_integers.rs"
 
+
+[[bin]]
+name = "reverse_integer"
+path = "src/bit_manipulation/reverse_integer.rs"
+
 # appendix
 [[bin]]
 name = "hash_map"
