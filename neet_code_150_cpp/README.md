@@ -303,6 +303,9 @@
 
 ## Bit Manipulation
 
+9999. Single Number 
+    - 理解: o
+
 9999. Number of 1 Bits 
     - 理解: o
 

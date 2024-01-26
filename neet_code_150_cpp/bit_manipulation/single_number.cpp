@@ -25,6 +25,19 @@ class Solution {
         }
 };
 
+// 模範解答
+class SolutionAns {
+    public:
+        int singleNumber(std::vector<int>& nums) {
+            int result = 0;
+            for(auto& v: nums) {
+                result ^= v;
+            }
+
+            return result;
+        }
+};
+
 int main(void) {
     auto case_1 = std::vector{2, 2, 1};
     auto case_2 = std::vector{4, 1, 2, 2, 1};
@@ -34,4 +47,9 @@ int main(void) {
     std::cout << s_1.singleNumberMap(case_1) << std::endl;
     std::cout << s_1.singleNumberMap(case_2) << std::endl;
     std::cout << s_1.singleNumberMap(case_3) << std::endl;
+
+    SolutionAns s_ans;
+    std::cout << s_ans.singleNumber(case_1) << std::endl;
+    std::cout << s_ans.singleNumber(case_2) << std::endl;
+    std::cout << s_ans.singleNumber(case_3) << std::endl;
 }
