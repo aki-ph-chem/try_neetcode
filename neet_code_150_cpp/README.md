@@ -278,6 +278,12 @@
 888. Valid Parenthesis String  
     - 理解: o
 
+## Intervals
+
+888. Insert Interval
+    - 初見: x
+    - 理解: o
+
 ## Math & Geometry
 
 999. Rot Image
