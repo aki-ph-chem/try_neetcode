@@ -317,3 +317,6 @@
 
 9999. Sum of Two Integers 
     - 理解: o
+
+9999. Reverse Integer
+    - 理解: o
