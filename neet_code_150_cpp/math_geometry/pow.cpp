@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 class Solution {
     // RustではACなのにC++だとTLEになるのだが
@@ -11,6 +12,16 @@ class Solution {
                 return 1.0 / pow_raw(x, n);
             }
         }
+
+        // AC
+        double myPow2(double x, int n) {
+            if(n >= 0) {
+                return pow_raw_2(x, n);
+            } else {
+                return 1.0 / pow_raw_2(x, n);
+            }
+        }
+
     private:
         double pow_raw(double x, int n) {
             switch(std::abs(n)) {
@@ -23,6 +34,21 @@ class Solution {
                         return pow_raw(x, n / 2) * pow_raw(x, n / 2);
                     } else {
                         return x * pow_raw(x, n / 2) * pow_raw(x, n / 2);
+                    }
+            }
+        }
+
+        double pow_raw_2(double x, int n) {
+            switch(std::abs(n)) {
+                case 0:
+                    return 1.0;
+                case 1:
+                    return x;
+                default:
+                    if(n % 2 == 0) {
+                        return std::pow(pow_raw_2(x, n / 2), 2);
+                    } else {
+                        return x * std::pow(pow_raw_2(x, n / 2), 2);
                     }
             }
         }
