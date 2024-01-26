@@ -26,6 +26,14 @@ impl Solution {
         }
     }
 
+    pub fn pow_c(x: f64, n: i32) -> f64 {
+        if n >= 0 {
+            Self::pow_raw_2(x, n)
+        } else {
+            1.0 / Self::pow_raw_2(x, n)
+        }
+    }
+
     fn pow_raw(x: f64, n: i32) -> f64 {
         match n.abs() {
             0 => 1.0,
@@ -36,6 +44,20 @@ impl Solution {
                 } else {
                     x * Self::pow_raw(x, n / 2) * Self::pow_raw(x, n / 2)
                 }
+            }
+        }
+    }
+
+    fn pow_raw_2(x: f64, n: i32) -> f64 {
+        match n.abs() {
+            0 => 1.0,
+            1 => x,
+            _ => {
+                if n % 2 == 0 {
+                    Self::pow_raw_2(x, n / 2).powi(2)
+                } else {
+                    x * Self::pow_raw_2(x, n / 2).powi(2)
+                } 
             }
         }
     }
@@ -83,6 +105,11 @@ fn main() {
     println!("case_2: {}", Solution::pow_b(case_2.0, case_2.1));
     println!("case_3: {}", Solution::pow_b(case_3.0, case_3.1));
     println!("case_4: {}", Solution::pow_b(case_4.0, case_4.1));
+
+    println!("case_1: {}", Solution::pow_c(case_1.0, case_1.1));
+    println!("case_2: {}", Solution::pow_c(case_2.0, case_2.1));
+    println!("case_3: {}", Solution::pow_c(case_3.0, case_3.1));
+    println!("case_4: {}", Solution::pow_c(case_4.0, case_4.1));
 
     // 模範解答
     println!("case_1: {}", SolutionAns::pow(case_1.0, case_1.1));
