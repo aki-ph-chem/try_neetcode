@@ -283,6 +283,10 @@
     - 初見: x
     - 理解: o
 
+888. Merge Intervals
+    - 初見: x
+    - 理解: o
+
 ## Math & Geometry
 
 9999. Rotate Image

@@ -261,6 +261,10 @@ path = "src/greedy/valid_paren.rs"
 name = "insert_interval"
 path = "src/intervals/insert_interval.rs"
 
+[[bin]]
+name = "merge_intervals"
+path = "src/intervals/merge_intervals.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"
