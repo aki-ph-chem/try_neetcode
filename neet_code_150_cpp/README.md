@@ -281,7 +281,9 @@
 ## Intervals
 
 888. Insert Interval
-    - 初見: x
+    - 理解: o
+
+888. Merge Intervals
     - 理解: o
 
 ## Math & Geometry
