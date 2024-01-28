@@ -3,6 +3,7 @@
 取り組む際の指針:
 - 15分考えてわからなかったら答えをみる 
 - Leet Codeに課金しないと見れない問題は無視しても良しとする
+    - Leet Codeの方ではできなくてもNeet Codeの方でできるっぽい(Rustは非対応でC++,C#,Java,Python,JSのみ対応)
 
 ## Array & Hashing
 
@@ -34,7 +35,7 @@
     - 初見: x
     - 理解: x
 
-8. 要課金なため略
+8. Encode and Decode Strings: Rust非対応なためpass
 
 9. Longest Consective Sequence
     - 初見: x
@@ -290,6 +291,8 @@
 888. Non Overlapping Intervals
     - 初見: x
     - 理解: o
+    
+888. Meeting Rooms: Rust非対応なためpass 
 
 ## Math & Geometry
 
