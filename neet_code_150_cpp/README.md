@@ -25,7 +25,9 @@
 7. Valid Sudoku
     - 理解: x
 
-8. 要課金なため略
+8. Encode and Decode Strings 
+    - 初見: o
+    - 理解: o
 
 9. Longest Consective Sequence
     - 理解: o
