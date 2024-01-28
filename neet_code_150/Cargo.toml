@@ -265,6 +265,10 @@ path = "src/intervals/insert_interval.rs"
 name = "merge_intervals"
 path = "src/intervals/merge_intervals.rs"
 
+[[bin]]
+name = "non_overlapping_intervals"
+path = "src/intervals/non_overlapping_intervals.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"
