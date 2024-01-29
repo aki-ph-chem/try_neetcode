@@ -59,7 +59,9 @@
     - 初見: x 
     - 理解: o
 
-14. Trapping Rain Water : Hardなため一旦飛ばす
+14. Trapping Rain Water
+    - 初見: x 
+    - 理解: x
 
 ## Sliding Window 
 

@@ -55,6 +55,10 @@ path = "src/two_pointers/tree_sum.rs"
 name = "continer_water"
 path = "src/two_pointers/continer_with_most_water.rs"
 
+[[bin]]
+name = "trapping_rain_water"
+path = "src/two_pointers/trapping_rain_water.rs"
+
 ## Sliding Window
 [[bin]]
 name = "buy_sell"
