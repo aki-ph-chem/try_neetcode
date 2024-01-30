@@ -85,7 +85,9 @@
     - 初見: x
     - 理解: x
 
-20. Sliding Window Maximum: Hardなため一旦飛ばす
+20. Sliding Window Maximum:
+    - 初見: x
+    - 理解: o
 
 ## Stack
 

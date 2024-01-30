@@ -80,6 +80,10 @@ path = "src/sliding_window/permutation_in_str.rs"
 name = "minimum_window_substr" 
 path = "src/sliding_window/minimum_window_substr.rs"
 
+[[bin]]
+name = "sliding_window_max" 
+path = "src/sliding_window/sliding_window_max.rs"
+
 ## Stack
 [[bin]]
 name = "valid_par"
