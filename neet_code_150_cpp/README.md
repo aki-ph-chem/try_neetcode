@@ -65,7 +65,8 @@
 19. Minimum Window Substring:
     - 理解: x
 
-20. Sliding Window Maximum: Hardなため一旦飛ばす
+20. Sliding Window Maximum:
+    - 理解: o
 
 ## Stack
 
