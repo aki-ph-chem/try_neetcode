@@ -82,8 +82,8 @@
     - 理解: o
 
 19. Minimum Window Substring:
-    - 初見:
-    - 理解:
+    - 初見: x
+    - 理解: x
 
 20. Sliding Window Maximum: Hardなため一旦飛ばす
 
