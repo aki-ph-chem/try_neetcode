@@ -20,6 +20,7 @@ impl Solution {
     }
 }
 
+// 模範解答
 struct SolutionAns {}
 impl SolutionAns {
     pub fn max_sliding_window(nums: Vec<i32>, k: i32) -> Vec<i32> {
@@ -51,6 +52,37 @@ impl SolutionAns {
     }
 }
 
+// VecDeque<(usize, i32)>で書ければすこしスマートなのだが..(まだ途中)
+struct SolutionRe {}
+impl SolutionRe {
+    pub fn max_sliding_window(nums: Vec<i32>, k: i32) -> Vec<i32> {
+        let mut result = vec![];
+        let mut q: VecDeque<(usize, i32)> = VecDeque::new();
+        let (mut l, mut r) = (0, 0);
+
+        while r < nums.len() {
+            while !q.is_empty() && q.back().unwrap().1 < nums[r] {
+                q.pop_back();
+            }
+
+            q.push_back((r, nums[r]));
+
+            if l > q.front().unwrap().0 {
+                q.pop_back();
+            }
+
+            if r + 1 >= k as usize {
+                result.push(q.front().unwrap().1);
+                l += 1;
+            }
+
+            r += 1;
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = (vec![1, 3, -1, -3, 5, 3, 6, 7], 3);
     // => [3,3,5,6,7]
@@ -73,5 +105,14 @@ fn main() {
     println!(
         "case_2: {:?}",
         SolutionAns::max_sliding_window(case_2.0.clone(), case_2.1.clone())
+    );
+
+    println!(
+        "case_1: {:?}",
+        SolutionRe::max_sliding_window(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionRe::max_sliding_window(case_2.0.clone(), case_2.1.clone())
     );
 }
