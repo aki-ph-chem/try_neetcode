@@ -62,7 +62,8 @@
 18. Permutation In String
     - 理解: o
 
-19. Minimum Window Substring: Hardなため一旦飛ばす
+19. Minimum Window Substring:
+    - 理解: x
 
 20. Sliding Window Maximum: Hardなため一旦飛ばす
 
