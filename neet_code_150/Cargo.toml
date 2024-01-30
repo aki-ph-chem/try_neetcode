@@ -350,4 +350,8 @@ path = "src/appendix/impl_list.rs"
 name = "max_except_self"
 path = "src/appendix/max_except_self.rs"
 
+[[bin]]
+name = "nabeatu"
+path = "src/appendix/nabeatu.rs"
+
 [dependencies]
