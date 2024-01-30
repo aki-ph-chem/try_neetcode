@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -41,6 +42,34 @@ class SolutionAns {
                 while (!stk.empty() && stk.top().second < currTemp) {
                     int prevDay = stk.top().first;
                     int prevTemp = stk.top().second;
+                    stk.pop();
+
+                    result[prevDay] = currDay - prevDay;
+                }
+
+                stk.push({currDay, currTemp});
+            }
+
+            return result;
+        }
+};
+
+// 構造化束縛を使うとちょっとスッキリ
+class SolutionRe {
+    public:
+        std::vector<int> dailyTemperatures(const std::vector<int>& temperatures) {
+            auto n = temperatures.size();
+            
+            std::stack<std::pair<int, int>> stk;
+            std::vector<int> result(n);
+
+            for(int i = 0; i < n; ++i) {
+                int currDay = i;
+                int currTemp = temperatures[i];
+
+                while(!stk.empty() && stk.top().second < currTemp) {
+                    // 構造化束縛!
+                    auto [prevDay, prevTemp] = stk.top();
                     stk.pop();
 
                     result[prevDay] = currDay - prevDay;
