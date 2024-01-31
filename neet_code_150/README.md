@@ -115,7 +115,9 @@
     - 初見: x
     - 理解: o
 
-27. Largest Rectangle In Histogram: Hardなため一旦飛ばす
+27. Largest Rectangle In Histogram:
+    - 初見: x
+    - 理解: x
 
 ## Binary Search
 

@@ -109,6 +109,10 @@ path = "src/stack/daily_tmp.rs"
 name = "car_fleet"
 path = "src/stack/car_fleet.rs"
 
+[[bin]]
+name = "largest_rectangle_in_hist"
+path = "src/stack/largest_rectangle_in_hist.rs"
+
 ## Binary Search
 [[bin]]
 name = "bin_search"
