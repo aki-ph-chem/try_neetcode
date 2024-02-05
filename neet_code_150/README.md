@@ -178,6 +178,10 @@
 555. Clone Graphs 
     - Rustで実行できないためスキップ
 
+555. Max Area of Island 
+    - 初見:
+    - 理解:
+
 555. Pacific Atlantic Water Flow 
     - 初見: x
     - 理解: o

@@ -176,6 +176,10 @@ path = "src/graphs/pacific_atlantic_water_flow.rs"
 name = "course_schedule"
 path = "src/graphs/course_schedule.rs"
 
+[[bin]]
+name = "max_area_of_island"
+path = "src/graphs/max_area_of_island.rs"
+
 ## 1-D Dynamic Programming
 
 [[bin]]
