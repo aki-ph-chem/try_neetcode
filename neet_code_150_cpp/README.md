@@ -111,7 +111,8 @@
 33. Time Based Key Value Store
     - 理解: o 
 
-34. Median of Two Sorted Arrays: Hardなため一旦飛ばす
+34. Median of Two Sorted Arrays
+    - 理解: o 
 
 ## [Linked List](./linked_list) 
 
