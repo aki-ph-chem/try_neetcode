@@ -145,7 +145,9 @@
     - 初見: o 
     - 理解: o
 
-34. Median of Two Sorted Arrays: Hardなため一旦飛ばす
+34. Median of Two Sorted Arrays
+    - 初見: x
+    - 理解: x
 
 ## Linked List
 

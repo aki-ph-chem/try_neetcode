@@ -138,6 +138,10 @@ path = "src/binary_search/search_rotated_sorted_array.rs"
 name = "timebase_key"
 path = "src/binary_search/timebase_key.rs"
 
+[[bin]]
+name = "median_of_two_sorted_array"
+path = "src/binary_search/median_of_two_sorted_array.rs"
+
 ## Linked List
 
 [[bin]]
