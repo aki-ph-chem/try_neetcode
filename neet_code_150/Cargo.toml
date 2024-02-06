@@ -169,16 +169,21 @@ name = "number_of_island"
 path = "src/graphs/number_of_island.rs"
 
 [[bin]]
+name = "max_area_of_island"
+path = "src/graphs/max_area_of_island.rs"
+
+[[bin]]
 name = "pacific_atlantic_water_flow"
 path = "src/graphs/pacific_atlantic_water_flow.rs"
+
+[[bin]]
+name = "surrounded_regions"
+path = "src/graphs/surrounded_regions.rs"
 
 [[bin]]
 name = "course_schedule"
 path = "src/graphs/course_schedule.rs"
 
-[[bin]]
-name = "max_area_of_island"
-path = "src/graphs/max_area_of_island.rs"
 
 ## 1-D Dynamic Programming
 
