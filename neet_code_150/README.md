@@ -190,6 +190,10 @@
     - 初見: x
     - 理解: o
 
+555. Rotting Oranges 
+    - 初見: x
+    - 理解: x
+
 555. Couse Schedule 
     - 初見: x
     - 理解: x

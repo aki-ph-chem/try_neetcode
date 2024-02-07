@@ -1,0 +1,6 @@
+# 一時
+
+[[bin]]
+name = "course_schedule_2"
+path = "src/graphs/course_schedule_2.rs"
+

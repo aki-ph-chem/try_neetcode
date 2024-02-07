@@ -181,9 +181,12 @@ name = "surrounded_regions"
 path = "src/graphs/surrounded_regions.rs"
 
 [[bin]]
+name = "rotting_orange"
+path = "src/graphs/rotting_orange.rs"
+
+[[bin]]
 name = "course_schedule"
 path = "src/graphs/course_schedule.rs"
-
 
 ## 1-D Dynamic Programming
 
