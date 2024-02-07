@@ -194,6 +194,9 @@
     - 初見: x
     - 理解: x
 
+555. Walls And Gates:
+    - Rustで実行できないためスキップ
+
 555. Course Schedule 
     - 初見: x
     - 理解: x
