@@ -224,6 +224,9 @@
 555. Course Schedule II 
     - 理解: x
 
+555. Redundant Connection 
+    - 理解: x
+
 ## 1-D Dynamic Programming 
 
 777. Climbing Stairs 
