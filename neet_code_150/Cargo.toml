@@ -188,6 +188,10 @@ path = "src/graphs/rotting_orange.rs"
 name = "course_schedule"
 path = "src/graphs/course_schedule.rs"
 
+[[bin]]
+name = "course_schedule_2"
+path = "src/graphs/course_schedule_2.rs"
+
 ## 1-D Dynamic Programming
 
 [[bin]]

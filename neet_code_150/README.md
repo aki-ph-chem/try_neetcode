@@ -194,7 +194,11 @@
     - 初見: x
     - 理解: x
 
-555. Couse Schedule 
+555. Course Schedule 
+    - 初見: x
+    - 理解: x
+
+555. Course Schedule II 
     - 初見: x
     - 理解: x
 
