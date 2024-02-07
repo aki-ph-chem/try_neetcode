@@ -5,3 +5,4 @@
 - palindrome: 回文
 - consecutive: 連続した
 - polish notation: ポーランド記法
+- redundant: 不必要な、冗長な
