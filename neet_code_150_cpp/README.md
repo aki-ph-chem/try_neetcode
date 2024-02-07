@@ -215,7 +215,10 @@
 555. Surrounded Regions 
     - 理解: o
 
-555. Couse Schedule 
+555. Rotting Oranges 
+    - 理解: x
+
+555. Course Schedule 
     - 理解: x
 
 ## 1-D Dynamic Programming 
