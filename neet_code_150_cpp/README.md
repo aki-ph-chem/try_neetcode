@@ -231,6 +231,10 @@
 555. Redundant Connection 
     - 理解: x
 
+555. Number of Connected Components In An Undirected Graph 
+    - 初見: o
+    - 理解: o
+
 ## 1-D Dynamic Programming 
 
 777. Climbing Stairs 
