@@ -61,7 +61,7 @@ class SolutionAns {
             std::vector<int> ranks;
             for(int i = 0; i < n; ++i) {
                 parents.push_back(i);
-                ranks.push_back(i);
+                ranks.push_back(1);
             }
 
             auto result = n;
