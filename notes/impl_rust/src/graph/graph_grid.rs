@@ -42,27 +42,27 @@ impl DfsGridCross {
     }
 }
 
-// 途中
 struct BfsGridCross {}
 impl BfsGridCross {
     fn search(grid: &Grid<i32>, v: (i32, i32)) {
         let (m, n) = (grid.len(), grid[0].len());
+        // 探索状況を記録
         let mut seen = vec![vec![false; n]; m];
-
         // 探索用のキュー
         let mut q: VecDeque<(i32, i32)> = VecDeque::new();
+
+        // スタート地点を訪問済みにする
+        seen[v.0 as usize][v.1 as usize] = true;
         q.push_back(v);
 
         while !q.is_empty() {
             let (row, col) = (q.front().unwrap().0, q.front().unwrap().1);
             q.pop_front();
 
-            // 訪問済みにする
-            seen[row as usize][col as usize] = true;
             print!("{} -> ", grid[row as usize][col as usize]);
 
             // 十字方向の探索
-            let directions: [(i32, i32); 4] = [(0, 1), (1, 0), (0, -1), (-1, 0)];
+            let directions: [(i32, i32); 4] = [(1, 0), (0, 1), (-1, 0), (0, -1)];
             for s in directions {
                 let (x, y) = (row + s.0, col + s.1);
 
@@ -72,6 +72,8 @@ impl BfsGridCross {
                     continue;
                 }
 
+                // 訪問済みにする
+                seen[x as usize][y as usize] = true;
                 q.push_back((x, y));
             }
         }
@@ -81,8 +83,11 @@ impl BfsGridCross {
 }
 
 fn main() {
-    let grid_1 = vec![vec![1, 2, 3], vec![4, 8, 12], vec![5, 10, 15]];
+    let grid_1 = vec![vec![1, 2, 3], vec![4, 5, 6], vec![7, 8, 9]];
+
+    println!("DFS:");
     DfsGridCross::search(&grid_1);
 
+    println!("BFS:");
     BfsGridCross::search(&grid_1, (0, 0));
 }
