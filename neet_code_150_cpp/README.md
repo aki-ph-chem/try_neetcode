@@ -229,7 +229,7 @@
     - 理解: x
 
 555. Redundant Connection 
-    - 理解: x
+    - 理解: o
 
 555. Number of Connected Components In An Undirected Graph 
     - 初見: o

@@ -59,6 +59,62 @@ class SolutionAns {
         }
 };
 
+// AC
+// Union-Findの実装が少し違う
+class SolutionRe {
+    public:
+        std::vector<int> findRedundantConnection(std::vector<std::vector<int>>& edges) {
+            auto n = (int)edges.size();
+
+            std::vector<int> parents(n + 1, -1);
+            std::vector<int> size_graph(n + 1, 1);
+            std::vector<int> result;
+
+            for(auto& v: edges) {
+                auto [n_1, n_2] = std::pair(v[0], v[1]);
+
+                if(!unite(n_1, n_2, parents, size_graph)) {
+                    result = {n_1, n_2};
+                    break;
+                }
+            }
+
+            return result;
+        }
+
+    private:
+        // for Union-Find
+        int root(int x, std::vector<int>& parents) {
+            if(parents[x] == -1) {
+                return x;
+            } else {
+                return parents[x] = root(parents[x], parents);
+            }
+        }
+
+        bool unite(int x,
+                int y,
+                std::vector<int>& parent,
+                std::vector<int>& size) {
+
+            x = root(x, parent);
+            y = root(y, parent);
+
+            if(x == y) {
+                return false;
+            }
+
+            if(size[x] < size[y]) {
+                std::swap(x, y);
+            }
+
+            parent[y] = x;
+            size[x] += size[y];
+
+            return true;
+        }
+};
+
 void show_result(const std::vector<int>& result) {
     for(auto& v: result){
         std::cout << v << " ";
@@ -78,4 +134,11 @@ int main(void) {
 
     show_result(res_1);
     show_result(res_2);
+
+    SolutionRe s_re;
+    auto res_1_re = s_re.findRedundantConnection(case_1);
+    auto res_2_re = s_re.findRedundantConnection(case_2);
+
+    show_result(res_1_re);
+    show_result(res_2_re);
 }
