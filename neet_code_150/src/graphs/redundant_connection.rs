@@ -79,6 +79,57 @@ impl SolutionAnsCpp {
     }
 }
 
+// AC
+// Union-Findの実装が少し違う
+struct SolutionRe {}
+impl SolutionRe {
+    pub fn find_redundant_connection(edges: Vec<Vec<i32>>) -> Vec<i32> {
+        let n = edges.len();
+
+        let mut parents = vec![-1; n + 1];
+        let mut size_graph = vec![1; n + 1];
+        let mut result = vec![];
+
+        for v in edges {
+            let (n_1, n_2) = (v[0], v[1]);
+
+            if !Self::unite(n_1, n_2, &mut parents, &mut size_graph) {
+                result = vec![n_1, n_2];
+                break;
+            }
+        }
+
+        result
+    }
+
+    fn root(x: i32, parents: &mut Vec<i32>) -> i32 {
+        if parents[x as usize] == -1 {
+            return x;
+        }
+
+        parents[x as usize] = Self::root(parents[x as usize], parents);
+        return parents[x as usize];
+    }
+
+    fn unite(mut x: i32, mut y: i32, parents: &mut Vec<i32>, size_graph: &mut Vec<i32>) -> bool {
+        x = Self::root(x, parents);
+        y = Self::root(y, parents);
+
+        if x == y {
+            return false;
+        }
+
+        if size_graph[x as usize] < size_graph[x as usize] {
+            std::mem::swap(&mut x, &mut y);
+        }
+
+        parents[y as usize] = x;
+        size_graph[x as usize] += size_graph[y as usize];
+
+        return true;
+    }
+}
+
 fn main() {
     let case_1 = vec![vec![1, 2], vec![1, 3], vec![2, 3]];
     // => [2, 3]
@@ -105,5 +156,14 @@ fn main() {
     println!(
         "case_2: {:?}",
         SolutionAnsCpp::find_redundant_connection(case_2.clone())
+    );
+
+    println!(
+        "case_1: {:?}",
+        SolutionRe::find_redundant_connection(case_1.clone())
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionRe::find_redundant_connection(case_2.clone())
     );
 }
