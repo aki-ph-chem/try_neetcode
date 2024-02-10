@@ -65,7 +65,7 @@ impl SolutionAnsCpp {
             }
         }
 
-        // (-1, -1)よりスタート
+        // ダミーの点(-1, -1)
         q.push_back((-1, -1));
         let mut result = -1;
 
