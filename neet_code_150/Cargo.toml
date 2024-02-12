@@ -163,6 +163,10 @@ name = "combination_sum"
 path = "src/backtracking/combination_sum.rs"
 
 [[bin]]
+name = "permutations"
+path = "src/backtracking/permutations.rs"
+
+[[bin]]
 name = "word_search"
 path = "src/backtracking/word_search.rs"
 
