@@ -216,7 +216,7 @@
     - 理解: o
 
 555. Rotting Oranges 
-    - 理解: x
+    - 理解: o
 
 555. Walls And Gates 
     - 初見: x

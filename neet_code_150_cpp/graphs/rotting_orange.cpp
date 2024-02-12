@@ -22,7 +22,7 @@ class SolutionAns {
                 }
             }
 
-            // (-1, -1)よりスタート
+            // ダミーの点(-1, -1)
             q.push({-1, -1});
             int result = -1;
 

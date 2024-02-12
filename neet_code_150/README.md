@@ -192,7 +192,7 @@
 
 555. Rotting Oranges 
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 555. Walls And Gates:
     - Rustで実行できないためスキップ
