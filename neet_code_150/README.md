@@ -212,6 +212,10 @@
 555. Number of Connected Components In An Undirected Graph 
     - Rustでは実行できないためスキップ
 
+555. Word Ladder 
+    - 初見: x
+    - 理解: x
+
 ## 1-D Dynamic Programming 
 
 777. Climbing Stairs 

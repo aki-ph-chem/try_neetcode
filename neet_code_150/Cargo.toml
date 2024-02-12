@@ -196,6 +196,10 @@ path = "src/graphs/course_schedule_2.rs"
 name = "redundant_connection"
 path = "src/graphs/redundant_connection.rs"
 
+[[bin]]
+name = "word_ladder"
+path = "src/graphs/word_ladder.rs"
+
 ## 1-D Dynamic Programming
 
 [[bin]]
