@@ -155,6 +155,10 @@ path = "src/linked_list/merge_sorted_list.rs"
 ## Backtracking
 
 [[bin]]
+name = "subsets"
+path = "src/backtracking/subsets.rs"
+
+[[bin]]
 name = "combination_sum"
 path = "src/backtracking/combination_sum.rs"
 
