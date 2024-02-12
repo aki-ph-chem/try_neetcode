@@ -398,4 +398,8 @@ path = "src/appendix/max_except_self.rs"
 name = "nabeatu"
 path = "src/appendix/nabeatu.rs"
 
+[[bin]]
+name = "from_iter"
+path = "src/appendix/from_iter.rs"
+
 [dependencies]
