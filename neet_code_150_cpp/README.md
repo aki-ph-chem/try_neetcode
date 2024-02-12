@@ -198,6 +198,9 @@
 666. Combination Sum
     - 理解: o
 
+666. Permutations 
+    - 理解: x
+
 666. Word Search
     - 理解: o
 
