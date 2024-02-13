@@ -167,6 +167,10 @@ name = "permutations"
 path = "src/backtracking/permutations.rs"
 
 [[bin]]
+name = "subsets_2"
+path = "src/backtracking/subsets_2.rs"
+
+[[bin]]
 name = "word_search"
 path = "src/backtracking/word_search.rs"
 
