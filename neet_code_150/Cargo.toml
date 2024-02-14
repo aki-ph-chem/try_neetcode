@@ -171,6 +171,10 @@ name = "subsets_2"
 path = "src/backtracking/subsets_2.rs"
 
 [[bin]]
+name = "combination_sum_2"
+path = "src/backtracking/combination_sum_2.rs"
+
+[[bin]]
 name = "word_search"
 path = "src/backtracking/word_search.rs"
 
