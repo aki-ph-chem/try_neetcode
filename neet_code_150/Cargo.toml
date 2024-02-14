@@ -182,6 +182,10 @@ path = "src/backtracking/word_search.rs"
 name = "palindrome_partitioning"
 path = "src/backtracking/palindrome_partitioning.rs"
 
+[[bin]]
+name = "letter_combinations_phone_number"
+path = "src/backtracking/letter_combinations_phone_number.rs"
+
 ## Graphs
 
 [[bin]]

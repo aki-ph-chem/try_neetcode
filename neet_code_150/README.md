@@ -189,6 +189,10 @@
     - 初見: x
     - 理解: o
 
+666. Letter Combinations of a Phone Number 
+    - 初見: o
+    - 理解: o
+
 ## Graphs
 
 555. Number of Islands
