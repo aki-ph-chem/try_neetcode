@@ -178,6 +178,10 @@ path = "src/backtracking/combination_sum_2.rs"
 name = "word_search"
 path = "src/backtracking/word_search.rs"
 
+[[bin]]
+name = "palindrome_partitioning"
+path = "src/backtracking/palindrome_partitioning.rs"
+
 ## Graphs
 
 [[bin]]

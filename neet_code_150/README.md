@@ -185,6 +185,10 @@
     - 初見: x
     - 理解: o
 
+666. Palindrome Partitioning 
+    - 初見: x
+    - 理解: x
+
 ## Graphs
 
 555. Number of Islands
