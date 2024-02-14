@@ -210,6 +210,9 @@
 666. Word Search
     - 理解: o
 
+666. Palindrome Partitioning 
+    - 理解: o
+
 ## Graphs
 
 555. Number of Islands
