@@ -213,6 +213,9 @@
 666. Palindrome Partitioning 
     - 理解: o
 
+666. Letter Combinations of a Phone Number 
+    - 理解: o
+
 ## Graphs
 
 555. Number of Islands
