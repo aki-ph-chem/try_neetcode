@@ -216,6 +216,9 @@
 666. Letter Combinations of a Phone Number 
     - 理解: o
 
+666. N Queens 
+    - 理解: x
+
 ## Graphs
 
 555. Number of Islands
