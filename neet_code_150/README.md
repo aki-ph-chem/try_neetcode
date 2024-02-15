@@ -193,6 +193,10 @@
     - 初見: o
     - 理解: o
 
+666. N Queens 
+    - 初見: x
+    - 理解: x
+
 ## Graphs
 
 555. Number of Islands

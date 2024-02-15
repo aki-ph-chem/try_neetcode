@@ -186,6 +186,10 @@ path = "src/backtracking/palindrome_partitioning.rs"
 name = "letter_combinations_phone_number"
 path = "src/backtracking/letter_combinations_phone_number.rs"
 
+[[bin]]
+name = "n_queens"
+path = "src/backtracking/n_queens.rs"
+
 ## Graphs
 
 [[bin]]
