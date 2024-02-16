@@ -67,6 +67,52 @@ impl Solution {
         true
     }
 }
+
+// AC
+// C++の模範解答より
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    pub fn min_const_connect_points(points: Vec<Vec<i32>>) -> i32 {
+        let n = points.len() as i32;
+        let inf = i32::MAX;
+
+        let mut edge_used = 0;
+        let mut in_mst = vec![false; n as usize];
+        let mut min_dist = vec![inf; n as usize];
+        min_dist[0] = 0;
+        let mut result = 0;
+
+        while edge_used < n {
+            let mut current_min_edge = inf;
+            let mut current_node = -1;
+
+            // 貪欲法
+            for i in 0..n {
+                if !in_mst[i as usize] && current_min_edge > min_dist[i as usize] {
+                    current_min_edge = min_dist[i as usize];
+                    current_node = i;
+                }
+            }
+
+            result += current_min_edge;
+            edge_used += 1;
+            in_mst[current_node as usize] = true;
+
+            // update
+            for i in 0..n {
+                let cost = (points[current_node as usize][0] - points[i as usize][0]).abs()
+                    + (points[current_node as usize][1] - points[i as usize][1]).abs();
+
+                if !in_mst[i as usize] && min_dist[i as usize] > cost {
+                    min_dist[i as usize] = cost;
+                }
+            }
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = vec![vec![0, 0], vec![2, 2], vec![3, 10], vec![5, 2], vec![7, 0]];
     // => 20
@@ -80,5 +126,14 @@ fn main() {
     println!(
         "case_2: {}",
         Solution::min_const_connect_points(case_2.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp::min_const_connect_points(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp::min_const_connect_points(case_2.clone())
     );
 }
