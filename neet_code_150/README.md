@@ -250,6 +250,10 @@
     - 初見: o
     - 理解: o
 
+1212. Network Delay Time 
+    - 初見: o
+    - 理解: o
+
 ## 1-D Dynamic Programming 
 
 777. Climbing Stairs 

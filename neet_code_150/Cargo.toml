@@ -234,6 +234,10 @@ path = "src/graphs/word_ladder.rs"
 name = "min_const_to_connect_all_points"
 path = "src/advanced_graphs/min_const_to_connect_all_points.rs"
 
+[[bin]]
+name = "network_delay_time"
+path = "src/advanced_graphs/network_delay_time.rs"
+
 ## 1-D Dynamic Programming
 
 [[bin]]
