@@ -1,3 +1,4 @@
+#include <climits>
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -65,6 +66,50 @@ class Solution {
         }
 };
 
+// 模範解答
+class SolutionAns {
+    public:
+        int minCostConnectPoints(std::vector<std::vector<int>>& points) {
+            auto n = (int)points.size();
+
+            auto edgeUsed = 0;
+            std::vector<bool> inMst(n);
+            std::vector<int> minDist(n, INT_MAX);
+            minDist[0] = 0;
+            auto result = 0;
+
+            while(edgeUsed < n) {
+                auto currentMinEdge = INT_MAX;
+                auto currentNode = -1;
+
+                // 貪欲法
+                for(int i = 0; i < n; ++i) {
+                    if(!inMst[i] && currentMinEdge > minDist[i]) {
+                        currentMinEdge = minDist[i];
+                        currentNode = i;
+                    }
+                }
+
+                result += currentMinEdge;
+                ++edgeUsed;
+                inMst[currentNode] = true;
+
+                // update
+                for(int i = 0; i < n; ++i) {
+                    auto cost = std::abs(points[currentNode][0] - points[i][0]) 
+                        + std::abs(points[currentNode][1] - points[i][1]); 
+
+                    if(!inMst[i] && minDist[i] > cost) {
+                        minDist[i] = cost;
+                    }
+                }
+            }
+
+
+            return result;
+        }
+};
+
 int main(void) {
     std::vector<std::vector<int>> case_1 = {{0, 0}, {2, 2}, {3, 10}, {5, 2}, {7, 10}};
     // => 20
@@ -74,4 +119,8 @@ int main(void) {
     Solution s_1;
     std::cout << s_1.minCostConnectPoints(case_1) << std::endl;
     std::cout << s_1.minCostConnectPoints(case_2) << std::endl;
+
+    SolutionAns s_ans;
+    std::cout << s_ans.minCostConnectPoints(case_1) << std::endl;
+    std::cout << s_ans.minCostConnectPoints(case_2) << std::endl;
 }
