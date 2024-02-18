@@ -436,4 +436,8 @@ path = "src/appendix/nabeatu.rs"
 name = "from_iter"
 path = "src/appendix/from_iter.rs"
 
+[[bin]]
+name = "bin_heap"
+path = "src/appendix/bin_heap.rs"
+
 [dependencies]
