@@ -137,8 +137,6 @@
 41. Linked List Cycle
     - 理解: o
 
-41. Cheapest Flight Within K Stops 
-    - 理解: x
 
 ## Trees
 
@@ -277,6 +275,13 @@
 1212. Network Dleay Time 
     - 初見: o
     - 理解: o
+
+1212. Alien Dictionary
+    - 初見: x
+    - 理解: x
+
+1212. Cheapest Flight Within K Stops 
+    - 理解: x
 
 ## 1-D Dynamic Programming 
 
