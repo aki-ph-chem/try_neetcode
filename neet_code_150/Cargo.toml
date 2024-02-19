@@ -158,6 +158,10 @@ path = "src/linked_list/merge_sorted_list.rs"
 name = "kth_largest_element_in_stream"
 path = "src/heap_p_queue/kth_largest_element_in_stream.rs"
 
+[[bin]]
+name = "last_stone_weight"
+path = "src/heap_p_queue/last_stone_weight.rs"
+
 ## Backtracking
 
 [[bin]]
