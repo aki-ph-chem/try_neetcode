@@ -254,6 +254,8 @@
     - 初見: o
     - 理解: o
 
+1212. Alien Dictionary: Rust非対応のためpass 
+
 1212. Cheapest Flights Within K Stops 
     - 初見: x
     - 理解: x
