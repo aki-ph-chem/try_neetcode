@@ -152,6 +152,12 @@ path = "src/linked_list/rev_list.rs"
 name = "merge_sorted_list"
 path = "src/linked_list/merge_sorted_list.rs"
 
+## Heap / Priority Queue
+
+[[bin]]
+name = "kth_largest_element_in_stream"
+path = "src/heap_p_queue/kth_largest_element_in_stream.rs"
+
 ## Backtracking
 
 [[bin]]
