@@ -162,6 +162,10 @@ path = "src/heap_p_queue/kth_largest_element_in_stream.rs"
 name = "last_stone_weight"
 path = "src/heap_p_queue/last_stone_weight.rs"
 
+[[bin]]
+name = "k_closest_point_to_origin"
+path = "src/heap_p_queue/k_closest_point_to_origin.rs"
+
 ## Backtracking
 
 [[bin]]
