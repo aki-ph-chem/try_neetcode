@@ -159,6 +159,20 @@
     - 初見: x 
     - 理解: o 
 
+## Heap / Priority Queue
+
+1313. Kth Largest Element In a Stream
+    - 初見: x 
+    - 理解: o 
+
+1313. Last Stone Weight
+    - 初見: o 
+    - 理解: o 
+
+1313. K Closest Points to Origin
+    - 初見: x 
+    - 理解: o 
+
 ## Backtracking
 
 666. Subsets 
