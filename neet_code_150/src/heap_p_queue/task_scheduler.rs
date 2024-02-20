@@ -49,6 +49,44 @@ impl SolutionAns {
     }
 }
 
+// C++の模範解答より
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    pub fn least_interval(tasks: Vec<char>, n: i32) -> i32 {
+        let mut pq: BinaryHeap<i32> = BinaryHeap::new();
+        let mut q: VecDeque<(i32, i32)> = VecDeque::new();
+        let mut map: HashMap<char, i32> = HashMap::new();
+
+        for c in tasks {
+            *map.entry(c).or_default() += 1;
+        }
+        for (_c, v) in map {
+            pq.push(v);
+        }
+        println!("pq: {:?}", pq);
+        println!("q: {:?}", q);
+
+        let mut time = 0;
+        while !q.is_empty() || !pq.is_empty() {
+            time += 1;
+            if !pq.is_empty() {
+                if pq.peek().unwrap() - 1 != 0 {
+                    q.push_front((pq.peek().unwrap() - 1, time + n));
+                }
+                pq.pop();
+            }
+
+            if !q.is_empty() && q.front().unwrap().1 == time {
+                pq.push(q.front().unwrap().0);
+                q.pop_front();
+            }
+            println!("time: {}", time);
+        }
+
+        time
+    }
+}
+
 fn main() {
     let case_1 = (vec!['A', 'A', 'A', 'B', 'B', 'B'], 2);
     // => 8
@@ -62,5 +100,14 @@ fn main() {
     println!(
         "case_2: {}",
         SolutionAns::least_interval(case_2.0.clone(), case_2.1)
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp::least_interval(case_1.0.clone(), case_1.1)
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp::least_interval(case_2.0.clone(), case_2.1)
     );
 }
