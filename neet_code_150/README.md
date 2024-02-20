@@ -177,6 +177,10 @@
     - 初見: o 
     - 理解: o 
 
+1313. Task Scheduler  
+    - 初見: x
+    - 理解: x
+
 ## Backtracking
 
 666. Subsets 

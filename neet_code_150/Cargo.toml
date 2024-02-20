@@ -170,6 +170,10 @@ path = "src/heap_p_queue/k_closest_point_to_origin.rs"
 name = "kth_largest_element_array"
 path = "src/heap_p_queue/kth_largest_element_array.rs"
 
+[[bin]]
+name = "task_scheduler"
+path = "src/heap_p_queue/task_scheduler.rs"
+
 ## Backtracking
 
 [[bin]]
