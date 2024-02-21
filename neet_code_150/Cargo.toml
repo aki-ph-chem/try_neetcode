@@ -178,6 +178,10 @@ path = "src/heap_p_queue/task_scheduler.rs"
 name = "design_twitter"
 path = "src/heap_p_queue/design_twitter.rs"
 
+[[bin]]
+name = "find_median_from_data_stream"
+path = "src/heap_p_queue/find_median_from_data_stream.rs"
+
 ## Backtracking
 
 [[bin]]

@@ -185,6 +185,10 @@
     - 初見: x
     - 理解: o
 
+1313.  Find Median From Data Stream 
+    - 初見: x
+    - 理解: x
+
 ## Backtracking
 
 666. Subsets 
