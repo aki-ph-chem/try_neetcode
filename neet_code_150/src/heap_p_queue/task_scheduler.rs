@@ -63,15 +63,17 @@ impl SolutionAnsCpp {
         for (_c, v) in map {
             pq.push(v);
         }
+        /*
         println!("pq: {:?}", pq);
         println!("q: {:?}", q);
+        */
 
         let mut time = 0;
         while !q.is_empty() || !pq.is_empty() {
             time += 1;
             if !pq.is_empty() {
                 if pq.peek().unwrap() - 1 != 0 {
-                    q.push_front((pq.peek().unwrap() - 1, time + n));
+                    q.push_back((pq.peek().unwrap() - 1, time + n));
                 }
                 pq.pop();
             }
@@ -80,7 +82,7 @@ impl SolutionAnsCpp {
                 pq.push(q.front().unwrap().0);
                 q.pop_front();
             }
-            println!("time: {}", time);
+            //println!("time: {}", time);
         }
 
         time
