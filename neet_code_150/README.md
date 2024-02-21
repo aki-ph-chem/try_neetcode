@@ -181,6 +181,10 @@
     - 初見: x
     - 理解: x
 
+1313. Design Twitter  
+    - 初見: x
+    - 理解: o
+
 ## Backtracking
 
 666. Subsets 
