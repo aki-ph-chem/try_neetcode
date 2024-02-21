@@ -466,4 +466,8 @@ path = "src/appendix/from_iter.rs"
 name = "bin_heap"
 path = "src/appendix/bin_heap.rs"
 
+[[bin]]
+name = "vec_deque"
+path = "src/appendix/vec_deque.rs"
+
 [dependencies]
