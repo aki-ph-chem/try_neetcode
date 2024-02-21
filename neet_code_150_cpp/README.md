@@ -210,6 +210,9 @@
 1313. Design Twitter  
     - 理解: o
 
+1313.  Find Median From Data Stream 
+    - 理解: x
+
 ## Backtracking
 
 666. Subsets 
