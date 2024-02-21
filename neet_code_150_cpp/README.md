@@ -204,6 +204,12 @@
 1313. Kth Largest Element In An Array  
     - 理解: o 
 
+1313. Task Scheduler  
+    - 理解: x
+
+1313. Design Twitter  
+    - 理解: o
+
 ## Backtracking
 
 666. Subsets 
