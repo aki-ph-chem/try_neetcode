@@ -172,6 +172,10 @@
     - 初見: x
     - 理解: o
 
+666. Binary Tree Right Side View  
+    - 初見: x
+    - 理解: x
+
 666. Valid Binary Search Tree
     - 初見: x
     - 理解: x
