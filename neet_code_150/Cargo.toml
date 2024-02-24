@@ -482,4 +482,8 @@ path = "src/appendix/bin_heap.rs"
 name = "vec_deque"
 path = "src/appendix/vec_deque.rs"
 
+[[bin]]
+name = "while_let"
+path = "src/appendix/while_let.rs"
+
 [dependencies]
