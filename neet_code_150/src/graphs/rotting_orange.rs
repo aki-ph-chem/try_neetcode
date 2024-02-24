@@ -103,6 +103,67 @@ impl SolutionAnsCpp {
         }
     }
 }
+
+// AC
+// while let を使って unwrap()をなくす
+struct SolutionAnsCpp2 {}
+impl SolutionAnsCpp2 {
+    pub fn orange_rotting(mut grid: Vec<Vec<i32>>) -> i32 {
+        let (m, n) = (grid.len(), grid[0].len());
+
+        // q: 腐ったオレンジのある場所のキュー
+        // fresh: 新鮮なオレンジの数
+        let mut q: VecDeque<(i32, i32)> = VecDeque::new();
+        let mut fresh = 0;
+        for i in 0..m {
+            for j in 0..n {
+                if grid[i][j] == 2 {
+                    q.push_back((i as i32, j as i32));
+                } else if grid[i][j] == 1 {
+                    fresh += 1;
+                }
+            }
+        }
+
+        // ダミーの点(-1, -1)
+        q.push_back((-1, -1));
+        let mut result = -1;
+
+        while let Some(q_front) = q.front() {
+            let (row, col) = (q_front.0, q_front.1);
+            q.pop_front();
+
+            if row == -1 {
+                result += 1;
+                if !q.is_empty() {
+                    q.push_back((-1, -1));
+                }
+            } else {
+                let directions: [(i32, i32); 4] = [(0, 1), (1, 0), (0, -1), (-1, 0)];
+                for s in directions {
+                    let (x, y) = (row + s.0, col + s.1);
+
+                    if x < 0 || x >= m as i32 || y < 0 || y >= n as i32 {
+                        continue;
+                    }
+
+                    if grid[x as usize][y as usize] == 1 {
+                        grid[x as usize][y as usize] = 2;
+                        fresh -= 1;
+                        q.push_back((x, y));
+                    }
+                }
+            }
+        }
+
+        if fresh == 0 {
+            result
+        } else {
+            -1
+        }
+    }
+}
+
 fn main() {
     let case_1 = vec![vec![2, 1, 1], vec![1, 1, 0], vec![0, 1, 1]];
     // => 4
@@ -114,6 +175,15 @@ fn main() {
     println!("case_2: {}", Solution::orange_rotting(case_2));
     */
 
-    println!("case_1: {}", SolutionAnsCpp::orange_rotting(case_1));
-    println!("case_2: {}", SolutionAnsCpp::orange_rotting(case_2));
+    println!("case_1: {}", SolutionAnsCpp::orange_rotting(case_1.clone()));
+    println!("case_2: {}", SolutionAnsCpp::orange_rotting(case_2.clone()));
+
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp2::orange_rotting(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp2::orange_rotting(case_2.clone())
+    );
 }
