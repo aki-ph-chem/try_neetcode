@@ -80,6 +80,43 @@ impl BfsGridCross {
 
         println!("end");
     }
+
+    fn search_2(grid: &Grid<i32>, v: (i32, i32)) {
+        let (m, n) = (grid.len(), grid[0].len());
+        // 探索状況を記録
+        let mut seen = vec![vec![false; n]; m];
+        // 探索用のキュー
+        let mut q: VecDeque<(i32, i32)> = VecDeque::new();
+
+        // スタート地点を訪問済みにする
+        seen[v.0 as usize][v.1 as usize] = true;
+        q.push_back(v);
+
+        while let Some(q_front) = q.front() {
+            let (row, col) = (q_front.0, q_front.1);
+            q.pop_front();
+
+            print!("{} -> ", grid[row as usize][col as usize]);
+
+            // 十字方向の探索
+            let directions: [(i32, i32); 4] = [(1, 0), (0, 1), (-1, 0), (0, -1)];
+            for s in directions {
+                let (x, y) = (row + s.0, col + s.1);
+
+                // 境界チェック
+                if x < 0 || y < 0 || x >= m as i32 || y >= n as i32 || seen[x as usize][y as usize]
+                {
+                    continue;
+                }
+
+                // 訪問済みにする
+                seen[x as usize][y as usize] = true;
+                q.push_back((x, y));
+            }
+        }
+
+        println!("end");
+    }
 }
 
 fn main() {
@@ -90,4 +127,5 @@ fn main() {
 
     println!("BFS:");
     BfsGridCross::search(&grid_1, (0, 0));
+    BfsGridCross::search_2(&grid_1, (0, 0));
 }
