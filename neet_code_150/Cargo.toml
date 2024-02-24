@@ -261,6 +261,10 @@ path = "src/graphs/word_ladder.rs"
 ## Advanced Graphs
 
 [[bin]]
+name = "reconstruct_itinerary"
+path = "src/advanced_graphs/reconstruct_itinerary.rs"
+
+[[bin]]
 name = "min_const_to_connect_all_points"
 path = "src/advanced_graphs/min_const_to_connect_all_points.rs"
 

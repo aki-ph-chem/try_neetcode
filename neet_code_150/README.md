@@ -276,6 +276,10 @@
 
 ## Advanced Graphs
 
+1212. Reconstruct Itinerary
+    - 初見: x
+    - 理解: x
+
 1212. Min Cost to Connect All Points
     - 初見: o
     - 理解: o
