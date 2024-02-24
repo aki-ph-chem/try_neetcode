@@ -176,6 +176,10 @@
     - 初見: x
     - 理解: x
 
+666. Count Good Nodes In Binary Tree  
+    - 初見: x
+    - 理解: o
+
 666. Valid Binary Search Tree
     - 初見: x
     - 理解: x
