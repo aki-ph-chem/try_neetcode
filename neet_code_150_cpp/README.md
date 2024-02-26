@@ -310,6 +310,10 @@
     - 初見: o
     - 理解: o
 
+1212. Swim in Rising Water 
+    - 初見: x
+    - 理解: x
+
 1212. Alien Dictionary
     - 初見: x
     - 理解: x
