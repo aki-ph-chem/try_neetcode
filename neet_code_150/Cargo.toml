@@ -273,6 +273,10 @@ name = "network_delay_time"
 path = "src/advanced_graphs/network_delay_time.rs"
 
 [[bin]]
+name = "swim_in_rising_water"
+path = "src/advanced_graphs/swim_in_rising_water.rs"
+
+[[bin]]
 name = "cheapest_flights_k_stops"
 path = "src/advanced_graphs/cheapest_flights_k_stops.rs"
 
