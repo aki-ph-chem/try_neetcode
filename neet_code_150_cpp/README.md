@@ -212,6 +212,10 @@
     - 初見: x
     - 理解: o
 
+555. Word Search II 
+    - 初見: x
+    - 理解: x
+
 ## Heap / Priority Queue
 
 1313. Kth Largest Element In a Stream
