@@ -137,6 +137,8 @@
 41. Linked List Cycle
     - 理解: o
 
+44. Merge K Sorted Lists 
+    - 理解: x
 
 ## Trees
 
