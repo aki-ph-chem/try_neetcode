@@ -71,6 +71,74 @@ class TrieAns {
         TrieNode* root;
 };
 
+// AC
+// searchを再帰で書く(dfsを意識)
+class TrieAnsRec {
+    public:
+        TrieAnsRec() {
+            root = new TrieNode();
+        }
+
+        void insert(std::string word) {
+            TrieNode* node = root;
+            int curr = 0;
+
+            for(int i = 0; i < (int)word.size(); ++i) {
+                curr = word[i] - 'a';
+                if(!(node->children[curr])) {
+                    node->children[curr] = new TrieNode();
+                }
+                node = node->children[curr];
+            }
+
+            node->isWord = true;
+        }
+
+        bool search(std::string word) {
+            return searchRec(word);
+        }
+
+        bool searchRec(std::string word) {
+            auto node = root;
+            return dfs(word, 0, node);
+        }
+
+        bool dfs(std::string& word, int i, TrieNode* node) {
+            if(!node) {
+                return false;
+            }
+            if(i == word.size()) {
+                return node->isWord;
+            }
+
+            return dfs(word, i + 1, node->children[word[i] - 'a']);
+        }
+
+        bool startsWith(std::string prefix) {
+            return startsWithRec(prefix);
+        }
+
+        bool startsWithRec(std::string prefix) {
+            auto node = root;
+            return dfs2(prefix, 0, node);
+        }
+
+        bool dfs2(std::string& word, int j, TrieNode* node) {
+            if(!node) {
+                return false;
+            }
+
+            if(j == word.size()) {
+                return true;
+            }
+
+            return dfs2(word, j + 1, node->children[word[j] - 'a']);
+        }
+
+    private:
+        TrieNode* root;
+};
+
 // AC(すごく遅い: 278 ms)
 // std::unorderd_map<U,V>を使って読みやすくした別解
 namespace ans_2 {
@@ -161,5 +229,14 @@ int main(void) {
     // true
     trie_2.insert("app"); 
     std::cout << trie_2.search("app") << std::endl; 
+    // true
+
+    TrieAnsRec trie_rec;
+    trie_rec.insert("apple");
+    std::cout << trie_rec.searchRec("apple") << std::endl;
+    // true
+    std::cout << trie_rec.searchRec("app") << std::endl;
+    // false
+    std::cout << trie_rec.startsWithRec("app") << std::endl;
     // true
 }
