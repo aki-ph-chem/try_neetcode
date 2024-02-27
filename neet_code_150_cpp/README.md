@@ -196,6 +196,10 @@
     - 初見: x
     - 理解: o
 
+666. Serialize Ans Deserialize Binary Tree 
+    - 初見: x
+    - 理解: x
+
 ## Tries
 
 555. Implement Trie Prefix Tree
