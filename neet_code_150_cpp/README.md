@@ -206,7 +206,7 @@
 
 555. Implement Trie Prefix Tree
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 ## Heap / Priority Queue
 
