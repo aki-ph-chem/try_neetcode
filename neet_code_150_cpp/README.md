@@ -208,6 +208,10 @@
     - 初見: x
     - 理解: o
 
+555. Design Add And Search Words Data Structure 
+    - 初見: x
+    - 理解: o
+
 ## Heap / Priority Queue
 
 1313. Kth Largest Element In a Stream
