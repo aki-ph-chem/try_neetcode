@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <unordered_set>
 
 // 模範解答
 class SolutionAns {
@@ -28,6 +29,50 @@ class SolutionAns {
                     sub[area][idx] = true;
                 }
             }
+            return true;
+        }
+};
+
+// AC
+// Rustの模範解答より
+class SolutionAnsRust {
+    public:
+        bool isValidSudoku(const std::vector<std::vector<char>>& board) {
+            std::unordered_set<char> row, col, bx;
+
+            for(int i = 0; i < 9; ++i) {
+                for(int j = 0; j < 9; ++j) {
+                    auto r = board[i][j];
+                    auto c = board[j][i];
+                    auto b = board[i / 3 * 3 + j / 3][i % 3 * 3 + j % 3];
+
+                    if(r != '.') {
+                        if(row.find(r) != row.end()) {
+                            return false;
+                        }
+                        row.insert(r);
+                    }
+
+                    if(c != '.') {
+                        if(col.find(c) != col.end()) {
+                            return false;
+                        }
+                        col.insert(c);
+                    }
+
+                    if(b != '.') {
+                        if(bx.find(b) != bx.end()) {
+                            return false;
+                        }
+                        bx.insert(b);
+                    }
+                }
+
+                row.clear();
+                col.clear();
+                bx.clear();
+            }
+
             return true;
         }
 };
@@ -65,4 +110,8 @@ int main(void) {
     if(s_1.is_valid_sudoku(case_2)) {
         std::cout << "valid sudoku" << std::endl;
     }
+
+    SolutionAnsRust s_ans_rs;
+    std::cout << s_ans_rs.isValidSudoku(case_1) << std::endl;
+    std::cout << s_ans_rs.isValidSudoku(case_2) << std::endl;
 }
