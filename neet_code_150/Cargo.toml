@@ -393,6 +393,10 @@ path = "src/intervals/merge_intervals.rs"
 name = "non_overlapping_intervals"
 path = "src/intervals/non_overlapping_intervals.rs"
 
+[[bin]]
+name = "min_interval_to_include_each_query"
+path = "src/intervals/min_interval_to_include_each_query.rs"
+
 ## Math & Geometry
 [[bin]]
 name = "rot_image"

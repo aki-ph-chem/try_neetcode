@@ -416,6 +416,10 @@
     
 888. Meeting Rooms: Rust非対応なためpass 
 
+888. Minimum Interval to Include Each Query
+    - 初見: x
+    - 理解: x
+
 ## Math & Geometry
 
 9999. Rotate Image
