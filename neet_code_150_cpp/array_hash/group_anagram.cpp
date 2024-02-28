@@ -1,8 +1,10 @@
 #include <cstddef>
+#include <exception>
 #include <iostream>
 #include <string>
 #include <vector>
 #include <unordered_map>
+#include <map>
 
 //#define CXX_20
 
@@ -69,6 +71,35 @@ class SolutionAns {
         }
 };
 
+// AC
+// std::map<U,V>だとkeyにstd::vector<T>を使えた
+class SolutionAns2 {
+    public:
+        std::vector<std::vector<std::string>> groupAnagrams(const std::vector<std::string>& strs) {
+            std::map<std::vector<int>, std::vector<std::string>> map;
+            for(auto& word: strs) {
+
+                std::vector<int> key(26, 0);
+                for(auto& c: word) {
+                    ++key[c - 'a'];
+                }
+
+                if(map.find(key) != map.end()) {
+                    map[key].push_back(word);
+                } else {
+                    map[key] = std::vector{word};
+                }
+            }
+
+            std::vector<std::vector<std::string>> result;
+            for(auto& [key, v]: map) {
+                result.push_back(v);
+            }
+
+            return result;
+        }
+};
+
 int main(void) {
     auto case_1 = std::vector<std::string>{"eat","tea","tan","ate","nat","bat"};
     auto case_2 = std::vector<std::string>{""};
@@ -108,6 +139,27 @@ int main(void) {
         std::cout << std::endl;
     }
     for(const auto &v: s_2.groupAnagrams(case_3)) {
+        for(const auto &w: v) {
+            std::cout << w << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    SolutionAns2 s_ans_2;
+    std::cout << "s_ans_2" << std::endl;
+    for(const auto &v: s_ans_2.groupAnagrams(case_1)) {
+        for(const auto &w: v) {
+            std::cout << w << " ";
+        }
+        std::cout << std::endl;
+    }
+    for(const auto &v: s_ans_2.groupAnagrams(case_2)) {
+        for(const auto &w: v) {
+            std::cout << w << " ";
+        }
+        std::cout << std::endl;
+    }
+    for(const auto &v: s_ans_2.groupAnagrams(case_3)) {
         for(const auto &w: v) {
             std::cout << w << " ";
         }
