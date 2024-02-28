@@ -430,6 +430,10 @@
     - 初見: x
     - 理解: x
 
+888. Minimum Interval to Include Each Query
+    - 初見: x
+    - 理解: x
+
 ## Math & Geometry
 
 999. Rot Image
