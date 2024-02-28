@@ -82,6 +82,25 @@ class Solution {
 
             return true;
         }
+
+        // AC
+        bool is_anagram_4(const std::string&& s, const std::string&& t) {
+            if(t.size() != s.size()) return false;
+            std::unordered_map<char, int> map;
+
+            for(int i = 0; i < s.size(); ++i) {
+                ++map[s[i]];
+                --map[t[i]];
+            }
+
+            for(auto& [idx, v]: map){
+                if(v != 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
 };
 
 // 模範解答
@@ -139,6 +158,16 @@ int main(void) {
     }
     std::cout << "case_2" << std::endl;
     if(s_1.is_anagram_3(case_2[0],case_2[1])) {
+        std::cout << "valid anagram" << std::endl;
+    }
+
+    std::cout << "is_anagram_4()" << std::endl;
+    std::cout << "case_1" << std::endl;
+    if(s_1.is_anagram_4(case_1[0],case_1[1])) {
+        std::cout << "valid anagram" << std::endl;
+    }
+    std::cout << "case_2" << std::endl;
+    if(s_1.is_anagram_4(case_2[0],case_2[1])) {
         std::cout << "valid anagram" << std::endl;
     }
 
