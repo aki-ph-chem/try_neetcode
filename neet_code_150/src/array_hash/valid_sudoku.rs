@@ -1,4 +1,4 @@
-use std::collections::HashSet;
+use std::collections::{HashMap, HashSet};
 
 struct Solution {}
 impl Solution {
@@ -87,6 +87,45 @@ impl SolutionAns {
     }
 }
 
+// AC
+// Pythonの模範解答より
+struct SolutionAnsPython {}
+impl SolutionAnsPython {
+    pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
+        // key = r, key = c
+        let mut row: HashMap<i32, HashSet<char>> = HashMap::new();
+        let mut col: HashMap<i32, HashSet<char>> = HashMap::new();
+        // key = (r/3, c/3)
+        let mut subcell: HashMap<(i32, i32), HashSet<char>> = HashMap::new();
+
+        for r in 0..9_i32 {
+            for c in 0..9_i32 {
+                if board[r as usize][c as usize] == '.' {
+                    continue;
+                }
+                let b_rc = board[r as usize][c as usize];
+
+                for opt in [row.get(&r), col.get(&c), subcell.get(&(r / 3, c / 3))] {
+                    if let Some(opt_raw) = opt {
+                        if opt_raw.contains(&b_rc) {
+                            return false;
+                        }
+                    }
+                }
+
+                row.entry(r).or_insert(HashSet::from([b_rc])).insert(b_rc);
+                col.entry(c).or_insert(HashSet::from([b_rc])).insert(b_rc);
+                subcell
+                    .entry((r / 3, c / 3))
+                    .or_insert(HashSet::from([b_rc]))
+                    .insert(b_rc);
+            }
+        }
+
+        true
+    }
+}
+
 fn main() {
     let case_1 = vec![
         vec!['5', '3', '.', '.', '7', '.', '.', '.', '.'],
@@ -117,4 +156,13 @@ fn main() {
 
     println!("case_1: {}", SolutionAns::is_valid_sudoku(case_1.clone()));
     println!("case_2: {}", SolutionAns::is_valid_sudoku(case_2.clone()));
+
+    println!(
+        "case_1: {}",
+        SolutionAnsPython::is_valid_sudoku(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsPython::is_valid_sudoku(case_2.clone())
+    );
 }
