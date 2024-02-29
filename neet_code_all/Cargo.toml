@@ -9,4 +9,8 @@ edition = "2021"
 name = "concatenation_of_array"
 path = "src/array_hash/concatenation_of_array.rs"
 
+[[bin]]
+name = "replace_elements_with_greatest_right"
+path = "src/array_hash/replace_elements_with_greatest_right.rs"
+
 [dependencies]
