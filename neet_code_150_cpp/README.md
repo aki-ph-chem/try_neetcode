@@ -23,7 +23,7 @@
     - 理解: o
 
 7. Valid Sudoku
-    - 理解: x
+    - 理解: o
 
 8. Encode and Decode Strings 
     - 初見: o

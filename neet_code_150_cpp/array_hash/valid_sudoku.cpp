@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 #include <unordered_set>
+#include <map>
 
 // 模範解答
 class SolutionAns {
@@ -77,6 +79,41 @@ class SolutionAnsRust {
         }
 };
 
+// AC
+// Pythonの模範解答より
+class SolutionAnsPython {
+    public:
+        bool isValidSudoku(const std::vector<std::vector<char>>& board) {
+            // key = r, key = c
+            std::unordered_map<int, std::unordered_set<char>> row, col;
+            // key = {r / 3, c /3}
+            std::map<std::pair<int,int>, std::unordered_set<char>> subcell;
+
+            for(int r = 0; r < 9; ++r) {
+                for(int c = 0; c < 9; ++c) {
+                    if(board[r][c] == '.') {
+                        continue;
+                    }
+
+                    auto b_rc = board[r][c];
+                    if(row[r].find(b_rc) != row[r].end()
+                            || col[c].find(b_rc) != col[c].end()
+                            || subcell[std::pair(r/3, c/3)].find(b_rc) 
+                            != subcell[std::pair(r/3, c/3)].end() 
+                            ) {
+                        return false;
+                    }
+
+                    row[r].insert(b_rc);
+                    col[c].insert(b_rc);
+                    subcell[std::pair(r/3, c/3)].insert(b_rc);
+                }
+            }
+
+            return true;
+        }
+};
+
 int main(void) {
      auto case_1 = std::vector{
         std::vector{'5', '3', '.', '.', '7', '.', '.', '.', '.'},
@@ -114,4 +151,8 @@ int main(void) {
     SolutionAnsRust s_ans_rs;
     std::cout << s_ans_rs.isValidSudoku(case_1) << std::endl;
     std::cout << s_ans_rs.isValidSudoku(case_2) << std::endl;
+
+    SolutionAnsPython s_ans_py;
+    std::cout << s_ans_py.isValidSudoku(case_1) << std::endl;
+    std::cout << s_ans_py.isValidSudoku(case_2) << std::endl;
 }
