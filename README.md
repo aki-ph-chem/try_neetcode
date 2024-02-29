@@ -9,5 +9,9 @@ NeetCodeにtryする
 
 [NeetCode-150(C++)](./neet_code_150_cpp)
 
+[NeetCode-All(Rust)](./neet_code_all)
+
+[NeetCode-All(C++)](./neet_code_all_cpp)
+
 ## [解法などのノート](./notes)
 ## [英単語のメモ](./word_list.md)
