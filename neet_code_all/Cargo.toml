@@ -1,0 +1,12 @@
+[package]
+name = "neet_code_all"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "concatenation_of_array"
+path = "src/array_hash/concatenation_of_array.rs"
+
+[dependencies]
