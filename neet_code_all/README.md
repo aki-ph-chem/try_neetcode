@@ -1,0 +1,13 @@
+# NeetCode All
+
+Blind 75, NeetCode 150で勉強したことを踏まえて...
+
+## Arrays & Hashing
+
+- Concatenation of Array
+    - 初見: o
+    - 理解: o
+
+- Replace Elements With Greatest Element On Right Side 
+    - 初見: o
+    - 理解: o
