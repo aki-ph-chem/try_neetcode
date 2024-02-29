@@ -17,4 +17,8 @@ path = "src/array_hash/replace_elements_with_greatest_right.rs"
 name = "is_subsequence"
 path = "src/array_hash/is_subsequence.rs"
 
+[[bin]]
+name = "len_of_last_word"
+path = "src/array_hash/len_of_last_word.rs"
+
 [dependencies]
