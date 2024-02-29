@@ -13,4 +13,8 @@ path = "src/array_hash/concatenation_of_array.rs"
 name = "replace_elements_with_greatest_right"
 path = "src/array_hash/replace_elements_with_greatest_right.rs"
 
+[[bin]]
+name = "is_subsequence"
+path = "src/array_hash/is_subsequence.rs"
+
 [dependencies]
