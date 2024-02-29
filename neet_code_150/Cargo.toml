@@ -65,7 +65,7 @@ name = "buy_sell"
 path = "src/sliding_window/best_time_buy_sell.rs" 
 
 [[bin]]
-name = "longest_substr"
+name = "longest_substr_no_repeat"
 path = "src/sliding_window/longest_substring_no_repeat.rs"
 
 [[bin]]

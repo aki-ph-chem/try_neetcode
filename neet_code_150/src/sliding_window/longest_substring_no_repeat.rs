@@ -55,6 +55,35 @@ impl Solution {
         println!("len_list: {:?}", len_list);
         *len_list.iter().max().unwrap()
     }
+
+    // AC
+    pub fn length_of_longest_substring_sq_2(s: String) -> i32 {
+        if s.len() == 0 {
+            return 0;
+        }
+        let s_vec: Vec<char> = s.chars().collect();
+
+        let mut set = HashSet::new();
+        let mut max_len = 0;
+        let mut len_tmp = 1;
+
+        for i in 0..s_vec.len() {
+            set.insert(s_vec[i]);
+            for j in (i + 1)..s_vec.len() {
+                if !set.contains(&s_vec[j]) {
+                    set.insert(s_vec[j]);
+                    len_tmp += 1;
+                } else {
+                    break;
+                }
+            }
+            max_len = max_len.max(len_tmp);
+            set.clear();
+            len_tmp = 1;
+        }
+
+        max_len
+    }
 }
 
 // 模範解答
@@ -82,8 +111,8 @@ impl SolutionAns {
 struct SolutionAnsCpp {}
 impl SolutionAnsCpp {
     pub fn length_of_longest_substring(s: String) -> i32 {
-        let vec_char:Vec<char> = s.chars().collect();
-        let mut set:HashSet<char> = HashSet::new();
+        let vec_char: Vec<char> = s.chars().collect();
+        let mut set: HashSet<char> = HashSet::new();
         let mut result = 0;
         let (mut i, mut j) = (0, 0);
 
@@ -169,6 +198,36 @@ fn main() {
     println!(
         "case_7: {}",
         Solution::length_of_longest_substring_sq(case_7.clone())
+    );
+
+    println!("lenght_of_longest_substring_sq_2");
+    println!(
+        "case_1: {}",
+        Solution::length_of_longest_substring_sq_2(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        Solution::length_of_longest_substring_sq_2(case_2.clone())
+    );
+    println!(
+        "case_3: {}",
+        Solution::length_of_longest_substring_sq_2(case_3.clone())
+    );
+    println!(
+        "case_4: {}",
+        Solution::length_of_longest_substring_sq_2(case_4.clone())
+    );
+    println!(
+        "case_5: {}",
+        Solution::length_of_longest_substring_sq_2(case_5.clone())
+    );
+    println!(
+        "case_6: {}",
+        Solution::length_of_longest_substring_sq_2(case_6.clone())
+    );
+    println!(
+        "case_7: {}",
+        Solution::length_of_longest_substring_sq_2(case_7.clone())
     );
 
     println!("模範解答");
