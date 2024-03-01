@@ -23,3 +23,7 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Longest Common Prefix 
     - 初見: o
     - 理解: o
+
+- Pascal's Triangle 
+    - 初見: o
+    - 理解: o
