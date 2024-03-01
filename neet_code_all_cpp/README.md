@@ -18,3 +18,6 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 
 - Longest Common Prefix 
     - 理解: o
+
+- Pascal's Triangle 
+    - 理解: o
