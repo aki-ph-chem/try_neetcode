@@ -19,3 +19,7 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Length of Last Word 
     - 初見: o
     - 理解: o
+
+- Longest Common Prefix 
+    - 初見: o
+    - 理解: o

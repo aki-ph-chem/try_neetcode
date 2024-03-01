@@ -5,6 +5,8 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+## Array & Hashing
+
 [[bin]]
 name = "concatenation_of_array"
 path = "src/array_hash/concatenation_of_array.rs"
@@ -20,5 +22,10 @@ path = "src/array_hash/is_subsequence.rs"
 [[bin]]
 name = "len_of_last_word"
 path = "src/array_hash/len_of_last_word.rs"
+
+[[bin]]
+name = "longest_common_prefix"
+path = "src/array_hash/longest_common_prefix.rs"
+
 
 [dependencies]
