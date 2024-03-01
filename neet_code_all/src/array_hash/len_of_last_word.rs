@@ -49,6 +49,28 @@ impl SolutionAns {
     }
 }
 
+// C++の模範解答より
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    pub fn length_of_last_word(s: String) -> i32 {
+        let s: Vec<char> = s.chars().collect();
+        let n = s.len();
+
+        let mut ptr = n as i32 - 1;
+        while ptr >= 0 && s[ptr as usize] == ' ' {
+            ptr -= 1;
+        }
+
+        let mut len = 0;
+        while ptr >= 0 && s[ptr as usize] != ' ' {
+            len += 1;
+            ptr -= 1;
+        }
+
+        len
+    }
+}
+
 fn main() {
     let case_1 = "Hello World".to_string();
     // => 5
@@ -72,5 +94,18 @@ fn main() {
     println!(
         "case_3: {}",
         SolutionAns::lenght_of_last_word(case_3.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp::length_of_last_word(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp::length_of_last_word(case_2.clone())
+    );
+    println!(
+        "case_3: {}",
+        SolutionAnsCpp::length_of_last_word(case_3.clone())
     );
 }
