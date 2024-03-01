@@ -12,3 +12,6 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 
 - Is Subsequence 
     - 理解: o
+
+- Length of Last Word 
+    - 理解: o
