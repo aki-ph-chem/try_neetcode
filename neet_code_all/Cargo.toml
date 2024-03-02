@@ -35,6 +35,10 @@ path = "src/array_hash/pascal_triangle.rs"
 name = "remove_element"
 path = "src/array_hash/remove_element.rs"
 
+[[bin]]
+name = "unique_email_address"
+path = "src/array_hash/unique_email_address.rs"
+
 ## Two Pointers 
 
 [[bin]]
