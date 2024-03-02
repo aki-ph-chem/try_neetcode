@@ -22,6 +22,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Pascal's Triangle 
     - 理解: o
 
+-  Remove Element
+    - 理解: x
+
 ## Two Pointers
 
 - Valid Palindrome II
