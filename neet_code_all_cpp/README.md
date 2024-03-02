@@ -26,3 +26,6 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 
 - Valid Palindrome II
     - 理解: o
+
+- Minimum Difference Between Highest And Lowest of K Scores 
+    - 理解: o
