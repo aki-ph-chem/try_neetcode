@@ -49,4 +49,8 @@ path = "src/two_pointers/min_diff_highest_lowest_k_score.rs"
 name = "merge_strings_alternately"
 path = "src/two_pointers/merge_strings_alternately.rs"
 
+[[bin]]
+name = "reverse_string"
+path = "src/two_pointers/reverse_string.rs"
+
 [dependencies]
