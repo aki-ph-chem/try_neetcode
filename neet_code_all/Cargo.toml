@@ -31,6 +31,10 @@ path = "src/array_hash/longest_common_prefix.rs"
 name = "pascal_triangle"
 path = "src/array_hash/pascal_triangle.rs"
 
+[[bin]]
+name = "remove_element"
+path = "src/array_hash/remove_element.rs"
+
 ## Two Pointers 
 
 [[bin]]

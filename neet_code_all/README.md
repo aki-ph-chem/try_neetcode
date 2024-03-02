@@ -28,6 +28,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+-  Remove Element
+    - 初見: x
+    - 理解: x
+
 ## Two Pointers
 
 - Valid Palindrome II
