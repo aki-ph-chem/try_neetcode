@@ -37,4 +37,8 @@ path = "src/array_hash/pascal_triangle.rs"
 name = "valid_palindrome_2"
 path = "src/two_pointers/valid_palindrome_2.rs"
 
+[[bin]]
+name = "min_diff_highest_lowest_k_score"
+path = "src/two_pointers/min_diff_highest_lowest_k_score.rs"
+
 [dependencies]
