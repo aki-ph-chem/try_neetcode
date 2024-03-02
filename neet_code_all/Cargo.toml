@@ -45,4 +45,8 @@ path = "src/two_pointers/valid_palindrome_2.rs"
 name = "min_diff_highest_lowest_k_score"
 path = "src/two_pointers/min_diff_highest_lowest_k_score.rs"
 
+[[bin]]
+name = "merge_strings_alternately"
+path = "src/two_pointers/merge_strings_alternately.rs"
+
 [dependencies]
