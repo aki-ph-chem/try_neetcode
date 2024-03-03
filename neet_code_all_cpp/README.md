@@ -46,3 +46,6 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 
 - Contains Duplicate II
     - 理解: o
+
+- Number of Sub Arrays of Size K and Avg Greater than or Equal to Threshold 
+    - 理解: o
