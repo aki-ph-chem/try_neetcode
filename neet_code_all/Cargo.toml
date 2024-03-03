@@ -63,4 +63,8 @@ path = "src/two_pointers/reverse_string.rs"
 name = "contain_duplicate_2"
 path = "src/sliding_window/contain_duplicate_2.rs"
 
+[[bin]]
+name = "num_of_subarray_size_k_avg_threshold"
+path = "src/sliding_window/num_of_subarray_size_k_avg_threshold.rs"
+
 [dependencies]
