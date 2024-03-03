@@ -57,4 +57,10 @@ path = "src/two_pointers/merge_strings_alternately.rs"
 name = "reverse_string"
 path = "src/two_pointers/reverse_string.rs"
 
+## Sliding Window
+
+[[bin]]
+name = "contain_duplicate_2"
+path = "src/sliding_window/contain_duplicate_2.rs"
+
 [dependencies]
