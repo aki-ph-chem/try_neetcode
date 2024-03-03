@@ -39,6 +39,10 @@ path = "src/array_hash/remove_element.rs"
 name = "unique_email_address"
 path = "src/array_hash/unique_email_address.rs"
 
+[[bin]]
+name = "isomorphic_strings"
+path = "src/array_hash/isomorphic_strings.rs"
+
 ## Two Pointers 
 
 [[bin]]
