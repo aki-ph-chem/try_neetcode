@@ -60,7 +60,11 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 
 -  Merge Sorted Array 
     - 初見: o
-    - 理解:
+    - 理解: o
+
+-  Move Zeroes 
+    - 初見: o
+    - 理解: o
 
 ## Sliding Window 
 

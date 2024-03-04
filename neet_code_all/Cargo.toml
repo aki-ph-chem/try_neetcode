@@ -65,6 +65,10 @@ path = "src/two_pointers/reverse_string.rs"
 name = "merge_sorted_array"
 path = "src/two_pointers/merge_sorted_array.rs"
 
+[[bin]]
+name = "move_zeroes"
+path = "src/two_pointers/move_zeroes.rs"
+
 ## Sliding Window
 
 [[bin]]
