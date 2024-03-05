@@ -47,6 +47,10 @@ path = "src/array_hash/isomorphic_strings.rs"
 name = "can_place_flowers"
 path = "src/array_hash/can_place_flowers.rs"
 
+[[bin]]
+name = "majority_element"
+path = "src/array_hash/majority_element.rs"
+
 ## Two Pointers 
 
 [[bin]]
