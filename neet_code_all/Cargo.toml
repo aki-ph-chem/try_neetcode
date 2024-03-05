@@ -43,6 +43,10 @@ path = "src/array_hash/unique_email_address.rs"
 name = "isomorphic_strings"
 path = "src/array_hash/isomorphic_strings.rs"
 
+[[bin]]
+name = "can_place_flowers"
+path = "src/array_hash/can_place_flowers.rs"
+
 ## Two Pointers 
 
 [[bin]]
