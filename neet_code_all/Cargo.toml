@@ -67,6 +67,10 @@ path = "src/array_hash/range_sum_query_immutable.rs"
 name = "find_all_numbers_disappeared_in_array"
 path = "src/array_hash/find_all_numbers_disappeared_in_array.rs"
 
+[[bin]]
+name = "max_number_of_ballons"
+path = "src/array_hash/max_number_of_ballons.rs"
+
 ## Two Pointers 
 
 [[bin]]
