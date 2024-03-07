@@ -63,6 +63,10 @@ path = "src/array_hash/find_pivot_index.rs"
 name = "range_sum_query_immutable"
 path = "src/array_hash/range_sum_query_immutable.rs"
 
+[[bin]]
+name = "find_all_numbers_disappeared_in_array"
+path = "src/array_hash/find_all_numbers_disappeared_in_array.rs"
+
 ## Two Pointers 
 
 [[bin]]
