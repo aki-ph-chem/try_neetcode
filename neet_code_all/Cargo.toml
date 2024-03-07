@@ -71,6 +71,10 @@ path = "src/array_hash/find_all_numbers_disappeared_in_array.rs"
 name = "max_number_of_ballons"
 path = "src/array_hash/max_number_of_ballons.rs"
 
+[[bin]]
+name = "word_pattern"
+path = "src/array_hash/word_pattern.rs"
+
 ## Two Pointers 
 
 [[bin]]
