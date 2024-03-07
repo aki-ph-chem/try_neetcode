@@ -59,6 +59,10 @@ path = "src/array_hash/next_greater_element_1.rs"
 name = "find_pivot_index"
 path = "src/array_hash/find_pivot_index.rs"
 
+[[bin]]
+name = "range_sum_query_immutable"
+path = "src/array_hash/range_sum_query_immutable.rs"
+
 ## Two Pointers 
 
 [[bin]]
