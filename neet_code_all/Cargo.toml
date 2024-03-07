@@ -51,6 +51,10 @@ path = "src/array_hash/can_place_flowers.rs"
 name = "majority_element"
 path = "src/array_hash/majority_element.rs"
 
+[[bin]]
+name = "next_greater_element_1"
+path = "src/array_hash/next_greater_element_1.rs"
+
 ## Two Pointers 
 
 [[bin]]
