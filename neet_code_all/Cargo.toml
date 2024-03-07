@@ -79,6 +79,10 @@ path = "src/array_hash/word_pattern.rs"
 name = "design_hashset"
 path = "src/array_hash/design_hashset.rs"
 
+[[bin]]
+name = "design_hashmap"
+path = "src/array_hash/design_hashmap.rs"
+
 ## Two Pointers 
 
 [[bin]]
