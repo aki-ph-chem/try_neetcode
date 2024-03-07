@@ -75,6 +75,10 @@ path = "src/array_hash/max_number_of_ballons.rs"
 name = "word_pattern"
 path = "src/array_hash/word_pattern.rs"
 
+[[bin]]
+name = "design_hashset"
+path = "src/array_hash/design_hashset.rs"
+
 ## Two Pointers 
 
 [[bin]]
