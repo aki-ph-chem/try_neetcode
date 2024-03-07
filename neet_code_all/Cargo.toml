@@ -55,6 +55,10 @@ path = "src/array_hash/majority_element.rs"
 name = "next_greater_element_1"
 path = "src/array_hash/next_greater_element_1.rs"
 
+[[bin]]
+name = "find_pivot_index"
+path = "src/array_hash/find_pivot_index.rs"
+
 ## Two Pointers 
 
 [[bin]]
