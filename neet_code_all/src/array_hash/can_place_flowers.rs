@@ -134,6 +134,35 @@ impl SolutionAns {
     }
 }
 
+// C++の模範解答より
+// AC
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    pub fn can_place_flowers(mut flowerbed: Vec<i32>, mut n: i32) -> bool {
+        if n == 0 {
+            return true;
+        }
+
+        // 頭とケツに0を挿入
+        flowerbed.insert(0, 0);
+        flowerbed.push(0);
+
+        for i in 1..flowerbed.len() - 1 {
+            // 隣り合った三個がゼロだったら1に変更
+            if (flowerbed[i - 1] == 0 && flowerbed[i] == 0 && flowerbed[i + 1] == 0) {
+                flowerbed[i] = 1;
+                n -= 1;
+            }
+
+            if n == 0 {
+                return true;
+            }
+        }
+
+        false
+    }
+}
+
 fn main() {
     let case_1 = (vec![1, 0, 0, 0, 1], 1);
     // => true
@@ -185,5 +214,18 @@ fn main() {
     println!(
         "case_5: {:?}",
         SolutionAns::can_place_flowers_3(case_5.0.clone(), case_5.1)
+    );
+
+    println!(
+        "case_3: {:?}",
+        SolutionAnsCpp::can_place_flowers(case_3.0.clone(), case_3.1)
+    );
+    println!(
+        "case_4: {:?}",
+        SolutionAnsCpp::can_place_flowers(case_4.0.clone(), case_4.1)
+    );
+    println!(
+        "case_5: {:?}",
+        SolutionAnsCpp::can_place_flowers(case_5.0.clone(), case_5.1)
     );
 }
