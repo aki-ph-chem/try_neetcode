@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, VecDeque};
 
 // 解けなかった
 struct Solution {}
@@ -59,6 +59,50 @@ impl SolutionAns {
     }
 }
 
+// AC
+// C++の模範解答より
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    pub fn next_greater_element(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
+        // {value: index}なMap
+        let mut map: HashMap<i32, i32> = HashMap::new();
+        for i in 0..nums1.len() {
+            map.insert(nums1[i], i as i32);
+        }
+
+        let mut result = vec![-1; nums1.len()];
+        let mut stack: VecDeque<i32> = VecDeque::new();
+
+        for current in nums2 {
+            // unwrap()を取り除くならこう書く
+            while let Some(stack_top) = stack.pop_back() {
+                if current > stack_top {
+                    let idx = map[&stack_top];
+                    result[idx as usize] = current;
+                } else {
+                    stack.push_back(stack_top);
+                    break;
+                }
+            }
+
+            // unwrap()ありでもいいなら
+            /*
+            while !stack.is_empty() && current > *stack.back().unwrap() {
+                let val = stack.pop_back().unwrap();
+                let idx = map[&val];
+                result[idx as usize] = current;
+            }
+            */
+
+            if map.contains_key(&current) {
+                stack.push_back(current);
+            }
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = (vec![4, 1, 2], vec![1, 3, 4, 2]);
     // => [-1,3,-1]
@@ -66,6 +110,8 @@ fn main() {
     // => [3,-1]
     let case_3 = (vec![3, 1, 5, 7, 9, 2, 6], vec![1, 2, 3, 5, 6, 7, 9, 11]);
     //=> [5,2,6,9,11,3,7]
+    let case_4 = (vec![1, 3, 5, 2, 4], vec![6, 5, 4, 3, 2, 1, 7]);
+    // => [7,7,7,7,7]
 
     /*
     println!(
@@ -93,5 +139,22 @@ fn main() {
     println!(
         "case_3: {:?}",
         SolutionAns::next_greater_element(case_3.0.clone(), case_3.1.clone())
+    );
+
+    println!(
+        "case_1: {:?}",
+        SolutionAnsCpp::next_greater_element(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionAnsCpp::next_greater_element(case_2.0.clone(), case_2.1.clone())
+    );
+    println!(
+        "case_3: {:?}",
+        SolutionAnsCpp::next_greater_element(case_3.0.clone(), case_3.1.clone())
+    );
+    println!(
+        "case_4: {:?}",
+        SolutionAnsCpp::next_greater_element(case_4.0.clone(), case_4.1.clone())
     );
 }
