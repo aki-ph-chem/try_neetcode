@@ -113,6 +113,10 @@ path = "src/two_pointers/remove_duplicates_from_sorted_array.rs"
 name = "move_zeroes"
 path = "src/two_pointers/move_zeroes.rs"
 
+[[bin]]
+name = "remove_duplicates_from_sorted_array_2"
+path = "src/two_pointers/remove_duplicates_from_sorted_array_2.rs"
+
 ## Sliding Window
 
 [[bin]]
