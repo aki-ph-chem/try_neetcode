@@ -31,6 +31,13 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Isomorphic Strings 
     - 理解: o
 
+- Can Place Flowers 
+    - 初見: x
+    - 理解: o
+
+- Mojority Element 
+    - 理解: o
+
 ## Two Pointers
 
 - Valid Palindrome II
