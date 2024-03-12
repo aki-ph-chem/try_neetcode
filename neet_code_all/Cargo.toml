@@ -91,6 +91,10 @@ path = "src/array_hash/sort_array.rs"
 name = "sort_colors"
 path = "src/array_hash/sort_colors.rs"
 
+[[bin]]
+name = "brick_wall"
+path = "src/array_hash/brick_wall.rs"
+
 ## Two Pointers 
 
 [[bin]]
