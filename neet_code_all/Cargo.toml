@@ -87,6 +87,10 @@ path = "src/array_hash/design_hashmap.rs"
 name = "sort_array"
 path = "src/array_hash/sort_array.rs"
 
+[[bin]]
+name = "sort_colors"
+path = "src/array_hash/sort_colors.rs"
+
 ## Two Pointers 
 
 [[bin]]
