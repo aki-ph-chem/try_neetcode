@@ -83,6 +83,10 @@ path = "src/array_hash/design_hashset.rs"
 name = "design_hashmap"
 path = "src/array_hash/design_hashmap.rs"
 
+[[bin]]
+name = "sort_array"
+path = "src/array_hash/sort_array.rs"
+
 ## Two Pointers 
 
 [[bin]]
