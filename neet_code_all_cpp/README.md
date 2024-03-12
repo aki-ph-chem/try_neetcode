@@ -38,6 +38,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Mojority Element 
     - 理解: o
 
+- Next Greater Element I 
+    - 理解: x
+
 - Sort An Array 
     - 理解: o
 
