@@ -1,4 +1,4 @@
-// AC 
+// AC
 struct Solution {}
 impl Solution {
     // AC
@@ -45,6 +45,16 @@ impl SolutionAns {
             res
         })
     }
+
+    pub fn reverse_bits_2(mut x: u32) -> u32 {
+        let mut res = 0;
+        for _i in 0..32 {
+            res = (res << 1) | (x & 1);
+            x >>= 1;
+        }
+
+        res
+    }
 }
 
 fn main() {
@@ -54,7 +64,7 @@ fn main() {
     // => 0b10111111111111111111111111111111 (3221225471)
     let case_3 = 0b1101;
     let case_4 = 0b10;
-    
+
     println!("cse_1: {:032b}", Solution::reverse_bits(case_1));
     println!("cse_2: {:032b}", Solution::reverse_bits(case_2));
     println!("cse_3: {:032b}", Solution::reverse_bits(case_3));
@@ -69,4 +79,9 @@ fn main() {
     println!("cse_2: {:032b}", SolutionAns::reverse_bits(case_2));
     println!("cse_3: {:032b}", SolutionAns::reverse_bits(case_3));
     println!("cse_4: {:032b}", SolutionAns::reverse_bits(case_4));
+
+    println!("cse_1: {:032b}", SolutionAns::reverse_bits_2(case_1));
+    println!("cse_2: {:032b}", SolutionAns::reverse_bits_2(case_2));
+    println!("cse_3: {:032b}", SolutionAns::reverse_bits_2(case_3));
+    println!("cse_4: {:032b}", SolutionAns::reverse_bits_2(case_4));
 }
