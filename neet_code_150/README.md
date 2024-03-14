@@ -474,7 +474,7 @@
 
 9999. Missing Number 
     - 初見: o
-    - 理解: x
+    - 理解: o
 
 9999. Sum of Two Integers 
     - 初見: x

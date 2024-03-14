@@ -45,6 +45,38 @@ impl SolutionAns {
         }
         ans
     }
+
+    // AC
+    // 模範解答を噛み砕いて書くとこうなる
+    pub fn missing_number_2(nums: Vec<i32>) -> i32 {
+        // nums.len() と nums の添字、値をすべてxor演算する
+        let mut result = nums.len() as i32;
+
+        // index
+        for idx in 0..nums.len() as i32 {
+            result ^= idx;
+        }
+
+        //  numsの要素
+        for v in nums {
+            result ^= v;
+        }
+
+        result
+    }
+
+    // AC
+    pub fn missing_number_3(nums: Vec<i32>) -> i32 {
+        // nums.len() と nums の添字、値をすべてxor演算する
+        let mut result = nums.len() as i32;
+
+        for (idx, v) in nums.iter().enumerate() {
+            result ^= idx as i32;
+            result ^= v;
+        }
+
+        result
+    }
 }
 
 fn main() {
@@ -71,4 +103,19 @@ fn main() {
     println!("case_3: {}", Solution::missing_number(case_3.clone()));
     //println!("case_4: {}", Solution::missing_number(case_4.clone()));
     //overflow
+
+    println!("case_1: {}", SolutionAns::missing_number(case_1.clone()));
+    println!("case_2: {}", SolutionAns::missing_number(case_2.clone()));
+    println!("case_3: {}", SolutionAns::missing_number(case_3.clone()));
+    println!("case_4: {}", SolutionAns::missing_number(case_4.clone()));
+
+    println!("case_1: {}", SolutionAns::missing_number_2(case_1.clone()));
+    println!("case_2: {}", SolutionAns::missing_number_2(case_2.clone()));
+    println!("case_3: {}", SolutionAns::missing_number_2(case_3.clone()));
+    println!("case_4: {}", SolutionAns::missing_number_2(case_4.clone()));
+
+    println!("case_1: {}", SolutionAns::missing_number_3(case_1.clone()));
+    println!("case_2: {}", SolutionAns::missing_number_3(case_2.clone()));
+    println!("case_3: {}", SolutionAns::missing_number_3(case_3.clone()));
+    println!("case_4: {}", SolutionAns::missing_number_3(case_4.clone()));
 }
