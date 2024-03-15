@@ -135,3 +135,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Number of Sub Arrays of Size K and Avg Greater than or Equal to Threshold 
     - 初見: o
     - 理解: o
+
+## Bit Manipulation  
+
+- Shuffle the Array
+    - 初見: o
+    - 理解: o

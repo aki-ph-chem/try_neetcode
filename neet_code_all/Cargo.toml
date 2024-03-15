@@ -139,4 +139,10 @@ path = "src/sliding_window/contain_duplicate_2.rs"
 name = "num_of_subarray_size_k_avg_threshold"
 path = "src/sliding_window/num_of_subarray_size_k_avg_threshold.rs"
 
+## Bit Manipulation 
+
+[[bin]]
+name = "shuffle_the_array"
+path = "src/bit_manipulation/shuffle_the_array.rs"
+
 [dependencies]
