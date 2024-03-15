@@ -145,4 +145,8 @@ path = "src/sliding_window/num_of_subarray_size_k_avg_threshold.rs"
 name = "shuffle_the_array"
 path = "src/bit_manipulation/shuffle_the_array.rs"
 
+[[bin]]
+name = "add_to_array_form_of_int"
+path = "src/bit_manipulation/add_to_array_form_of_int.rs"
+
 [dependencies]
