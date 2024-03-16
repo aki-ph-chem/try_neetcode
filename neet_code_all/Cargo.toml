@@ -149,4 +149,8 @@ path = "src/bit_manipulation/shuffle_the_array.rs"
 name = "add_to_array_form_of_int"
 path = "src/bit_manipulation/add_to_array_form_of_int.rs"
 
+[[bin]]
+name = "add_binary"
+path = "src/bit_manipulation/add_binary.rs"
+
 [dependencies]

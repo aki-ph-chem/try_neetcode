@@ -1,0 +1,15 @@
+diff --git a/neet_code_all/Cargo.toml b/neet_code_all/Cargo.toml
+index 98a0ff5..88d0f95 100644
+--- a/neet_code_all/Cargo.toml
++++ b/neet_code_all/Cargo.toml
+@@ -129,6 +129,10 @@ path = "src/two_pointers/move_zeroes.rs"
+ name = "remove_duplicates_from_sorted_array_2"
+ path = "src/two_pointers/remove_duplicates_from_sorted_array_2.rs"
+ 
++[[bin]]
++name = "four_sum"
++path = "src/two_pointers/four_sum.rs"
++
+ ## Sliding Window
+ 
+ [[bin]]
