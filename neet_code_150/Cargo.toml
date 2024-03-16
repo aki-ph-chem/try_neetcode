@@ -494,4 +494,8 @@ path = "src/appendix/vec_deque.rs"
 name = "while_let"
 path = "src/appendix/while_let.rs"
 
+[[bin]]
+name = "fold"
+path = "src/appendix/fold.rs"
+
 [dependencies]
