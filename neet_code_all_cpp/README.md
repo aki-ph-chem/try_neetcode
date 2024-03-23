@@ -78,6 +78,11 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Number of Sub Arrays of Size K and Avg Greater than or Equal to Threshold 
     - 理解: o
 
+## Binary Search
+
+- Search Insert Position
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
