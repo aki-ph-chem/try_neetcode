@@ -149,6 +149,10 @@ name = "search_insert_position"
 path = "src/bin_search/search_insert_position.rs"
 
 [[bin]]
+name = "guess_number_higher_lower"
+path = "src/bin_search/guess_number_higher_lower.rs"
+
+[[bin]]
 name = "sqrt_x"
 path = "src/bin_search/sqrt_x.rs"
 
