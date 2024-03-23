@@ -140,6 +140,12 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+## Binary Search
+
+- Search Insert Position
+    - 初見: o
+    - 理解: o
+
 ## Bit Manipulation  
 
 - Shuffle the Array
