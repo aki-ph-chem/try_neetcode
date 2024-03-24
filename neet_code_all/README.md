@@ -150,13 +150,17 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: o
 
+- Arranging Coins 
+    - 初見: o
+    - 理解: o
+
 - Sqrt(x) 
     - 初見: x
     - 理解: o
 
 - Guess Number Higher or Lower 
-    - 初見:
-    - 理解:
+    - 初見: o
+    - 理解: o
 
 ## Bit Manipulation  
 
