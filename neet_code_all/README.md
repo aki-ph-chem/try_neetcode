@@ -130,6 +130,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: x
 
+- Number of Subsequences That Satisfy The Given Sum Condition 
+    - 初見: x
+    - 理解: x
+
 ## Sliding Window 
 
 - Contains Duplicate II

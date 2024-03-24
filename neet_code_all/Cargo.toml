@@ -133,6 +133,10 @@ path = "src/two_pointers/remove_duplicates_from_sorted_array_2.rs"
 name = "four_sum"
 path = "src/two_pointers/four_sum.rs"
 
+[[bin]]
+name = "number_of_sub_sequences"
+path = "src/two_pointers/number_of_sub_sequences.rs"
+
 ## Sliding Window
 
 [[bin]]
