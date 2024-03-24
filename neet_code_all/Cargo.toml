@@ -144,6 +144,7 @@ name = "num_of_subarray_size_k_avg_threshold"
 path = "src/sliding_window/num_of_subarray_size_k_avg_threshold.rs"
 
 ## Binary Search
+
 [[bin]]
 name = "search_insert_position"
 path = "src/bin_search/search_insert_position.rs"
@@ -151,6 +152,10 @@ path = "src/bin_search/search_insert_position.rs"
 [[bin]]
 name = "guess_number_higher_lower"
 path = "src/bin_search/guess_number_higher_lower.rs"
+
+[[bin]]
+name = "arranging_coins"
+path = "src/bin_search/arranging_coins.rs"
 
 [[bin]]
 name = "sqrt_x"
