@@ -158,6 +158,10 @@ name = "arranging_coins"
 path = "src/bin_search/arranging_coins.rs"
 
 [[bin]]
+name = "sq_of_sorted_array"
+path = "src/bin_search/sq_of_sorted_array.rs"
+
+[[bin]]
 name = "sqrt_x"
 path = "src/bin_search/sqrt_x.rs"
 
