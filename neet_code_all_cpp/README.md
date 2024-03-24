@@ -83,6 +83,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Search Insert Position
     - 理解: o
 
+- Arranging Coins 
+    - 理解: o
+
 - Sqrt(x) 
     - 理解: o
 
