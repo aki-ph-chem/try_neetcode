@@ -89,6 +89,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Squares Of a Sorted Array 
     - 理解: o
 
+- Valid Perfect Square 
+    - 理解: o
+
 - Sqrt(x) 
     - 理解: o
 
