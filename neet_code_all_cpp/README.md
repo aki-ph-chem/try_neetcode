@@ -76,6 +76,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Rotate Array 
     - 理解: o
 
+- Boats to Save People 
+    - 理解: o
+
 ## Sliding Window 
 
 - Contains Duplicate II
