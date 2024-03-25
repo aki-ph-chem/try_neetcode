@@ -137,6 +137,10 @@ path = "src/two_pointers/four_sum.rs"
 name = "number_of_sub_sequences"
 path = "src/two_pointers/number_of_sub_sequences.rs"
 
+[[bin]]
+name = "rotate_array"
+path = "src/two_pointers/rotate_array.rs"
+
 ## Sliding Window
 
 [[bin]]
