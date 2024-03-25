@@ -141,6 +141,10 @@ path = "src/two_pointers/number_of_sub_sequences.rs"
 name = "rotate_array"
 path = "src/two_pointers/rotate_array.rs"
 
+[[bin]]
+name = "boats_to_save_people"
+path = "src/two_pointers/boats_to_save_people.rs"
+
 ## Sliding Window
 
 [[bin]]
