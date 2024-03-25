@@ -96,6 +96,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: o
 
+- Subarray Sum Equals K
+    - 初見: x
+    - 理解: x
+
 ## Two Pointers
 
 - Valid Palindrome II
