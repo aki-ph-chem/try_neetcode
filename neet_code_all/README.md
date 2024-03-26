@@ -170,7 +170,7 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 
 - Fruit into Basket 
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 ## Binary Search
 

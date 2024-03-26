@@ -82,6 +82,42 @@ impl SolutionAns {
     }
 }
 
+// AC
+// Pythonの模範解答より
+struct SolutionAnsPython {}
+impl SolutionAnsPython {
+    pub fn total_fruit(fruits: Vec<i32>) -> i32 {
+        let mut map: HashMap<i32, i32> = HashMap::new();
+        let (mut left, mut total) = (0, 0);
+        let mut result = 0;
+
+        for f in &fruits {
+            *map.entry(*f).or_default() += 1;
+            total += 1;
+
+            while map.len() > 2 {
+                let f_left = fruits[left];
+
+                if let Some(map_key) = map.get_mut(&f_left) {
+                    *map_key -= 1;
+                }
+                total -= 1;
+                left += 1;
+
+                if let Some(map_key) = map.get(&f_left) {
+                    if *map_key == 0 {
+                        map.remove(&f_left);
+                    }
+                }
+            }
+
+            result = result.max(total);
+        }
+
+        result
+    }
+}
+
 // fruits[i]: i番目の木が実らせることができるフルーツの種類
 // 持てるバスケットは二個
 // 一つのバスケットは１種類のフルーツのみ入れられる
@@ -109,4 +145,21 @@ fn main() {
     println!("case_2: {:?}", SolutionAns::total_fruit(case_2.clone()));
     println!("case_3: {:?}", SolutionAns::total_fruit(case_3.clone()));
     println!("case_4: {:?}", SolutionAns::total_fruit(case_4.clone()));
+
+    println!(
+        "case_1: {:?}",
+        SolutionAnsPython::total_fruit(case_1.clone())
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionAnsPython::total_fruit(case_2.clone())
+    );
+    println!(
+        "case_3: {:?}",
+        SolutionAnsPython::total_fruit(case_3.clone())
+    );
+    println!(
+        "case_4: {:?}",
+        SolutionAnsPython::total_fruit(case_4.clone())
+    );
 }
