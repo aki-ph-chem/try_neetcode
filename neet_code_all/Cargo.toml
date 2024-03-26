@@ -103,6 +103,10 @@ path = "src/array_hash/best_time_to_buy_and_sell_2.rs"
 name = "subarray_sum_eq_k"
 path = "src/array_hash/subarray_sum_eq_k.rs"
 
+[[bin]]
+name = "unique_len_3_palindromic_substr"
+path = "src/array_hash/unique_len_3_palindromic_substr.rs"
+
 ## Two Pointers 
 
 [[bin]]
