@@ -75,6 +75,36 @@ impl SolutionAns {
     }
 }
 
+// AC
+// C++の模範解答より
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    pub fn subarray_sum(nums: Vec<i32>, k: i32) -> i32 {
+        let n = nums.len();
+        let mut j = 0;
+        let mut result = 0;
+        let mut sum = 0;
+
+        let mut map: HashMap<i32, i32> = HashMap::new();
+        while j < n {
+            sum += nums[j];
+            if sum == k {
+                result += 1;
+            }
+
+            let diff = sum - k;
+            if map.contains_key(&diff) {
+                result += map[&diff];
+            }
+
+            *map.entry(sum).or_default() += 1;
+            j += 1;
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = (vec![1, 1, 1], 2);
     // => 2
@@ -128,5 +158,22 @@ fn main() {
     println!(
         "case_4: {:?}",
         SolutionAns::subarray_sum(case_4.0.clone(), case_4.1)
+    );
+
+    println!(
+        "case_1: {:?}",
+        SolutionAnsCpp::subarray_sum(case_1.0.clone(), case_1.1)
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionAnsCpp::subarray_sum(case_2.0.clone(), case_2.1)
+    );
+    println!(
+        "case_3: {:?}",
+        SolutionAnsCpp::subarray_sum(case_3.0.clone(), case_3.1)
+    );
+    println!(
+        "case_4: {:?}",
+        SolutionAnsCpp::subarray_sum(case_4.0.clone(), case_4.1)
     );
 }
