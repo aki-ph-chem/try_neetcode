@@ -160,6 +160,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- Frequency of The Most Frequent Elemen 
+    - 初見: x
+    - 理解: x
+
 ## Binary Search
 
 - Search Insert Position

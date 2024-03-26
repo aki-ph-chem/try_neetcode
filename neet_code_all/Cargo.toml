@@ -163,6 +163,10 @@ path = "src/sliding_window/contain_duplicate_2.rs"
 name = "num_of_subarray_size_k_avg_threshold"
 path = "src/sliding_window/num_of_subarray_size_k_avg_threshold.rs"
 
+[[bin]]
+name = "freq_of_most_frequent_element"
+path = "src/sliding_window/freq_of_most_frequent_element.rs"
+
 ## Binary Search
 
 [[bin]]
