@@ -171,6 +171,10 @@ path = "src/sliding_window/num_of_subarray_size_k_avg_threshold.rs"
 name = "freq_of_most_frequent_element"
 path = "src/sliding_window/freq_of_most_frequent_element.rs"
 
+[[bin]]
+name = "fruits_into_basket"
+path = "src/sliding_window/fruits_into_basket.rs"
+
 ## Binary Search
 
 [[bin]]
