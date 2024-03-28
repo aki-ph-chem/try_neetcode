@@ -175,6 +175,10 @@ path = "src/sliding_window/freq_of_most_frequent_element.rs"
 name = "fruits_into_basket"
 path = "src/sliding_window/fruits_into_basket.rs"
 
+[[bin]]
+name = "max_num_of_vowels_k"
+path = "src/sliding_window/max_num_of_vowels_k.rs"
+
 ## Binary Search
 
 [[bin]]
