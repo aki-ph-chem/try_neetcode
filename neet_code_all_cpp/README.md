@@ -102,6 +102,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Fruits into Basket 
     - 理解: o
 
+- Maximum Number of Vowels in a Substring of Given Length 
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position
