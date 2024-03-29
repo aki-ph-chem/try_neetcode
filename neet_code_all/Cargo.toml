@@ -179,6 +179,10 @@ path = "src/sliding_window/fruits_into_basket.rs"
 name = "max_num_of_vowels_k"
 path = "src/sliding_window/max_num_of_vowels_k.rs"
 
+[[bin]]
+name = "min_size_subarray_sum"
+path = "src/sliding_window/min_size_subarray_sum.rs"
+
 ## Binary Search
 
 [[bin]]
