@@ -183,6 +183,10 @@ path = "src/sliding_window/max_num_of_vowels_k.rs"
 name = "min_size_subarray_sum"
 path = "src/sliding_window/min_size_subarray_sum.rs"
 
+[[bin]]
+name = "find_k_closest_element"
+path = "src/sliding_window/find_k_closest_element.rs"
+
 ## Binary Search
 
 [[bin]]
