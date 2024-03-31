@@ -107,6 +107,10 @@ path = "src/array_hash/subarray_sum_eq_k.rs"
 name = "unique_len_3_palindromic_substr"
 path = "src/array_hash/unique_len_3_palindromic_substr.rs"
 
+[[bin]]
+name = "min_num_of_swaps"
+path = "src/array_hash/min_num_of_swaps.rs"
+
 ## Two Pointers 
 
 [[bin]]
