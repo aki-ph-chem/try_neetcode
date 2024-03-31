@@ -108,6 +108,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Minimum Size Subarray Sum 
     - 理解: o
 
+- Find K Closest Elements 
+    - 理解: x
+
 ## Binary Search
 
 - Search Insert Position
