@@ -115,6 +115,10 @@ path = "src/array_hash/min_num_of_swaps.rs"
 name = "num_of_interchangeable_rectangle"
 path = "src/array_hash/num_of_interchangeable_rectangle.rs"
 
+[[bin]]
+name = "max_product_of_two_substr"
+path = "src/array_hash/max_product_of_two_substr.rs"
+
 ## Two Pointers 
 
 [[bin]]
