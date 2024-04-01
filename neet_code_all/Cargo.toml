@@ -111,6 +111,10 @@ path = "src/array_hash/unique_len_3_palindromic_substr.rs"
 name = "min_num_of_swaps"
 path = "src/array_hash/min_num_of_swaps.rs"
 
+[[bin]]
+name = "num_of_interchangeable_rectangle"
+path = "src/array_hash/num_of_interchangeable_rectangle.rs"
+
 ## Two Pointers 
 
 [[bin]]
