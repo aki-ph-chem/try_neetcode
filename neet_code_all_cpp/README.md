@@ -62,6 +62,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Minimum Number of Swaps to Make The String Balanced 
     - 理解: x
 
+-  Number of Pairs of Interchangeable Rectangles
+    - 理解: o
+
 ## Two Pointers
 
 - Valid Palindrome II
