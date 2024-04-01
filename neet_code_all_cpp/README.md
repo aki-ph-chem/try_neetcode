@@ -65,6 +65,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 -  Number of Pairs of Interchangeable Rectangles
     - 理解: o
 
+-  Maximum Product of The Length of Two Palindromic Subsequences
+    - 理解: x
+
 ## Two Pointers
 
 - Valid Palindrome II
