@@ -119,6 +119,10 @@ path = "src/array_hash/num_of_interchangeable_rectangle.rs"
 name = "max_product_of_two_substr"
 path = "src/array_hash/max_product_of_two_substr.rs"
 
+[[bin]]
+name = "grid_game"
+path = "src/array_hash/grid_game.rs"
+
 ## Two Pointers 
 
 [[bin]]
