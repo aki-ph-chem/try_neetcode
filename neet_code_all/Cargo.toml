@@ -170,6 +170,10 @@ name = "rotate_array"
 path = "src/two_pointers/rotate_array.rs"
 
 [[bin]]
+name = "array_with_not_eq_avg_of_neighbors"
+path = "src/two_pointers/array_with_not_eq_avg_neighbors.rs"
+
+[[bin]]
 name = "boats_to_save_people"
 path = "src/two_pointers/boats_to_save_people.rs"
 
