@@ -233,6 +233,10 @@ path = "src/bin_search/valid_perfect_square.rs"
 name = "sqrt_x"
 path = "src/bin_search/sqrt_x.rs"
 
+[[bin]]
+name = "single_element_in_sorted_array"
+path = "src/bin_search/single_element_in_sorted_array.rs"
+
 ## Bit Manipulation 
 
 [[bin]]

@@ -230,6 +230,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: o
 
+- Single Element in a Sorted Array
+    - 初見: o
+    - 理解: x
+
 - Guess Number Higher or Lower 
     - 初見: o
     - 理解: o
