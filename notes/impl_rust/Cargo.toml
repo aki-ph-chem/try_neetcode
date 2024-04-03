@@ -13,4 +13,8 @@ path = "src/graph/graph_grid.rs"
 name = "prefix_sum"
 path = "src/prefix_sum/prefix_sum.rs"
 
+[[bin]]
+name = "bit_1"
+path = "src/bit_manipulation/bit_1.rs"
+
 [dependencies]
