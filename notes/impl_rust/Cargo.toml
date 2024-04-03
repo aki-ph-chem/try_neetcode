@@ -17,4 +17,8 @@ path = "src/prefix_sum/prefix_sum.rs"
 name = "bit_1"
 path = "src/bit_manipulation/bit_1.rs"
 
+[[bin]]
+name = "bit_2"
+path = "src/bit_manipulation/bit_2.rs"
+
 [dependencies]
