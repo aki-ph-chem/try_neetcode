@@ -143,6 +143,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Sqrt(x) 
     - 理解: o
 
+- Single Element in a Sorted Array 
+    - 理解: x 
+
 ## Bit Manipulation
 
 - Shuffle the Array
