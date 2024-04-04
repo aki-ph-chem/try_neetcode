@@ -146,6 +146,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Single Element in a Sorted Array 
     - 理解: x 
 
+- Capacity to Ship Packages 
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
