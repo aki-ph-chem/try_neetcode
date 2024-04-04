@@ -237,6 +237,10 @@ path = "src/bin_search/sqrt_x.rs"
 name = "single_element_in_sorted_array"
 path = "src/bin_search/single_element_in_sorted_array.rs"
 
+[[bin]]
+name = "capacity_to_ship_pkg_within_days"
+path = "src/bin_search/capacity_to_ship_pkg_within_days.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
