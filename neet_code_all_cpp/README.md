@@ -149,6 +149,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Capacity to Ship Packages 
     - 理解: o
 
+- Find Peak Element 
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
