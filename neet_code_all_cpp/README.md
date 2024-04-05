@@ -152,6 +152,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Find Peak Element 
     - 理解: o
 
+- Successful Pairs of Spells and Potions 
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
