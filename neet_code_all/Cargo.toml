@@ -249,6 +249,10 @@ path = "src/bin_search/find_peak_element.rs"
 name = "successful_pairs_spell_potion"
 path = "src/bin_search/successful_pairs_spell_potion.rs"
 
+[[bin]]
+name = "minimize_max_diff_of_pairs"
+path = "src/bin_search/minimize_max_diff_of_pairs.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
