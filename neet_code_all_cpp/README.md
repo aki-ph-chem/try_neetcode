@@ -155,6 +155,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Successful Pairs of Spells and Potions 
     - 理解: o
 
+- Minimize the Maximum Difference of Pairs 
+    - 理解: x
+
 ## Bit Manipulation
 
 - Shuffle the Array
