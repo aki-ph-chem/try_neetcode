@@ -245,6 +245,10 @@ path = "src/bin_search/capacity_to_ship_pkg_within_days.rs"
 name = "find_peak_element"
 path = "src/bin_search/find_peak_element.rs"
 
+[[bin]]
+name = "successful_pairs_spell_potion"
+path = "src/bin_search/successful_pairs_spell_potion.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
