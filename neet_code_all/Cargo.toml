@@ -241,6 +241,10 @@ path = "src/bin_search/single_element_in_sorted_array.rs"
 name = "capacity_to_ship_pkg_within_days"
 path = "src/bin_search/capacity_to_ship_pkg_within_days.rs"
 
+[[bin]]
+name = "find_peak_element"
+path = "src/bin_search/find_peak_element.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
