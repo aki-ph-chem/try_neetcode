@@ -7,6 +7,7 @@
 - polish notation: ポーランド記法
 - redundant: 不必要な、冗長な
 - adjacent: 隣接した
+- occurrence: 存在、発生
 
 ## subarray,subsequence,substring,contiguous
 
