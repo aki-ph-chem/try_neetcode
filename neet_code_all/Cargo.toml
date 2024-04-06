@@ -123,6 +123,10 @@ path = "src/array_hash/max_product_of_two_substr.rs"
 name = "grid_game"
 path = "src/array_hash/grid_game.rs"
 
+[[bin]]
+name = "find_all_anagrams_in_string"
+path = "src/array_hash/find_all_anagrams_in_string.rs"
+
 ## Two Pointers 
 
 [[bin]]
