@@ -215,6 +215,12 @@ path = "src/sliding_window/min_size_subarray_sum.rs"
 name = "find_k_closest_element"
 path = "src/sliding_window/find_k_closest_element.rs"
 
+## Stack 
+
+[[bin]]
+name = "baseball_game"
+path = "src/stack/baseball_game.rs"
+
 ## Binary Search
 
 [[bin]]
