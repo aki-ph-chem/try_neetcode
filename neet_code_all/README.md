@@ -124,6 +124,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+-  Find The Index of The First Occurrence in a String
+    - 初見: o
+    - 理解: o
+
 ## Two Pointers
 
 - Valid Palindrome II

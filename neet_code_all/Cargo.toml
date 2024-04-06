@@ -127,6 +127,10 @@ path = "src/array_hash/grid_game.rs"
 name = "find_all_anagrams_in_string"
 path = "src/array_hash/find_all_anagrams_in_string.rs"
 
+[[bin]]
+name = "find_index_of_first_occurrence_string"
+path = "src/array_hash/find_index_of_first_occurrence_string.rs"
+
 ## Two Pointers 
 
 [[bin]]
