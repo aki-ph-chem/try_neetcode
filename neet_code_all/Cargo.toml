@@ -253,6 +253,10 @@ path = "src/bin_search/successful_pairs_spell_potion.rs"
 name = "minimize_max_diff_of_pairs"
 path = "src/bin_search/minimize_max_diff_of_pairs.rs"
 
+[[bin]]
+name = "search_in_rotated_sorted_array_2"
+path = "src/bin_search/search_in_rotated_sorted_array_2.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
