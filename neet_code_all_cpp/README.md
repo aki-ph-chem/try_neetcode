@@ -132,6 +132,11 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Find K Closest Elements 
     - 理解: x
 
+## Stack
+
+- Baseball Game 
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position
