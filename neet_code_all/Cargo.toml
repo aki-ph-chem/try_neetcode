@@ -271,6 +271,12 @@ path = "src/bin_search/minimize_max_diff_of_pairs.rs"
 name = "search_in_rotated_sorted_array_2"
 path = "src/bin_search/search_in_rotated_sorted_array_2.rs"
 
+## Graphs 
+
+[[bin]]
+name = "island_perimeter"
+path = "src/graphs/island_perimeter.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
