@@ -177,6 +177,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Island Perimeter
     - 理解: o
 
+- Verifying An Alien Dictionary
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
