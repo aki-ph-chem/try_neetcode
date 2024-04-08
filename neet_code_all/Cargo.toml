@@ -281,6 +281,10 @@ path = "src/graphs/island_perimeter.rs"
 name = "verify_alien_dict"
 path = "src/graphs/verify_alien_dict.rs"
 
+[[bin]]
+name = "count_sub_islands"
+path = "src/graphs/count_sub_islands.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
