@@ -180,6 +180,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Verifying An Alien Dictionary
     - 理解: o
 
+- Count Sub Islands 
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
