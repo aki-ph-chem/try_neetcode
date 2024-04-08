@@ -6,6 +6,15 @@
 
 ### [C++での実装](impl_cpp/graph)
 
+### flood fill アルゴリズム
+
+[Rustでの実装](impl_rust/src/graph/flood_fill.rs)
+
+お絵描きソフト塗りつぶし機能で使われているらしい
+
+- 参考
+    - [Flood fill Algorithm – how to implement fill() in paint?](https://www.geeksforgeeks.org/flood-fill-algorithm-implement-fill-paint/) 
+
 ## 累積和
 
 ### [Rustでの実装](impl_rust/src/prefix_sum)

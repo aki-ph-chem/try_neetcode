@@ -21,4 +21,8 @@ path = "src/bit_manipulation/bit_1.rs"
 name = "bit_2"
 path = "src/bit_manipulation/bit_2.rs"
 
+[[bin]]
+name = "flood_fill"
+path = "src/graph/flood_fill.rs"
+
 [dependencies]
