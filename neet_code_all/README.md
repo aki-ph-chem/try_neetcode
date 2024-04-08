@@ -271,7 +271,11 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 ## Graphs
 
 - Island Perimeter
-    - 初見: o
+    - 初見: x
+    - 理解: o
+
+- Verifying An Alien Dictionary 
+    - 初見: x
     - 理解: o
 
 ## Bit Manipulation  

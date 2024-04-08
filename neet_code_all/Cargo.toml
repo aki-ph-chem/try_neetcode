@@ -277,6 +277,10 @@ path = "src/bin_search/search_in_rotated_sorted_array_2.rs"
 name = "island_perimeter"
 path = "src/graphs/island_perimeter.rs"
 
+[[bin]]
+name = "verify_alien_dict"
+path = "src/graphs/verify_alien_dict.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
