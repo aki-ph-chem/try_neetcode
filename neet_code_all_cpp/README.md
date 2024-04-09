@@ -183,6 +183,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Count Sub Islands 
     - 理解: o
 
+- Reorder Routes to Make All Paths Lead to The City Zero 
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
