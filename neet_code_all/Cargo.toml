@@ -285,6 +285,10 @@ path = "src/graphs/verify_alien_dict.rs"
 name = "count_sub_islands"
 path = "src/graphs/count_sub_islands.rs"
 
+[[bin]]
+name = "reorder_routes_to_city_zero"
+path = "src/graphs/reorder_routes_to_city_zero.rs"
+
 ## Bit Manipulation 
 
 [[bin]]

@@ -282,6 +282,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: o
 
+- Reorder Routes to Make All Paths Lead to The City Zero 
+    - 初見: x
+    - 理解: o
+
 ## Bit Manipulation  
 
 - Shuffle the Array
