@@ -29,4 +29,8 @@ path = "src/graph/flood_fill.rs"
 name = "dfs_rec"
 path = "src/graph/dfs_rec.rs"
 
+[[bin]]
+name = "graph_search_loop"
+path = "src/graph/graph_search_loop.rs"
+
 [dependencies]
