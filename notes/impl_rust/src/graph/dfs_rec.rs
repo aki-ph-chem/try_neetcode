@@ -11,6 +11,7 @@ impl Dfs1 {
                 continue;
             }
             Self::dfs_rec(&graph, &mut visit, i as i32);
+            println!("");
         }
     }
 
@@ -24,7 +25,6 @@ impl Dfs1 {
             print!("{} -> ", next_v);
             Self::dfs_rec(graph, visit, *next_v);
         }
-        println!("");
     }
 }
 
@@ -38,6 +38,7 @@ impl Dfs2 {
             }
 
             Self::dfs_rec(&graph, &mut visit, i as i32);
+            println!("");
         }
     }
 
@@ -52,7 +53,6 @@ impl Dfs2 {
             print!("{} -> ", next_v);
             Self::dfs_rec(graph, visit, *next_v);
         }
-        println!("");
     }
 }
 
@@ -67,6 +67,7 @@ impl Dfs3 {
             }
 
             Self::dfs_rec(&graph, &mut visit, i as i32);
+            println!("");
         }
     }
 
@@ -81,7 +82,6 @@ impl Dfs3 {
             print!("{} -> ", next_v);
             Self::dfs_rec(graph, visit, *next_v);
         }
-        println!("");
     }
 }
 
@@ -96,6 +96,7 @@ impl Dfs4 {
             }
 
             Self::dfs_rec(&graph, &mut visit, i as i32);
+            println!("");
         }
     }
 
@@ -112,7 +113,6 @@ impl Dfs4 {
                 Self::dfs_rec(graph, visit, *next_v);
             }
         }
-        println!("");
     }
 }
 
