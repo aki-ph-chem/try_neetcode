@@ -289,6 +289,10 @@ path = "src/graphs/count_sub_islands.rs"
 name = "reorder_routes_to_city_zero"
 path = "src/graphs/reorder_routes_to_city_zero.rs"
 
+[[bin]]
+name = "snakes_and_ladders"
+path = "src/graphs/snakes_and_ladders.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
