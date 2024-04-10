@@ -186,6 +186,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Reorder Routes to Make All Paths Lead to The City Zero 
     - 理解: o
 
+- Snakes And Ladders 
+    - 理解: x
+
 ## Bit Manipulation
 
 - Shuffle the Array
