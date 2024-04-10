@@ -90,6 +90,95 @@ class SolutionAns {
         }
 };
 
+// 模範解答
+class SolutionAns2 {
+    public:
+        // AC
+        std::vector<std::vector<int>> pacificAtlantic(std::vector<std::vector<int>>& heights) {
+            int m = heights.size();
+            int n = heights[0].size();
+
+            std::vector<std::vector<bool>> pacific(m, std::vector<bool>(n));
+            std::vector<std::vector<bool>> atlantic(m, std::vector<bool>(n));
+
+            // 左端、右端、上端、下端からそれぞれ山を再帰的に登る
+            //
+            for (int i = 0; i < m; i++) {
+                // (i, 0)から再帰的に探索
+                // 左端からスタート
+                dfs(heights, pacific, i, 0);
+                // (i, n - 1)から再帰的に探索
+                // 右端からスタート
+                dfs(heights, atlantic, i, n - 1);
+            }
+
+            for (int j = 0; j < n; j++) {
+                // (0, j)から再帰的に探索
+                // 上端からスタート
+                dfs(heights, pacific, 0, j);
+                // (m - 1, j)から再帰的に探索
+                // 下端からスタート
+                dfs(heights, atlantic, m - 1, j);
+            }
+
+            std::vector<std::vector<int>> result;
+
+#ifdef FOR_DEBUG
+            // 訪問済みの点を表示
+            std::cout << "pacific:" << std::endl;
+            for(const auto &a: pacific) {
+                for(const auto &b: a) {
+                    std::cout << b << " ";
+                }
+                std::cout << std::endl;
+            }
+
+            std::cout << "atlantic:" << std::endl;
+            for(const auto &a: atlantic) {
+                for(const auto &b: a) {
+                    std::cout << b << " ";
+                }
+                std::cout << std::endl;
+            }
+#endif
+
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    // pacific, atlantic共に訪問済みならばok
+                    if (pacific[i][j] && atlantic[i][j]) {
+                        result.push_back({i, j});
+                    }
+                }
+            }
+
+            return result;
+        }
+
+    private:
+        void dfs(std::vector<std::vector<int>>& heights, std::vector<std::vector<bool>>& visited, int x, int y) {
+            auto [m, n] = std::pair(heights.size(), heights[0].size());
+            // (i, j)を訪問済みにする
+            visited[x][y] = true;
+
+            // 十字方向に再帰的に探索
+            std::vector<std::pair<int,int>> directions = {
+                {1, 0},
+                {0, 1},
+                {-1, 0},
+                {0, -1}
+            };
+
+            for (auto& [dx, dy]: directions) {
+                auto [x_new, y_new] = std::pair(x + dx, y + dy);
+                if(x_new >= 0 && y_new >= 0 && x_new < m && y_new < n) {
+                    if(!visited[x_new][y_new] && heights[x_new][y_new] >= heights[x][y]) {
+                        dfs(heights, visited, x_new, y_new);
+                    }
+                }
+            }
+        }
+};
+
 int main(void) {
     auto case_1 = std::vector{
         std::vector{1, 2, 2, 3, 5},
@@ -104,6 +193,16 @@ int main(void) {
     auto res = s_anas.pacificAtlantic(case_1);
     std::cout << "s_ans" << std::endl;
     for(const auto &a: res) {
+        for(const auto &b: a) {
+            std::cout << b << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    SolutionAns2 s_ans_2;
+    auto res_2 = s_ans_2.pacificAtlantic(case_1);
+    std::cout << "s_ans_2" << std::endl;
+    for(const auto &a: res_2) {
         for(const auto &b: a) {
             std::cout << b << " ";
         }

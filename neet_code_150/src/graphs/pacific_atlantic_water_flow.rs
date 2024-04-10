@@ -112,6 +112,91 @@ impl SolutionAns {
     }
 }
 
+// 上の回答を少し整理した(主にdfsの十字探索)
+struct SolutionAns2 {}
+impl SolutionAns2 {
+    // AC
+    pub fn pacific_atlantic(heights: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+        let m = heights.len() as i32;
+        let n = heights[0].len() as i32;
+
+        let mut seen_pacific = vec![vec![false; n as usize]; m as usize];
+        let mut seen_atlantic = vec![vec![false; n as usize]; m as usize];
+
+        // 左端、右端、上端、下端からそれぞれ山を再帰的に登る
+        //
+        for i in 0..m {
+            // (i, 0)から再帰的に探索
+            // 左端からスタート
+            Self::dfs(&heights, &mut seen_pacific, i, 0);
+            // (i, n - 1)から再帰的に探索
+            // 右端からスタート
+            Self::dfs(&heights, &mut seen_atlantic, i, n - 1);
+        }
+
+        for j in 0..n {
+            // (0, j)から再帰的に探索
+            // 上端からスタート
+            Self::dfs(&heights, &mut seen_pacific, 0, j);
+            // (m - 1, j)から再帰的に探索
+            // 下端からスタート
+            Self::dfs(&heights, &mut seen_atlantic, m - 1, j);
+        }
+
+        let for_debug = || {
+            println!("seen_pacific:");
+            for arr in &seen_pacific {
+                for a in arr {
+                    print!("{} ", *a as i32);
+                }
+                println!();
+            }
+
+            println!("seen_atlantic:");
+            for arr in &seen_atlantic {
+                for a in arr {
+                    print!("{} ", *a as i32);
+                }
+                println!();
+            }
+        };
+        for_debug();
+
+        let mut result = vec![];
+        for i in 0..m {
+            for j in 0..n {
+                // pacific, atlantic共に訪問済みならばok
+                if seen_pacific[i as usize][j as usize] && seen_atlantic[i as usize][j as usize] {
+                    result.push(vec![i, j]);
+                }
+            }
+        }
+
+        result
+    }
+
+    fn dfs(heights: &Vec<Vec<i32>>, seen: &mut Vec<Vec<bool>>, x: i32, y: i32) {
+        let m = heights.len() as i32;
+        let n = heights[0].len() as i32;
+        // (i, j)を訪問済みにする
+        seen[x as usize][y as usize] = true;
+
+        // 十字方向に再帰的に探索
+        let directions = [(1, 0), (0, 1), (-1, 0), (0, -1)];
+        for (dx, dy) in directions {
+            let (x_new, y_new) = (x + dx, y + dy);
+
+            if x_new >= 0 && y_new >= 0 && x_new < m && y_new < n {
+                if !seen[x_new as usize][y_new as usize]
+                    && heights[x_new as usize][y_new as usize] >= heights[x as usize][y as usize]
+                {
+                    Self::dfs(heights, seen, x_new, y_new);
+                }
+            }
+        }
+    }
+}
+
 fn main() {
     let case_1 = vec![
         vec![1, 2, 2, 3, 5],
@@ -124,4 +209,7 @@ fn main() {
 
     let res_1 = SolutionAns::pacific_atlantic(case_1.clone());
     println!("case_1: {:?}", res_1);
+
+    let res_1_2 = SolutionAns2::pacific_atlantic(case_1.clone());
+    println!("case_1: {:?}", res_1_2);
 }
