@@ -128,6 +128,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- Largest Number
+    - 初見: x
+    - 理解: o
+
 ## Two Pointers
 
 - Valid Palindrome II

@@ -131,6 +131,10 @@ path = "src/array_hash/find_all_anagrams_in_string.rs"
 name = "find_index_of_first_occurrence_string"
 path = "src/array_hash/find_index_of_first_occurrence_string.rs"
 
+[[bin]]
+name = "largest_number"
+path = "src/array_hash/largest_number.rs"
+
 ## Two Pointers 
 
 [[bin]]
