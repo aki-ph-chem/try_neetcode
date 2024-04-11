@@ -498,4 +498,8 @@ path = "src/appendix/while_let.rs"
 name = "fold"
 path = "src/appendix/fold.rs"
 
+[[bin]]
+name = "sort"
+path = "src/appendix/sort.rs"
+
 [dependencies]
