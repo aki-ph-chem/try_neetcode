@@ -33,4 +33,8 @@ path = "src/graph/dfs_rec.rs"
 name = "graph_search_loop"
 path = "src/graph/graph_search_loop.rs"
 
+[[bin]]
+name = "topo_sort"
+path = "src/graph/topo_sort.rs"
+
 [dependencies]
