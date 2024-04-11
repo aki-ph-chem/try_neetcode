@@ -293,6 +293,10 @@ path = "src/graphs/reorder_routes_to_city_zero.rs"
 name = "snakes_and_ladders"
 path = "src/graphs/snakes_and_ladders.rs"
 
+[[bin]]
+name = "open_the_lock"
+path = "src/graphs/open_the_lock.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
