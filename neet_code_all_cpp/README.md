@@ -189,6 +189,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Snakes And Ladders 
     - 理解: x
 
+- Open The Lock 
+    - 理解: x
+
 ## Bit Manipulation
 
 - Shuffle the Array
