@@ -12,6 +12,12 @@ loopによるグラフ探索(DFS,BFS)
 
 [Rustでの実装](impl_rust/src/graph/dfs_rec.rs)
 
+### トポロジカルソート
+
+DFSによるトポロジカルソート
+
+[Rustでの実装](impl_rust/src/graph/topo_sort.rs)
+
 ## gridのグラフ探索
 
 [Rustでの実装](impl_rust/src/graph/graph_grid.rs)
