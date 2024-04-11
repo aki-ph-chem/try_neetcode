@@ -257,7 +257,7 @@
 
 555. Course Schedule 
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 555. Course Schedule II 
     - 初見: x
