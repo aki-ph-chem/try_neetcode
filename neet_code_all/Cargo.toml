@@ -135,6 +135,10 @@ path = "src/array_hash/find_index_of_first_occurrence_string.rs"
 name = "largest_number"
 path = "src/array_hash/largest_number.rs"
 
+[[bin]]
+name = "continuous_subarray_sum"
+path = "src/array_hash/continuous_subarray_sum.rs"
+
 ## Two Pointers 
 
 [[bin]]
