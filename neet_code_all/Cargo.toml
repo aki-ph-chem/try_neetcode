@@ -279,6 +279,10 @@ path = "src/bin_search/minimize_max_diff_of_pairs.rs"
 name = "search_in_rotated_sorted_array_2"
 path = "src/bin_search/search_in_rotated_sorted_array_2.rs"
 
+[[bin]]
+name = "find_first_and_last_in_sorted_array"
+path = "src/bin_search/find_first_and_last_in_sorted_array.rs"
+
 ## Graphs 
 
 [[bin]]
