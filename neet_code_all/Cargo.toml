@@ -139,6 +139,10 @@ path = "src/array_hash/largest_number.rs"
 name = "continuous_subarray_sum"
 path = "src/array_hash/continuous_subarray_sum.rs"
 
+[[bin]]
+name = "push_dominoes"
+path = "src/array_hash/push_dominoes.rs"
+
 ## Two Pointers 
 
 [[bin]]
