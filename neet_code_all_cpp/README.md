@@ -86,6 +86,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Push Dominoes 
     - 理解: x
 
+- Rpeated DNA Sequences
+    - 理解: o
+
 ## Two Pointers
 
 - Valid Palindrome II
