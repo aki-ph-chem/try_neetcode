@@ -151,6 +151,10 @@ path = "src/array_hash/repeated_dna_sequences.rs"
 name = "string_contains_all_bin_code_size_k"
 path = "src/array_hash/string_contains_all_bin_code_size_k.rs"
 
+[[bin]]
+name = "non_decreasing_array"
+path = "src/array_hash/non_decreasing_array.rs"
+
 ## Two Pointers 
 
 [[bin]]
