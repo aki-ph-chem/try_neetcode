@@ -143,6 +143,10 @@ path = "src/array_hash/continuous_subarray_sum.rs"
 name = "push_dominoes"
 path = "src/array_hash/push_dominoes.rs"
 
+[[bin]]
+name = "repeated_dna_sequences"
+path = "src/array_hash/repeated_dna_sequences.rs"
+
 ## Two Pointers 
 
 [[bin]]
