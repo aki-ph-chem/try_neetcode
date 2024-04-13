@@ -74,6 +74,20 @@ impl SolutionAnsCpp {
     }
 }
 
+// Pythonの模範解答より(ワンライナー)
+struct SolutionAnsPython {}
+impl SolutionAnsPython {
+    pub fn has_all_codes(s: String, k: i32) -> bool {
+        (0..=(s.len() as i32 - k))
+            .fold(HashSet::new(), |mut set, i| {
+                set.insert(s[i as usize..(i as usize + k as usize)].to_string());
+                set
+            })
+            .len()
+            == 1 << k
+    }
+}
+
 fn main() {
     let case_1 = ("00110110".to_string(), 2);
     // => true
@@ -106,5 +120,18 @@ fn main() {
     println!(
         "case_3: {}",
         SolutionAnsCpp::has_all_codes(case_3.0.clone(), case_3.1)
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionAnsPython::has_all_codes(case_1.0.clone(), case_1.1)
+    );
+    println!(
+        "case_2: {}",
+        SolutionAnsPython::has_all_codes(case_2.0.clone(), case_2.1)
+    );
+    println!(
+        "case_3: {}",
+        SolutionAnsPython::has_all_codes(case_3.0.clone(), case_3.1)
     );
 }
