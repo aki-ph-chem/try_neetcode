@@ -147,6 +147,10 @@ path = "src/array_hash/push_dominoes.rs"
 name = "repeated_dna_sequences"
 path = "src/array_hash/repeated_dna_sequences.rs"
 
+[[bin]]
+name = "string_contains_all_bin_code_size_k"
+path = "src/array_hash/string_contains_all_bin_code_size_k.rs"
+
 ## Two Pointers 
 
 [[bin]]
