@@ -155,6 +155,10 @@ path = "src/array_hash/string_contains_all_bin_code_size_k.rs"
 name = "non_decreasing_array"
 path = "src/array_hash/non_decreasing_array.rs"
 
+[[bin]]
+name = "sign_of_product_of_array"
+path = "src/array_hash/sign_of_product_of_array.rs"
+
 ## Two Pointers 
 
 [[bin]]
