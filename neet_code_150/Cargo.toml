@@ -502,4 +502,8 @@ path = "src/appendix/fold.rs"
 name = "sort"
 path = "src/appendix/sort.rs"
 
+[[bin]]
+name = "prime_number"
+path = "src/appendix/prime_number.rs"
+
 [dependencies]
