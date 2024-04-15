@@ -163,6 +163,10 @@ path = "src/array_hash/sign_of_product_of_array.rs"
 name = "find_difference_of_two_arrays"
 path = "src/array_hash/find_difference_of_two_arrays.rs"
 
+[[bin]]
+name = "number_of_zero_filled_subarray"
+path = "src/array_hash/number_of_zero_filled_subarray.rs"
+
 ## Two Pointers 
 
 [[bin]]
