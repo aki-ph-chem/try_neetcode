@@ -167,6 +167,10 @@ path = "src/array_hash/find_difference_of_two_arrays.rs"
 name = "number_of_zero_filled_subarray"
 path = "src/array_hash/number_of_zero_filled_subarray.rs"
 
+[[bin]]
+name = "optimal_partition_of_string"
+path = "src/array_hash/optimal_partition_of_string.rs"
+
 ## Two Pointers 
 
 [[bin]]
