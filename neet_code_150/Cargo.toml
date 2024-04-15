@@ -506,4 +506,8 @@ path = "src/appendix/sort.rs"
 name = "prime_number"
 path = "src/appendix/prime_number.rs"
 
+[[bin]]
+name = "all"
+path = "src/appendix/all.rs"
+
 [dependencies]
