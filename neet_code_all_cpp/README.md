@@ -165,6 +165,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Find K Closest Elements 
     - 理解: x
 
+- Minimum Operations to Reduce X to Zero 
+    - 理解: x
+
 ## Stack
 
 - Baseball Game 
