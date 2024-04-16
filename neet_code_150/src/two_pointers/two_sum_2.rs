@@ -4,7 +4,7 @@ impl Solution {
         let len_nums = nums.len();
         let mut res = vec![];
         for i in 0..len_nums {
-            for j in (i+1)..len_nums {
+            for j in (i + 1)..len_nums {
                 if nums[i] + nums[j] == target {
                     res.push(i as i32);
                     res.push(j as i32);
@@ -48,7 +48,7 @@ impl Solution {
 use std::cmp::Ordering::{Equal, Greater, Less};
 struct SolutionAns {}
 impl SolutionAns {
-  pub fn two_sum(numbers: Vec<i32>, target: i32) -> Vec<i32> {
+    pub fn two_sum(numbers: Vec<i32>, target: i32) -> Vec<i32> {
         let (mut l, mut r) = (0, numbers.len() - 1);
         while l < r {
             match (numbers[l] + numbers[r]).cmp(&target) {
@@ -61,20 +61,85 @@ impl SolutionAns {
     }
 }
 
+// C++の模範解答より
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    // AC
+    pub fn two_sum(numbers: Vec<i32>, target: i32) -> Vec<i32> {
+        let (mut left, mut right) = (0, numbers.len() - 1);
+        let mut result = vec![];
+
+        while left < right {
+            let sum = numbers[left] + numbers[right];
+            if sum < target {
+                left += 1;
+            } else if sum > target {
+                right -= 1;
+            } else {
+                result.push(left as i32 + 1);
+                result.push(right as i32 + 1);
+                break;
+            }
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = (vec![2, 7, 11, 15], 9);
     let case_2 = (vec![2, 3, 4], 6);
     let case_3 = (vec![-1, 0], -1);
 
-    println!("case_1: {:?}", Solution::two_sum(case_1.clone().0, case_1.clone().1));
-    println!("case_2: {:?}", Solution::two_sum(case_2.clone().0, case_2.clone().1));
-    println!("case_3: {:?}", Solution::two_sum(case_3.clone().0, case_3.clone().1));
+    println!(
+        "case_1: {:?}",
+        Solution::two_sum(case_1.clone().0, case_1.clone().1)
+    );
+    println!(
+        "case_2: {:?}",
+        Solution::two_sum(case_2.clone().0, case_2.clone().1)
+    );
+    println!(
+        "case_3: {:?}",
+        Solution::two_sum(case_3.clone().0, case_3.clone().1)
+    );
 
-    println!("case_1: {:?}", SolutionAns::two_sum(case_1.clone().0, case_1.clone().1));
-    println!("case_2: {:?}", SolutionAns::two_sum(case_2.clone().0, case_2.clone().1));
-    println!("case_3: {:?}", SolutionAns::two_sum(case_3.clone().0, case_3.clone().1));
+    println!(
+        "case_1: {:?}",
+        SolutionAns::two_sum(case_1.clone().0, case_1.clone().1)
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionAns::two_sum(case_2.clone().0, case_2.clone().1)
+    );
+    println!(
+        "case_3: {:?}",
+        SolutionAns::two_sum(case_3.clone().0, case_3.clone().1)
+    );
 
-    println!("case_1: {:?}", Solution::two_sum_bin_search(case_1.clone().0, case_1.clone().1));
-    println!("case_2: {:?}", Solution::two_sum_bin_search(case_2.clone().0, case_2.clone().1));
-    println!("case_3: {:?}", Solution::two_sum_bin_search(case_3.clone().0, case_3.clone().1));
+    println!(
+        "case_1: {:?}",
+        Solution::two_sum_bin_search(case_1.clone().0, case_1.clone().1)
+    );
+    println!(
+        "case_2: {:?}",
+        Solution::two_sum_bin_search(case_2.clone().0, case_2.clone().1)
+    );
+    println!(
+        "case_3: {:?}",
+        Solution::two_sum_bin_search(case_3.clone().0, case_3.clone().1)
+    );
+
+    println!(
+        "case_1: {:?}",
+        SolutionAnsCpp::two_sum(case_1.clone().0, case_1.clone().1)
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionAnsCpp::two_sum(case_2.clone().0, case_2.clone().1)
+    );
+    println!(
+        "case_3: {:?}",
+        SolutionAnsCpp::two_sum(case_3.clone().0, case_3.clone().1)
+    );
 }
