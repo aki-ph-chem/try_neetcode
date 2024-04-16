@@ -171,6 +171,10 @@ path = "src/array_hash/number_of_zero_filled_subarray.rs"
 name = "optimal_partition_of_string"
 path = "src/array_hash/optimal_partition_of_string.rs"
 
+[[bin]]
+name = "minimum_penalty_for_shop"
+path = "src/array_hash/minimum_penalty_for_shop.rs"
+
 ## Two Pointers 
 
 [[bin]]
