@@ -25,7 +25,7 @@
 
 5. Top K Frequent Elements
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 6. Product of Array Except Self
     - 初見: x
