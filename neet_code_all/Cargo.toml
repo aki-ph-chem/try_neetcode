@@ -259,6 +259,10 @@ path = "src/sliding_window/min_size_subarray_sum.rs"
 name = "find_k_closest_element"
 path = "src/sliding_window/find_k_closest_element.rs"
 
+[[bin]]
+name = "minimum_operations_to_reduce_x_to_zero"
+path = "src/sliding_window/minimum_operations_to_reduce_x_to_zero.rs"
+
 ## Stack 
 
 [[bin]]
