@@ -107,6 +107,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Optimal Partition of String 
     - 理解: o
 
+- Minimum Penalty for a Shop 
+    - 理解: o
+
 ## Two Pointers
 
 - Valid Palindrome II
