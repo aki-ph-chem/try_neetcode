@@ -2,477 +2,476 @@
 
 基本的にはRustで一旦解いたあとでC++でも解くというスタンス(基本的に初見ではない)
 
+- now(2024 0422): READMEの更新中(リンクを追加した,まだ途中) 
+
 ## Array & Hash
 
-1. Contains Duplicate
+- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
     - 理解: o
 
-2. Valid Anagram 
+- [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) 
     - 理解: o
 
-3. Two Sum
+- [Two Sum](https://leetcode.com/problems/two-sum/description/)
     - 理解: o
 
-4. Group Anagrams
+- [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
     - 理解: o
 
-5. Top K Frequent Element
+- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
     - 理解: o
 
-6. Product of Array Except Self
+- [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
+    - 理解: ○
+
+- [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/)  
     - 理解: o
 
-7. Valid Sudoku
+- [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) 
     - 理解: o
 
-8. Encode and Decode Strings 
-    - 初見: o
-    - 理解: o
-
-9. Longest Consective Sequence
-    - 理解: o
+- [Longest Consective Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
+    - 理解: o 
 
 ## Two Pointers
 
-10. Valid Palindrome
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
     - 理解: o
 
-11. Two Sum II
+- [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
     - 理解: o
 
-12. 3sum
+- [3sum](https://leetcode.com/problems/3sum/)
     - 理解: o
 
-13. Continer with Most Water
-    - 理解: o
+- [Continer with Most Water](https://leetcode.com/problems/container-with-most-water/)
+    - 初見: x 
 
-14. Trapping Rain Water : Hardなため一旦飛ばす
+- [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+    - 理解: o
 
 ## Sliding Window 
 
-15. Best Time to Buy And Sell Stock 
+- [Best Time to Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
     - 理解: o
 
-16. Longest Substring Without Repeating Characters
+- [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
     - 理解: o
 
-17. Longest Repeating Character Replacement
+- [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
     - 理解: o
 
-18. Permutation In String
+- [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/)
     - 理解: o
 
-19. Minimum Window Substring:
+- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
     - 理解: x
 
-20. Sliding Window Maximum:
+- [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
     - 理解: o
 
 ## Stack
 
-21. Valid Parentheses
+- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
     - 理解: o
 
-22. Min Stack 
+- [Min Stack](https://leetcode.com/problems/min-stack/)
     - 理解: o
 
-23. Evaluate Reverse Polish Notation 
+- [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) 
     - 理解: o
 
-24.  Generate Parentheses
+-  [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
     - 理解: o
 
-25.  Daily Temperatures
+-  [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
     - 理解: o
 
-26.  Car Fleet 
+-  [Car Fleet](https://leetcode.com/problems/car-fleet/) 
     - 理解: o
 
-27. Largest Rectangle In Histogram:
+- [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
     - 理解: x
 
 ## Binary Search
 
-28. Binary Search
+- [Binry Search](https://leetcode.com/problems/binary-search/)
     - 理解: o
 
-29. Seach a 2D Matrix
-    - 理解: o 
+- [Seach a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
+    - 理解: o
 
-30. Koko Eating Bananas 
+- [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) 
     - 理解: x
 
-31. Find Minimum In Rotated Sorted Array
+- [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
     - 理解: o
 
-32. Search In Rotated Sorted Array
+- [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
     - 理解: o
 
-33. Time Based Key Value Store
-    - 理解: o 
+- [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/)
+    - 理解: o
 
-34. Median of Two Sorted Arrays
-    - 理解: o 
+- [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+    - 理解: x
 
 ## [Linked List](./linked_list) 
 
-35. Reverse Linked List 
+- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) 
     - 理解: o
 
-36. Merge Two Sorted Lists 
+- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+    - 理解: o 
+
+- [Reorder List]() 
     - 理解: o
 
-37. Reorder List 
+- [Remove Nth Node From End of List]()
     - 理解: o
 
-38. Remove Nth Node From End of List
-    - 理解: o
-
-39. Copy List With Random Pointer
+- [Copy List With Random Pointer]()
     - 理解:
 
-40. Add Two Numbers
+- [Add Two Numbers]()
     - 理解:
 
-41. Linked List Cycle
+- [Linked List Cycle]()
     - 理解: o
 
-44. Merge K Sorted Lists 
+- [Merge K Sorted Lists]() 
     - 理解: x
 
 ## Trees
 
-666. Invert Binary Tree
+- Invert Binary Tree
     - 初見: x
     - 理解: o
 
-666. Maximum Depth of Binary Tree
+- Maximum Depth of Binary Tree
     - 初見: x
     - 理解: o
 
-666. Diameter of Binary Tree 
+- Diameter of Binary Tree 
     - 初見: x
     - 理解: o
 
-666. Balanced Binary Tree 
+- Balanced Binary Tree 
     - 初見: x
     - 理解: x
 
-666. Same Tree
+- Same Tree
     - 初見: x
     - 理解: o
 
-666. Subtree of Another Tree 
+- Subtree of Another Tree 
     - 初見: x
     - 理解: x
 
-666. Lowest Common Ancestor of Binary Search Tree 
+- Lowest Common Ancestor of Binary Search Tree 
     - 初見: x
     - 理解: o
 
-666. Binary Tree Level Order Traversal  
+- Binary Tree Level Order Traversal  
     - 初見: x
     - 理解: o
 
-666. Binary Tree Right Side View  
+- Binary Tree Right Side View  
     - 初見: x
     - 理解: x
 
-666. Count Good Nodes In Binary Tree  
+- Count Good Nodes In Binary Tree  
     - 初見: x
     - 理解: o
 
-666. Valid Binary Search Tree
+- Valid Binary Search Tree
     - 初見: x
     - 理解: x
 
-666. Kth Smallest Element In a Bst 
+- Kth Smallest Element In a Bst 
     - 初見: x
     - 理解: x
 
-666. Construct Binary Tree From Preorder And Inorder Traversal
+- Construct Binary Tree From Preorder And Inorder Traversal
     - 初見: x
     - 理解: x
 
-666. Binary Tree Maximum Path Sum 
+- Binary Tree Maximum Path Sum 
     - 初見: x
     - 理解: o
 
-666. Serialize Ans Deserialize Binary Tree 
+- Serialize Ans Deserialize Binary Tree 
     - 初見: x
     - 理解: x
 
 ## Tries
 
-555. Implement Trie Prefix Tree
+- Implement Trie Prefix Tree
     - 初見: x
     - 理解: o
 
-555. Design Add And Search Words Data Structure 
+- Design Add And Search Words Data Structure 
     - 初見: x
     - 理解: o
 
-555. Word Search II 
+- Word Search II 
     - 初見: x
     - 理解: x
 
 ## Heap / Priority Queue
 
-1313. Kth Largest Element In a Stream
+- [Kth Largest Element In a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
     - 理解: o 
 
-1313. Last Stone Weight
+- [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)
     - 理解: o 
 
-1313. K Closest Points to Origin
+- [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)
+    - 理解: o 
+    
+- [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
     - 理解: o 
 
-1313. Kth Largest Element In An Array  
-    - 理解: o 
-
-1313. Task Scheduler  
+- [Task Scheduler](https://leetcode.com/problems/task-scheduler/)
     - 理解: x
 
-1313. Design Twitter  
+- [Design Twitter](https://leetcode.com/problems/design-twitter/)
     - 理解: o
 
-1313.  Find Median From Data Stream 
+-  [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
     - 理解: x
 
 ## Backtracking
 
-666. Subsets 
-    - 初見: o
+- [Subsets](https://leetcode.com/problems/subsets/)
     - 理解: o
 
-666. Combination Sum
+- [Combination Sum](https://leetcode.com/problems/combination-sum/)
     - 理解: o
 
-666. Permutations 
+- [Permutations](https://leetcode.com/problems/permutations/)
     - 理解: x
 
-666. Subsets II 
+- [Subsets II](https://leetcode.com/problems/subsets-ii/)
     - 理解: o
 
-666. Combination Sum II
+- [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
     - 理解: x
 
-666. Word Search
+- [Word Search](https://leetcode.com/problems/word-search/)
     - 理解: o
 
-666. Palindrome Partitioning 
+- [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
     - 理解: o
 
-666. Letter Combinations of a Phone Number 
+- [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) 
     - 理解: o
 
-666. N Queens 
+- [N Queens](https://leetcode.com/problems/n-queens/)
     - 理解: x
 
 ## Graphs
 
-555. Number of Islands
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
     - 理解: o
 
-555. Clone Graph 
+- [Max Area of Island](https://leetcode.com/problems/max-area-of-island/)
+    - 理解: o
+
+- [Clone Graphs](https://leetcode.com/problems/clone-graph/)
+    - 理解: o 
+
+- [Walls And Gates](https://neetcode.io/problems/islands-and-treasure)
     - 初見: x
     - 理解: o
 
-555. Max Area of Island 
+- [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) 
     - 理解: o
 
-555. Pacific Atlantic Water Flow 
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) 
     - 理解: o
 
-555. Surrounded Regions 
+- [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) 
     - 理解: o
 
-555. Rotting Oranges 
-    - 理解: o
-
-555. Walls And Gates 
-    - 初見: x
-    - 理解: o
-
-555. Course Schedule 
+- [Course Schedule](https://leetcode.com/problems/course-schedule/)
     - 理解: x
 
-555. Course Schedule II 
+- [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
     - 理解: x
 
-555. Redundant Connection 
-    - 理解: o
-
-555. Number of Connected Components In An Undirected Graph 
+- [Graph Valid Tree](https://neetcode.io/problems/valid-tree)
     - 初見: o
     - 理解: o
 
-555. Graph Valid Tree
+- [Number of Connected Components In An Undirected Graph](https://neetcode.io/problems/count-connected-components) 
     - 初見: o
     - 理解: o
 
-555. Word Ladder 
-    - 初見: x
+- [Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+    - 理解: o
+
+- [Word Ladder](https://leetcode.com/problems/word-ladder/)
     - 理解: x
 
 ## Advanced Graphs
 
-1212. Reconstruct Itinerary
+- Reconstruct Itinerary
     - 理解: x
 
-1212. Min Cost to Connect All Points
+- Min Cost to Connect All Points
     - 初見: o
     - 理解: o
 
-1212. Network Dleay Time 
+- Network Dleay Time 
     - 初見: o
     - 理解: o
 
-1212. Swim in Rising Water 
+- Swim in Rising Water 
     - 初見: x
     - 理解: x
 
-1212. Alien Dictionary
+- Alien Dictionary
     - 初見: x
     - 理解: x
 
-1212. Cheapest Flight Within K Stops 
+- Cheapest Flight Within K Stops 
     - 理解: x
 
 ## 1-D Dynamic Programming 
 
-777. Climbing Stairs 
+- Climbing Stairs 
     - 理解: o
 
-777. Min Cost Climbing Stairs 
+- Min Cost Climbing Stairs 
     - 理解: o
 
-777. House Robber 
+- House Robber 
     - 理解: o
 
-777. House Robber II
+- House Robber II
     - 理解: o 
 
-777. Longest Palindromic Substring 
+- Longest Palindromic Substring 
     - 理解: o 
 
-777. Palindromic Substring 
+- Palindromic Substring 
     - 初見: o
 
-777. Decode Ways 
+- Decode Ways 
     - 初見: o
 
-777. Coin Change
+- Coin Change
     - 初見: o
 
-777. Max Product Subarray
+- Max Product Subarray
     - 理解: o
 
-777. Partition Equal Subset Sum 
+- Partition Equal Subset Sum 
     - 理解: o
 
 ## 2-D Dynamic Programming 
 
-777. Unique Paths
+- Unique Paths
     - 理解: x
 
-777. Longest Common Subsequence 
+- Longest Common Subsequence 
     - 理解: o
 
-777. Best Time to Buy And Sell Stock With Cooldown
+- Best Time to Buy And Sell Stock With Cooldown
     - 理解: x
 
-777. Coin Change II 
+- Coin Change II 
     - 理解: x
 
 ## Greedy
 
-888. Maximum Subarray
+- Maximum Subarray
     - 理解: x
 
-888. Jump Game
+- Jump Game
     - 理解: o
 
-888. Jump Game II
+- Jump Game II
     - 理解: x 
 
-888. Gas Station 
+- Gas Station 
     - 理解: x
 
-888. Hand of Straights 
+- Hand of Straights 
     - 理解: o
 
-888. Merge Triplets to From Target Triplet 
+- Merge Triplets to From Target Triplet 
     - 理解: o
 
-888. Partition Labels  
+- Partition Labels  
     - 理解: x
 
-888. Valid Parenthesis String  
+- Valid Parenthesis String  
     - 理解: o
 
 ## Intervals
 
-888. Insert Interval
+- Insert Interval
     - 理解: o
 
-888. Merge Intervals
+- Merge Intervals
     - 理解: o
 
-888. Non Overlapping Intervals
+- Non Overlapping Intervals
     - 理解: o
 
-888. Meeting Rooms
+- Meeting Rooms
     - 初見: o
     - 理解: o
 
-888. Meeting Rooms II
+- Meeting Rooms II
     - 初見: x
     - 理解: x
 
-888. Minimum Interval to Include Each Query
+- Minimum Interval to Include Each Query
     - 初見: x
     - 理解: x
 
 ## Math & Geometry
 
-999. Rot Image
+- Rot Image
     - 理解: o
 
-999. Spiral Matrix
+- Spiral Matrix
     - 理解: o 
 
-999. Set Matrix Zeroes
+- Set Matrix Zeroes
     - 理解: o 
 
-999. Happy number 
+- Happy number 
     - 理解: x 
 
-999. Plus One 
+- Plus One 
     - 理解: x  
 
-999. Pow 
+- Pow 
     - 理解: x  
 
-999. Multiply Strings 
+- Multiply Strings 
     - 理解: o  
 
 ## Bit Manipulation
 
-9999. Single Number 
+- Single Number 
     - 理解: o
 
-9999. Number of 1 Bits 
+- Number of 1 Bits 
     - 理解: o
 
-9999. Counting Bits 
+- Counting Bits 
     - 理解: o
 
-9999. Reverse Bits 
+- Reverse Bits 
     - 理解: x
 
-9999. Sum of Two Integers 
+- Sum of Two Integers 
     - 理解: o
 
-9999. Reverse Integer
+- Reverse Integer
     - 理解: o
