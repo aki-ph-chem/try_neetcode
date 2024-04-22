@@ -159,6 +159,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Maximum Number of Vowels in a Substring of Given Length 
     - 理解: o
 
+- Minimum Number of Flips to Make The Binary String Alternating
+    - 初見: x
+    - 理解: x
+
 - Minimum Size Subarray Sum 
     - 理解: o
 
