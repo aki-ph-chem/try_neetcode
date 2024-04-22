@@ -252,6 +252,10 @@ name = "max_num_of_vowels_k"
 path = "src/sliding_window/max_num_of_vowels_k.rs"
 
 [[bin]]
+name = "min_number_of_flip_to_make_alternative"
+path = "src/sliding_window/min_number_of_flip_to_make_alternative.rs"
+
+[[bin]]
 name = "min_size_subarray_sum"
 path = "src/sliding_window/min_size_subarray_sum.rs"
 

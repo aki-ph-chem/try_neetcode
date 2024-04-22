@@ -94,6 +94,7 @@
 - Frequency of The Most Frequent Elemen 
 - Find K Closest Elements 
 - Minimum Operations to Reduce X to Zero 
+- Minimum Number of Flips to Make The Binary String Alternating
 
 ### Binary Search
 
