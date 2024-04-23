@@ -1,5 +1,15 @@
 # 解法のメモ
 
+## RustのHashMap\<U,V\>とentry()
+
+HashMap\<U,V\>でenrtry()を使うと便利だという話
+
+参考:[Rust公式ドキュメント](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html#method.and_modify)
+
+
+- [or_insert(), or_insert_with(), or_insert_with_key(), and_modify()](impl_rust/src/hash_map/or_insert.rs)
+- [or_default()](impl_rust/src/hash_map/or_default.rs)
+
 ## グラフ探索
 
 loopによるグラフ探索(DFS,BFS)

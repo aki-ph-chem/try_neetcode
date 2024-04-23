@@ -37,4 +37,12 @@ path = "src/graph/graph_search_loop.rs"
 name = "topo_sort"
 path = "src/graph/topo_sort.rs"
 
+[[bin]]
+name = "or_insert"
+path = "src/hash_map/or_insert.rs"
+
+[[bin]]
+name = "or_default"
+path = "src/hash_map/or_default.rs"
+
 [dependencies]
