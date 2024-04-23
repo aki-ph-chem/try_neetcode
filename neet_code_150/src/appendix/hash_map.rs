@@ -31,4 +31,12 @@ fn main() {
 
     println!("values: {:?}", values);
     println!("values: {:?}", values);
+
+    let mut map_4 = HashMap::from([('a', 3), ('b', 4)]);
+    // insert()メソッドの返り値はOption<T>
+    // すでに存在するkeyによる(key,value)をinsertすると
+    // insertする前のvalueをSome()でラップした値を返す
+    println!("map_4.insert('a', 13): {:?}", map_4.insert('a', 13));
+    // 存在しないkeyによる(key,value)をinsertするとNoneを返す
+    println!("map_4.insert('x', 121): {:?}", map_4.insert('x', 121));
 }
