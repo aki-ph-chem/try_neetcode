@@ -45,4 +45,8 @@ path = "src/hash_map/or_insert.rs"
 name = "or_default"
 path = "src/hash_map/or_default.rs"
 
+[[bin]]
+name = "kadane"
+path = "src/etc/kadane.rs"
+
 [dependencies]

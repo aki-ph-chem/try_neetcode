@@ -77,3 +77,11 @@ Xが奇数ならば最下位ビットは1であるので1とAND演算を行う�
 [実装(2)(Rust)](impl_rust/src/bit_manipulation/bit_2.rs)
 
 - XORの応用
+
+## その他(現在のところ未分類) 
+
+### Kadane's Algorithm
+
+参考:[GeeksforGeeks: Largest Sum Contiguous Subarray (Kadane’s Algorithm)](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)
+
+[Rustでの実装](impl_rust/src/etc/kadane.rs)
