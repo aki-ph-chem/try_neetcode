@@ -34,6 +34,10 @@ DFSによるトポロジカルソート
 
 [C++での実装](impl_cpp/graph/graph_grid.cpp)
 
+## 配列による完全二分木の実装
+
+[Rustでの実装](impl_rust/src/graph/complete_bin_tree.rs)
+
 ### flood fill アルゴリズム
 
 [Rustでの実装](impl_rust/src/graph/flood_fill.rs)
