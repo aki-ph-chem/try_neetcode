@@ -38,6 +38,15 @@ DFSによるトポロジカルソート
 
 [Rustでの実装](impl_rust/src/graph/complete_bin_tree.rs)
 
+### 完全二分木の応用: セグメント木
+
+- 参考: 
+    - [Geeks for Geeks: Introduction to Segment Trees – Data Structure and Algorithm Tutorials](https://www.geeksforgeeks.org/introduction-to-segment-trees-data-structure-and-algorithm-tutorials/?ref=lbp)
+    - [Algorithms for Competitive Programming: Segment Tree](https://cp-algorithms.com/data_structures/segment_tree.html)
+
+[Rustでの実装](impl_rust/src/graph/segument_tree.rs)
+
+
 ### flood fill アルゴリズム
 
 [Rustでの実装](impl_rust/src/graph/flood_fill.rs)

@@ -42,6 +42,10 @@ name = "complete_bin_tree"
 path = "src/graph/complete_bin_tree.rs"
 
 [[bin]]
+name = "segment_tree"
+path = "src/graph/segment_tree.rs"
+
+[[bin]]
 name = "or_insert"
 path = "src/hash_map/or_insert.rs"
 
