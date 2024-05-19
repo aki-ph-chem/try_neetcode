@@ -241,6 +241,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/submissions/1261803913/)
     - 理解: o
 
+- [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/)
+    - 理解: x
+
 ## Bit Manipulation
 
 - Shuffle the Array
