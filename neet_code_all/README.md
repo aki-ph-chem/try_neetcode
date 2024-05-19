@@ -368,6 +368,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
+    - 初見: o
+    - 理解: o
+
 ## Bit Manipulation  
 
 - Shuffle the Array

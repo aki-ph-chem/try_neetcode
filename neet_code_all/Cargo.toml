@@ -371,6 +371,10 @@ path = "src/math_and_geometry/count_odd_number_in_interval.rs"
 name = "matrix_diagonal_sum"
 path = "src/math_and_geometry/matrix_diagonal_sum.rs"
 
+[[bin]]
+name = "palindrome_number"
+path = "src/math_and_geometry/palindrome_number.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
