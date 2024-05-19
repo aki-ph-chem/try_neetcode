@@ -247,6 +247,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/submissions/1262285488/)
     - 理解: o
 
+- [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/)
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
