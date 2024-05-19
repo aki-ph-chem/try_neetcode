@@ -356,6 +356,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: o
 
+- [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/)
+    - 初見: x
+    - 理解: x
+
 ## Bit Manipulation  
 
 - Shuffle the Array

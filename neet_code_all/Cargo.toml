@@ -359,6 +359,10 @@ path = "src/graphs/open_the_lock.rs"
 name = "excel_sheet_column_title"
 path = "src/math_and_geometry/excel_sheet_column_title.rs"
 
+[[bin]]
+name = "greatest_common_divisor_of_string"
+path = "src/math_and_geometry/greatest_common_divisor_of_string.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
