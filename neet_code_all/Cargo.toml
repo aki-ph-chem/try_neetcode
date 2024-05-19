@@ -367,6 +367,10 @@ path = "src/math_and_geometry/greatest_common_divisor_of_string.rs"
 name = "count_odd_number_in_interval"
 path = "src/math_and_geometry/count_odd_number_in_interval.rs"
 
+[[bin]]
+name = "matrix_diagonal_sum"
+path = "src/math_and_geometry/matrix_diagonal_sum.rs"
+
 ## Bit Manipulation 
 
 [[bin]]

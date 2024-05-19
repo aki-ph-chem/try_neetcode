@@ -364,6 +364,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/)
+    - 初見: o
+    - 理解: o
+
 ## Bit Manipulation  
 
 - Shuffle the Array
