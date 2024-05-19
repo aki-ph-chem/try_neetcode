@@ -353,6 +353,12 @@ path = "src/graphs/snakes_and_ladders.rs"
 name = "open_the_lock"
 path = "src/graphs/open_the_lock.rs"
 
+## Math & Geometry
+
+[[bin]]
+name = "excel_sheet_column_title"
+path = "src/math_and_geometry/excel_sheet_column_title.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
