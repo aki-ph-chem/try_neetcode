@@ -250,6 +250,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/description/)
     - 理解: o
 
+
+- [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
