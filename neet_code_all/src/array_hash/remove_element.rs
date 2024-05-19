@@ -39,6 +39,7 @@ impl Solution {
     }
 }
 
+// 模範解答
 struct SolutionAns {}
 impl SolutionAns {
     // 解1
@@ -64,7 +65,24 @@ impl SolutionAns {
     }
 }
 
-// 模範解答
+// C++の模範解答より
+// Rustの解2に近い
+struct SolutionAnsCpp {}
+impl SolutionAnsCpp {
+    // AC
+    pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
+        let n = nums.len();
+        let mut result = 0;
+        for i in 0..n {
+            if nums[i] != val {
+                nums.swap(i, result);
+                result += 1;
+            }
+        }
+
+        result as i32
+    }
+}
 
 fn main() {
     let case_1 = (vec![3, 2, 2, 3], 3);
@@ -105,6 +123,27 @@ fn main() {
     println!(
         "case_3: {}",
         SolutionAns::remove_element(&mut res_3, case_3.1)
+    );
+    println!("{:?}", res_3);
+
+    let mut res_1 = case_1.0.clone();
+    println!(
+        "case_1: {}",
+        SolutionAnsCpp::remove_element(&mut res_1, case_1.1)
+    );
+    println!("{:?}", res_1);
+
+    let mut res_2 = case_2.0.clone();
+    println!(
+        "case_2: {}",
+        SolutionAnsCpp::remove_element(&mut res_2, case_2.1)
+    );
+    println!("{:?}", res_2);
+
+    let mut res_3 = case_3.0.clone();
+    println!(
+        "case_3: {}",
+        SolutionAnsCpp::remove_element(&mut res_3, case_3.1)
     );
     println!("{:?}", res_3);
 }
