@@ -363,6 +363,10 @@ path = "src/math_and_geometry/excel_sheet_column_title.rs"
 name = "greatest_common_divisor_of_string"
 path = "src/math_and_geometry/greatest_common_divisor_of_string.rs"
 
+[[bin]]
+name = "count_odd_number_in_interval"
+path = "src/math_and_geometry/count_odd_number_in_interval.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
