@@ -236,6 +236,11 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Open The Lock 
     - 理解: x
 
+## Math & Geometry
+
+- [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/submissions/1261803913/)
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
