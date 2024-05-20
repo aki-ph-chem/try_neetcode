@@ -254,6 +254,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)
     - 理解: o
 
+- [Ugly Number](https://leetcode.com/problems/ugly-number/description/)
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
