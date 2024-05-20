@@ -375,6 +375,10 @@ path = "src/math_and_geometry/matrix_diagonal_sum.rs"
 name = "palindrome_number"
 path = "src/math_and_geometry/palindrome_number.rs"
 
+[[bin]]
+name = "ugly_number"
+path = "src/math_and_geometry/ugly_number.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
