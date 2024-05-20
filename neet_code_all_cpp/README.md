@@ -257,6 +257,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Ugly Number](https://leetcode.com/problems/ugly-number/description/)
     - 理解: o
 
+- [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/description/)
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
