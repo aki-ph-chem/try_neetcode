@@ -379,6 +379,10 @@ path = "src/math_and_geometry/palindrome_number.rs"
 name = "ugly_number"
 path = "src/math_and_geometry/ugly_number.rs"
 
+[[bin]]
+name = "shift_2d_grid"
+path = "src/math_and_geometry/shift_2d_grid.rs"
+
 ## Bit Manipulation 
 
 [[bin]]

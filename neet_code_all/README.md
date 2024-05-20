@@ -376,6 +376,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/description/)
+    - 初見: o
+    - 理解: o
+
 ## Bit Manipulation  
 
 - Shuffle the Array
