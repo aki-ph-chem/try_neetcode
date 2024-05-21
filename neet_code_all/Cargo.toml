@@ -383,6 +383,10 @@ path = "src/math_and_geometry/ugly_number.rs"
 name = "shift_2d_grid"
 path = "src/math_and_geometry/shift_2d_grid.rs"
 
+[[bin]]
+name = "roman_to_integer"
+path = "src/math_and_geometry/roman_to_integer.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
