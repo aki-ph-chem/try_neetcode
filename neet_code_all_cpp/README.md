@@ -263,6 +263,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)
     - 理解: x
 
+- [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
