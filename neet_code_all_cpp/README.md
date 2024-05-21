@@ -260,6 +260,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/description/)
     - 理解: o
 
+- [Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)
+    - 理解: x
+
 ## Bit Manipulation
 
 - Shuffle the Array
