@@ -387,6 +387,10 @@ path = "src/math_and_geometry/shift_2d_grid.rs"
 name = "roman_to_integer"
 path = "src/math_and_geometry/roman_to_integer.rs"
 
+[[bin]]
+name = "integer_to_roman"
+path = "src/math_and_geometry/integer_to_roman.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
