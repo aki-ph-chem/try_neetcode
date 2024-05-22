@@ -391,6 +391,10 @@ path = "src/math_and_geometry/roman_to_integer.rs"
 name = "integer_to_roman"
 path = "src/math_and_geometry/integer_to_roman.rs"
 
+[[bin]]
+name = "robot_bounded_in_circle"
+path = "src/math_and_geometry/robot_bounded_in_circle.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
