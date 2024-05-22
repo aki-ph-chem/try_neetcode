@@ -272,6 +272,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)
     - 理解: x
 
+- [Find Missing Observations](https://leetcode.com/problems/find-missing-observations/description/)
+    - 理解: x
+
 ## Bit Manipulation
 
 - Shuffle the Array
