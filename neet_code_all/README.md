@@ -392,6 +392,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)
+    - 初見: x
+    - 理解:
+
 ## Bit Manipulation  
 
 - Shuffle the Array
