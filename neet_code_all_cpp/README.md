@@ -267,7 +267,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 理解: o
 
 - [Robot Bounded in Circle](https://leetcode.com/problems/robot-bounded-in-circle/submissions/1264651578/)
-    - 理解:
+    - 理解: o
+
+- [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)
+    - 理解: x
 
 ## Bit Manipulation
 
