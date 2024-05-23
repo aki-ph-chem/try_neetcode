@@ -278,6 +278,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/)
     - 理解: o
 
+- [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/description/)
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
