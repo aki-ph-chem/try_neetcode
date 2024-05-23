@@ -275,6 +275,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Find Missing Observations](https://leetcode.com/problems/find-missing-observations/description/)
     - 理解: x
 
+- [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/)
+    - 理解: o
+
 ## Bit Manipulation
 
 - Shuffle the Array
