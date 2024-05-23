@@ -18,6 +18,36 @@ public:
         
         return count;
     }
+
+    // AC
+    int removeElement2(std::vector<int>& nums, int val) {
+        int k = 0;
+        for(int i = 0; i < nums.size(); ++i) {
+            if(nums[i] != val) {
+                nums[k] = nums[i];
+                ++k;
+            }
+        }
+
+        return k;
+    }
+
+    // AC
+    int removeElement3(std::vector<int>& nums, int val) {
+        int k = 0;
+        int i = 0;
+        while(i < nums.size()) {
+            if(nums[i] == val) {
+                ++i;
+            } else {
+                nums[k] = nums[i];
+                ++k;
+                ++i;
+            }
+        }
+
+        return k;
+    }
 };
 
 void show_resutl(std::vector<int>& result) {
@@ -40,5 +70,21 @@ int main(void) {
 
     auto res_2 = case_2.first;
     std::cout << s_ans.removeElement(res_2, case_2.second) << std::endl;
+    show_resutl(res_2);
+
+    res_1 = case_1.first;
+    std::cout << s_ans.removeElement2(res_1, case_1.second) << std::endl;
+    show_resutl(res_1);
+
+    res_2 = case_2.first;
+    std::cout << s_ans.removeElement2(res_2, case_2.second) << std::endl;
+    show_resutl(res_2);
+
+    res_1 = case_1.first;
+    std::cout << s_ans.removeElement3(res_1, case_1.second) << std::endl;
+    show_resutl(res_1);
+
+    res_2 = case_2.first;
+    std::cout << s_ans.removeElement3(res_2, case_2.second) << std::endl;
     show_resutl(res_2);
 }

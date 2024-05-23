@@ -23,7 +23,7 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 理解: o
 
 -  Remove Element
-    - 理解: x
+    - 理解: o
 
 - Unique Email Addresses
     - 理解: o
