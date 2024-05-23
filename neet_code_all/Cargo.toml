@@ -407,6 +407,10 @@ path = "src/math_and_geometry/find_missing_observations.rs"
 name = "spiral_matrix_2"
 path = "src/math_and_geometry/spiral_matrix_2.rs"
 
+[[bin]]
+name = "max_points_on_line"
+path = "src/math_and_geometry/max_points_on_line.rs"
+
 ## Bit Manipulation 
 
 [[bin]]

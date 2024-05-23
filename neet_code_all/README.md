@@ -404,6 +404,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/description/)
+    - 初見: x
+    - 理解: o
+
 ## Bit Manipulation  
 
 - Shuffle the Array
