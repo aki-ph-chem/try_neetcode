@@ -63,6 +63,24 @@ impl SolutionAns {
 
         k as i32
     }
+
+    // 解3
+    // AC
+    pub fn remove_element_3(nums: &mut Vec<i32>, val: i32) -> i32 {
+        let mut k = 0;
+        let mut i = 0;
+        while i < nums.len() {
+            if nums[i] == val {
+                i += 1;
+            } else {
+                nums[k] = nums[i];
+                k += 1;
+                i += 1;
+            }
+        }
+
+        k as i32
+    }
 }
 
 // C++の模範解答より
@@ -126,6 +144,21 @@ fn main() {
     );
     println!("{:?}", res_3);
 
+    let mut res_1 = case_1.0.clone();
+    println!(
+        "case_1: {}",
+        SolutionAns::remove_element_2(&mut res_1, case_1.1)
+    );
+    println!("{:?}", res_1);
+
+    let mut res_2 = case_2.0.clone();
+    println!(
+        "case_2: {}",
+        SolutionAns::remove_element_2(&mut res_2, case_2.1)
+    );
+    println!("{:?}", res_2);
+
+    // C++
     let mut res_1 = case_1.0.clone();
     println!(
         "case_1: {}",

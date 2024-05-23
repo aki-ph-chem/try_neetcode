@@ -30,7 +30,7 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 
 -  [Remove Element](https://leetcode.com/problems/remove-element/)
     - 初見: x
-    - 理解: x
+    - 理解: o
 
 - [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)
     - 初見: o
