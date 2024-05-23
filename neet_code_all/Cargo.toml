@@ -403,6 +403,10 @@ path = "src/math_and_geometry/zigzag_conversion.rs"
 name = "find_missing_observations"
 path = "src/math_and_geometry/find_missing_observations.rs"
 
+[[bin]]
+name = "spiral_matrix_2"
+path = "src/math_and_geometry/spiral_matrix_2.rs"
+
 ## Bit Manipulation 
 
 [[bin]]
