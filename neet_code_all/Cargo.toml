@@ -92,6 +92,10 @@ name = "sort_colors"
 path = "src/array_hash/sort_colors.rs"
 
 [[bin]]
+name = "encode_and_decode_tinyurl"
+path = "src/array_hash/encode_and_decode_tinyurl.rs"
+
+[[bin]]
 name = "brick_wall"
 path = "src/array_hash/brick_wall.rs"
 

@@ -88,6 +88,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- [Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/description/) 
+    - 初見: x
+    - 理解: o
+
 - Brick Wall 
     - 初見: x
     - 理解: x
