@@ -47,6 +47,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Sort Colors 
     - 理解: o
 
+- [Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/description/) 
+    - 理解: o
+
 - Brick Wall 
     - 理解: x
 
