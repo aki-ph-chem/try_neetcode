@@ -60,6 +60,10 @@ DFSによるトポロジカルソート
 
 [Rustでの実装](impl_rust/src/prefix_sum/prefix_sum.rs)
 
+### HashMapで累積和
+
+通常累積和といえば配列だが、HashMapを使うとうまくいくケースがある
+
 ## 部分集合、連続部分配列
 
 - 長さ $n$ の配列の部分集合の個数: $2^n - 1$
