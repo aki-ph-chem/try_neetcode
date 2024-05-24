@@ -160,6 +160,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- [Design Parking System](https://leetcode.com/problems/design-parking-system/description/) 
+    - 初見: o
+    - 理解: o
+
 - Number of Zero-Filled Subarrays
     - 初見: o
     - 理解: o

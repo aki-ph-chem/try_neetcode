@@ -164,6 +164,10 @@ name = "find_difference_of_two_arrays"
 path = "src/array_hash/find_difference_of_two_arrays.rs"
 
 [[bin]]
+name = "design_parking_system"
+path = "src/array_hash/design_parking_system.rs"
+
+[[bin]]
 name = "number_of_zero_filled_subarray"
 path = "src/array_hash/number_of_zero_filled_subarray.rs"
 
