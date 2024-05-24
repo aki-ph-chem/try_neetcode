@@ -152,6 +152,10 @@ name = "string_contains_all_bin_code_size_k"
 path = "src/array_hash/string_contains_all_bin_code_size_k.rs"
 
 [[bin]]
+name = "range_sum_query_2d"
+path = "src/array_hash/range_sum_query_2d.rs"
+
+[[bin]]
 name = "non_decreasing_array"
 path = "src/array_hash/non_decreasing_array.rs"
 
