@@ -10,6 +10,7 @@
 - occurrence: 存在、発生
 - perimeter: 周囲の長さ
 - verify: 検証する
+- auxiliary: 補助の
 
 ## subarray,subsequence,substring,contiguous
 
