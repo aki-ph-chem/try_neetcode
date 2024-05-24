@@ -92,6 +92,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Check if a String Contains all Binary Codes of Size K 
     - 理解: o
 
+- [Range Sum Query 2D Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/description/)
+    - 理解: o
+
 - Non Decreasing Array 
     - 理解: o
 
