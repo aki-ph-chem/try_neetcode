@@ -101,6 +101,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Non Decreasing Array 
     - 理解: o
 
+- [First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
+    - 理解: x
+
 - Sign of the Product of an Array 
     - 理解: o
 
