@@ -164,6 +164,10 @@ name = "non_decreasing_array"
 path = "src/array_hash/non_decreasing_array.rs"
 
 [[bin]]
+name = "first_missing_positive"
+path = "src/array_hash/first_missing_positive.rs"
+
+[[bin]]
 name = "sign_of_product_of_array"
 path = "src/array_hash/sign_of_product_of_array.rs"
 
