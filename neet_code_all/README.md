@@ -290,6 +290,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) 
+    - 初見: x
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position
