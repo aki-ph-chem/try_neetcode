@@ -195,6 +195,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) 
     - 理解: o
 
+- [Removing Starts From a String](https://leetcode.com/problems/removing-stars-from-a-string/description/)
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position
