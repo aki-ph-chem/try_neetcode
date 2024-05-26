@@ -148,6 +148,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: o
     - 理解: o
 
+- [Insert Delete Get Random O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/description/)
+    - 初見: x
+    - 理解: x
+
 - Check if a String Contains all Binary Codes of Size K 
     - 初見: o
     - 理解: o
