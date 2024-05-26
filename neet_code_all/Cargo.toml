@@ -297,6 +297,10 @@ path = "src/stack/baseball_game.rs"
 name = "implement_stack_using_queues"
 path = "src/stack/implement_stack_using_queues.rs"
 
+[[bin]]
+name = "removing_stars_from_string"
+path = "src/stack/removing_stars_from_string.rs"
+
 ## Binary Search
 
 [[bin]]
