@@ -301,6 +301,10 @@ path = "src/stack/implement_stack_using_queues.rs"
 name = "removing_stars_from_string"
 path = "src/stack/removing_stars_from_string.rs"
 
+[[bin]]
+name = "validate_stack_sequences"
+path = "src/stack/validate_stack_sequences.rs"
+
 ## Binary Search
 
 [[bin]]
