@@ -305,6 +305,10 @@ path = "src/stack/removing_stars_from_string.rs"
 name = "validate_stack_sequences"
 path = "src/stack/validate_stack_sequences.rs"
 
+[[bin]]
+name = "asteroid_collision"
+path = "src/stack/asteroid_collision.rs"
+
 ## Binary Search
 
 [[bin]]
