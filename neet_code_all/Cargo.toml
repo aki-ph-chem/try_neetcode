@@ -309,6 +309,10 @@ path = "src/stack/validate_stack_sequences.rs"
 name = "asteroid_collision"
 path = "src/stack/asteroid_collision.rs"
 
+[[bin]]
+name = "online_stock_span"
+path = "src/stack/online_stock_span.rs"
+
 ## Binary Search
 
 [[bin]]
