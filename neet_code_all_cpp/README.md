@@ -198,6 +198,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Removing Starts From a String](https://leetcode.com/problems/removing-stars-from-a-string/description/)
     - 理解: o
 
+- [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/description/)
+    - 初見: x
+    - 理解: x
+
 ## Binary Search
 
 - Search Insert Position
