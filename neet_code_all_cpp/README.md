@@ -202,6 +202,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: x
 
+- [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/description/)
+    - 初見: x
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position
