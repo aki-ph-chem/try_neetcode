@@ -209,6 +209,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Online Stock Span](https://leetcode.com/problems/online-stock-span/description/)
     - 理解: o
 
+- [Simplify Path](https://leetcode.com/problems/simplify-path/description/)
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position
