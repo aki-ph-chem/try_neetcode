@@ -314,6 +314,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: o
 
+- [Decode String](https://leetcode.com/problems/decode-string/description/)
+    - 初見: x
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position
