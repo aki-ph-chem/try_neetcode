@@ -514,4 +514,8 @@ path = "src/appendix/all.rs"
 name = "repeat"
 path = "src/appendix/repeat.rs"
 
+[[bin]]
+name = "join"
+path = "src/appendix/join.rs"
+
 [dependencies]
