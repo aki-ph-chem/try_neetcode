@@ -318,6 +318,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: o
 
+- [Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
+    - 初見: x
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position

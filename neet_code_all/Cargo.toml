@@ -321,6 +321,10 @@ path = "src/stack/simplify_path.rs"
 name = "decode_string"
 path = "src/stack/decode_string.rs"
 
+[[bin]]
+name = "remove_k_digits"
+path = "src/stack/remove_k_digits.rs"
+
 ## Binary Search
 
 [[bin]]
