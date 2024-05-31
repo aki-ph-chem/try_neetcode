@@ -215,6 +215,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Decode String](https://leetcode.com/problems/decode-string/description/)
     - 理解: o
 
+- [Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position
