@@ -518,4 +518,8 @@ path = "src/appendix/repeat.rs"
 name = "join"
 path = "src/appendix/join.rs"
 
+[[bin]]
+name = "skip_while"
+path = "src/appendix/skip_while.rs"
+
 [dependencies]
