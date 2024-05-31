@@ -212,6 +212,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Simplify Path](https://leetcode.com/problems/simplify-path/description/)
     - 理解: o
 
+- [Decode String](https://leetcode.com/problems/decode-string/description/)
+    - 理解: o
+
 ## Binary Search
 
 - Search Insert Position
