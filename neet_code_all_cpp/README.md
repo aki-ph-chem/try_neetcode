@@ -221,6 +221,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Remove All Adjacent Duplicates In String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/description/)
     - 理解: x
 
+- [132 Pattern](https://leetcode.com/problems/132-pattern/description/)
+    - 理解: x 
+
 ## Binary Search
 
 - Search Insert Position
