@@ -329,6 +329,10 @@ path = "src/stack/remove_k_digits.rs"
 name = "remove_all_adjacent_duplicates_in_string_2"
 path = "src/stack/remove_all_adjacent_duplicates_in_string_2.rs"
 
+[[bin]]
+name = "132_pattern"
+path = "src/stack/132_pattern.rs"
+
 ## Binary Search
 
 [[bin]]
