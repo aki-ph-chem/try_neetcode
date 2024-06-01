@@ -218,6 +218,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - [Remove K Digits](https://leetcode.com/problems/remove-k-digits/description/)
     - 理解: o
 
+- [Remove All Adjacent Duplicates In String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/description/)
+    - 理解: x
+
 ## Binary Search
 
 - Search Insert Position
