@@ -195,6 +195,10 @@ path = "src/array_hash/optimal_partition_of_string.rs"
 name = "minimum_penalty_for_shop"
 path = "src/array_hash/minimum_penalty_for_shop.rs"
 
+[[bin]]
+name = "text_justification"
+path = "src/array_hash/text_justification.rs"
+
 ## Two Pointers 
 
 [[bin]]
