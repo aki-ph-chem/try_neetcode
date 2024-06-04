@@ -125,6 +125,9 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
 - Minimum Penalty for a Shop 
     - 理解: o
 
+- Text Justification
+    - 理解: x
+
 ## Two Pointers
 
 - Valid Palindrome II
