@@ -199,6 +199,10 @@ path = "src/array_hash/minimum_penalty_for_shop.rs"
 name = "text_justification"
 path = "src/array_hash/text_justification.rs"
 
+[[bin]]
+name = "naming_a_company"
+path = "src/array_hash/naming_a_company.rs"
+
 ## Two Pointers 
 
 [[bin]]

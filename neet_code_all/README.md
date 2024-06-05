@@ -196,6 +196,10 @@ Blind 75, NeetCode 150で勉強したことを踏まえて...
     - 初見: x
     - 理解: x
 
+- [Naming a Company](https://leetcode.com/problems/naming-a-company/description/)
+    - 初見: x
+    - 理解: x
+
 ## Two Pointers
 
 - Valid Palindrome II
