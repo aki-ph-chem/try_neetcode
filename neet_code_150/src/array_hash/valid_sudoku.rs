@@ -126,6 +126,39 @@ impl SolutionAnsPython {
     }
 }
 
+// 後から解いたときの別解
+struct SolutionLatter;
+impl SolutionLatter {
+    // AC
+    pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
+        let mut set_h = vec![HashSet::new(); 9];
+        let mut set_v = vec![HashSet::new(); 9];
+        let mut set_c = vec![vec![HashSet::new(); 3]; 3];
+
+        for a in 0..9 {
+            for b in 0..9 {
+                let c = board[a][b];
+                if c == '.' {
+                    continue;
+                }
+
+                if set_h[a].contains(&c)
+                    || set_v[b].contains(&c)
+                    || set_c[a / 3][b / 3].contains(&c)
+                {
+                    return false;
+                } else {
+                    set_h[a].insert(c);
+                    set_v[b].insert(c);
+                    set_c[a / 3][b / 3].insert(c);
+                }
+            }
+        }
+
+        true
+    }
+}
+
 fn main() {
     let case_1 = vec![
         vec!['5', '3', '.', '.', '7', '.', '.', '.', '.'],
@@ -164,5 +197,14 @@ fn main() {
     println!(
         "case_2: {}",
         SolutionAnsPython::is_valid_sudoku(case_2.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionLatter::is_valid_sudoku(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionLatter::is_valid_sudoku(case_2.clone())
     );
 }
