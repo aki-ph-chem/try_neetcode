@@ -48,6 +48,28 @@ class Solution {
         }
 };
 
+// 後で時間を置いて解いたときの別解
+class SolutionLatter {
+    public:
+        // AC
+        std::vector<int> prod_except_self(std::vector<int>& nums) {
+            auto n = nums.size();
+            std::vector<int> prefix(n + 1, 1);
+            for(int i = 0; i < n; ++i) {
+                prefix[i + 1] = nums[i] * prefix[i];
+            }
+
+            std::vector<int> result(n, 1);
+            int acc = 1;
+            for(int i = n - 1; i >= 0; --i) {
+                result[i] = acc * prefix[i];
+                acc *= nums[i];
+            }
+
+            return result;
+        }
+};
+
 int main(void) {
     auto case_1 = std::vector{1,2,3,4};
     auto case_2 = std::vector{-1,1,0,-3,3};
@@ -69,6 +91,19 @@ int main(void) {
     }
     std::cout << std::endl;
     for(const auto &v: s_1.product_except_self(case_2)) {
+        std::cout << v << " ";
+    }
+    std::cout << std::endl;
+
+    SolutionLatter s_ans_latter;
+    auto res_1_latter = s_ans_latter.prod_except_self(case_1);
+    auto res_2_latter = s_ans_latter.prod_except_self(case_2);
+
+    for(auto &v: res_1_latter) {
+        std::cout << v << " ";
+    }
+    std::cout << std::endl;
+    for(auto &v: res_2_latter) {
         std::cout << v << " ";
     }
     std::cout << std::endl;
