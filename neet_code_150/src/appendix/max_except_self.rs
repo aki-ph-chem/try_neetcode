@@ -56,6 +56,28 @@ impl Solution {
     }
 }
 
+// 後から考えた別解
+struct SolutionLatter;
+impl SolutionLatter {
+    fn max_except_self(nums: Vec<i32>) -> Vec<i32> {
+        let n = nums.len();
+        let mut prefix = vec![i32::MIN; n + 1];
+        for i in 0..n {
+            prefix[i + 1] = nums[i].max(prefix[i]);
+        }
+        //println!("prefix: {:?}", prefix);
+
+        let mut result = vec![0; n];
+        let mut acc = i32::MIN;
+        for i in (0..n).rev() {
+            result[i] = acc.max(prefix[i]);
+            acc = acc.max(nums[i]);
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = vec![1, 2, 3, 4];
     let case_2 = vec![5, 2, 13, 4, 16, 8, 12, 9];
@@ -64,4 +86,13 @@ fn main() {
     println!("case_1: {:?}", Solution::max_except_self(case_1.clone()));
     println!("case_2: {:?}", Solution::max_except_self_sq(case_2.clone()));
     println!("case_2: {:?}", Solution::max_except_self(case_2.clone()));
+
+    println!(
+        "case_1: {:?}",
+        SolutionLatter::max_except_self(case_1.clone())
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionLatter::max_except_self(case_2.clone())
+    );
 }
