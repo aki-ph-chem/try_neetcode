@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <climits>
 
 //#define DEBUG
 
@@ -76,6 +77,27 @@ class Solution {
         }
 };
 
+// 後から考えた別解
+class SolutionLatter {
+    public:
+        std::vector<int> max_except_self(std::vector<int>& nums) {
+            int n = nums.size();
+            std::vector<int> prefix(n + 1, INT_MIN);
+            for(int i = 0; i < n; ++i) {
+                prefix[i + 1] = std::max(nums[i], prefix[i]);
+            }
+
+            std::vector<int> result(n, 0);
+            int acc = INT_MIN;
+            for(int i = n - 1; i >=0; --i) {
+                result[i] = std::max(acc, prefix[i]);
+                acc = std::max(acc, nums[i]);
+            }
+
+            return result;
+        }
+};
+
 int main(void) {
     auto case_1 = std::vector{1, 2, 3, 4};
     auto case_2 = std::vector{5, 2, 13, 4, 16, 8, 12, 9};
@@ -90,4 +112,12 @@ int main(void) {
     show_vector(res_1);
     auto res_2 = s_1.product_except_self(case_2);
     show_vector(res_2);
+
+    SolutionLatter s_latter;
+
+    auto res_1_latter = s_latter.max_except_self(case_1);
+    auto res_2_latter = s_latter.max_except_self(case_2);
+
+    show_vector(res_1_latter);
+    show_vector(res_2_latter);
 }
