@@ -70,6 +70,35 @@ class SolutionAns {
         }
 };
 
+// 時間を置いて解いた別解
+class SolutionLatter {
+    public:
+        std::vector<int> topKFrequent(std::vector<int>& nums, int k) {
+            std::unordered_map<int,int> map;
+            for(auto&v: nums) {
+                ++map[v];
+            }
+
+            std::vector<std::pair<int,int>> map_2;
+            for(auto& [key, v]: map) {
+                map_2.push_back({v, key});
+            }
+            std::sort(map_2.begin(), map_2.end(),[](auto& a, auto& b) {return a.first > b.first;});
+
+            std::vector<int> result;
+            for(auto& [key, v]: map_2) {
+                if(k > 0) {
+                    result.push_back(v);
+                    --k;
+                } else {
+                    break;
+                }
+            }
+
+            return result;
+        }
+};
+
 int main(void) {
     auto case_1_array = std::vector{1,1,1,2,2,3};
     auto case_1_k = 2;
