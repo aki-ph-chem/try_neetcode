@@ -74,7 +74,7 @@ impl SolutionAnsCpp {
     pub fn top_k_frequent(nums: Vec<i32>, k: i32) -> Vec<i32> {
         let n = nums.len();
         // 要素 -> その個数 の対応をmapに作る
-        let mut map:HashMap<i32, i32> = HashMap::new();
+        let mut map: HashMap<i32, i32> = HashMap::new();
         for v in nums {
             *map.entry(v).or_default() += 1;
         }
@@ -102,6 +102,29 @@ impl SolutionAnsCpp {
 
         result
     }
+
+    // 時間を開けて解いたときに考えた別解(上とほぼ同じ)
+    fn top_k_frequent_2(nums: Vec<i32>, k: i32) -> Vec<i32> {
+        let mut map: HashMap<i32, i32> = HashMap::new();
+        for v in nums {
+            *map.entry(v).or_default() += 1;
+        }
+
+        let mut map_2 = vec![];
+        for (k, v) in map {
+            map_2.push((v, k));
+        }
+        map_2.sort_by(|a, b| a.0.cmp(&b.0));
+
+        let mut result = vec![];
+        let mut k = k;
+        while !map_2.is_empty() && k > 0 {
+            result.push(map_2.pop().unwrap().1);
+            k -= 1;
+        }
+
+        result
+    }
 }
 
 fn main() {
@@ -119,4 +142,13 @@ fn main() {
     let res_cpp_2 = SolutionAnsCpp::top_k_frequent(case_2.clone(), k_case_2);
     println!("case_1: {:?}", res_cpp_1);
     println!("case_2: {:?}", res_cpp_2);
+
+    println!(
+        "case_1: {:?}",
+        SolutionAnsCpp::top_k_frequent_2(case_1.clone(), k_case_1)
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionAnsCpp::top_k_frequent_2(case_2.clone(), k_case_2)
+    );
 }
