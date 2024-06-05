@@ -114,6 +114,34 @@ class SolutionAnsPython {
         }
 };
 
+// 後から解いたときの別解
+class SolutionLatter {
+    public:
+        bool isValidSudoku(const std::vector<std::vector<char>>& board) {
+            std::vector<std::unordered_set<char>> set_h(9), set_v(9);
+            std::vector<std::vector<std::unordered_set<char>>> set_c(3, std::vector<std::unordered_set<char>>(3));
+
+            for(int a = 0; a < 9; ++a) {
+                for(int b = 0; b < 9; ++b) {
+                    auto c = board[a][b];
+                    if(c == '.') {
+                        continue;
+                    }
+
+                    if(set_h[a].count(c) || set_v[b].count(c) || set_c[a/3][b/3].count(c)) {
+                        return false;
+                    } else {
+                        set_h[a].insert(c);
+                        set_v[b].insert(c);
+                        set_c[a/3][b/3].insert(c);
+                    }
+                }
+            }
+
+            return true;
+        }
+};
+
 int main(void) {
      auto case_1 = std::vector{
         std::vector{'5', '3', '.', '.', '7', '.', '.', '.', '.'},
@@ -155,4 +183,8 @@ int main(void) {
     SolutionAnsPython s_ans_py;
     std::cout << s_ans_py.isValidSudoku(case_1) << std::endl;
     std::cout << s_ans_py.isValidSudoku(case_2) << std::endl;
+
+    SolutionLatter s_latter;
+    std::cout << s_latter.isValidSudoku(case_1) << std::endl;
+    std::cout << s_latter.isValidSudoku(case_2) << std::endl;
 }
