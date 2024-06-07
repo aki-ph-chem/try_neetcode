@@ -140,6 +140,35 @@ class MinStackAns {
         std::stack<std::pair<int, int>> minStk;
 };
 
+// 時間を開けて解いたときの別解
+// AC
+class MinStackLatter {
+    private:
+        std::vector<std::pair<int,int>> data;
+
+    public:
+        MinStackLatter(){}
+
+        void push(int val) {
+            if(!data.empty()) {
+                data.push_back({val, std::min(val, data.back().second)});
+            } else {
+                data.push_back({val, val});
+            }
+        }
+
+        void pop(void) {
+            data.pop_back();
+        }
+
+        int top(void) {
+            return data.back().first;
+        }
+
+        int getMin(void) {
+            return data.back().second;
+        }
+};
 
 int main(void) {
     MinStack ms_1;
@@ -189,4 +218,14 @@ int main(void) {
     ms_4.pop();
     ms_4.top();
     ms_4.get_min();
+
+    MinStackLatter ms_latter;
+
+    ms_latter.push(-2);
+    ms_latter.push(0);
+    ms_latter.push(-3);
+    std::cout << ms_latter.getMin() << std::endl;
+    ms_latter.pop();
+    std::cout << ms_latter.top() << std::endl;
+    std::cout << ms_latter.getMin() << std::endl;
 }
