@@ -71,6 +71,40 @@ impl SolutionAnsCpp {
     }
 }
 
+// 後で解いたときの解
+struct SolutionLatter;
+impl SolutionLatter {
+    // AC
+    pub fn length_of_last_word(s: String) -> i32 {
+        s.split(' ')
+            .filter(|s| *s != " " && *s != "")
+            .last()
+            .unwrap()
+            .len() as i32
+    }
+
+    // AC
+    pub fn length_of_last_word_2(s: String) -> i32 {
+        let s = s.chars().collect::<Vec<char>>();
+        let mut result = 0;
+        if let Some(s_last) = s.last() {
+            let mut i_start = s.len() as i32 - 1;
+            if *s_last == ' ' {
+                while i_start >= 0 && s[i_start as usize] == ' ' {
+                    i_start -= 1;
+                }
+            }
+
+            while i_start >= 0 && s[i_start as usize] != ' ' {
+                i_start -= 1;
+                result += 1;
+            }
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = "Hello World".to_string();
     // => 5
@@ -107,5 +141,31 @@ fn main() {
     println!(
         "case_3: {}",
         SolutionAnsCpp::length_of_last_word(case_3.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionLatter::length_of_last_word(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionLatter::length_of_last_word(case_2.clone())
+    );
+    println!(
+        "case_3: {}",
+        SolutionLatter::length_of_last_word(case_3.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionLatter::length_of_last_word_2(case_1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionLatter::length_of_last_word_2(case_2.clone())
+    );
+    println!(
+        "case_3: {}",
+        SolutionLatter::length_of_last_word_2(case_3.clone())
     );
 }
