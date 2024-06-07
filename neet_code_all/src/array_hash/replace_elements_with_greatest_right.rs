@@ -32,6 +32,20 @@ impl SolutionAns {
     }
 }
 
+// 後から解いたときの解
+struct SolutionLatter;
+impl SolutionLatter {
+    pub fn replace_elements(arr: Vec<i32>) -> Vec<i32> {
+        let n = arr.len();
+        let mut max_suffix = vec![-1; n];
+        for i in (1..n).rev() {
+            max_suffix[i - 1] = max_suffix[i].max(arr[i]);
+        }
+
+        max_suffix
+    }
+}
+
 fn main() {
     let case_1 = vec![17, 18, 5, 4, 6, 1];
     // => [18,6,6,6,1,-1]
