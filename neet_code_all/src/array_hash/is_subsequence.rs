@@ -82,6 +82,28 @@ impl SolutionAns {
     }
 }
 
+//　時間を置いて解いたときの
+struct SolutionLatter;
+impl SolutionLatter {
+    pub fn is_subsequence(s: String, t: String) -> bool {
+        if s.len() > t.len() {
+            return false;
+        }
+
+        let s = s.chars().collect::<Vec<char>>();
+        let mut i_s = 0;
+        for c_t in t.chars() {
+            if i_s < s.len() {
+                if s[i_s] == c_t {
+                    i_s += 1;
+                }
+            }
+        }
+
+        i_s == s.len()
+    }
+}
+
 // AC
 // C++の模範解答より
 struct SolutionAnsCpp {}
@@ -149,5 +171,14 @@ fn main() {
     println!(
         "case_2: {}",
         SolutionAnsCpp::is_subsequence(case_2.0.clone(), case_2.1.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionLatter::is_subsequence(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionLatter::is_subsequence(case_2.0.clone(), case_2.1.clone())
     );
 }
