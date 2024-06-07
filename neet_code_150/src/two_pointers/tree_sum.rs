@@ -57,6 +57,42 @@ impl SolutionAns {
 
         ans
     }
+
+    // 部分的な別解(matchがif elseになっただけだが..)
+    // AC
+    pub fn three_sum_2(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
+        nums.sort_unstable();
+        let mut ans = vec![];
+
+        for i in 0..nums.len() {
+            if i > 0 && nums[i] == nums[i - 1] {
+                continue;
+            }
+
+            let (mut left, mut right) = (i + 1, nums.len() - 1);
+
+            while left < right {
+                let sum = nums[i] + nums[left] + nums[right];
+                if 0 < sum {
+                    right -= 1;
+                } else if sum < 0 {
+                    left += 1;
+                } else {
+                    ans.push(vec![nums[i], nums[left], nums[right]]);
+                    left += 1;
+                    while nums[left] == nums[left - 1] && left < right {
+                        left += 1;
+                    }
+                    right -= 1;
+                    while nums[right] == nums[right + 1] && left < right {
+                        right -= 1;
+                    }
+                }
+            }
+        }
+
+        ans
+    }
 }
 
 // C++の模範解答
