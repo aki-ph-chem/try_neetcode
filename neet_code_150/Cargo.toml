@@ -522,4 +522,8 @@ path = "src/appendix/join.rs"
 name = "skip_while"
 path = "src/appendix/skip_while.rs"
 
+[[bin]]
+name = "closed_paren"
+path = "src/appendix/closed_paren.rs"
+
 [dependencies]
