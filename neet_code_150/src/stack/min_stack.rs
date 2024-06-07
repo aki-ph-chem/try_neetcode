@@ -173,6 +173,38 @@ impl MinStackAns {
     }
 }
 
+// 時間を開けて解いたときの別解
+// AC
+struct MinStackLatter {
+    data: Vec<(i32, i32)>,
+}
+
+impl MinStackLatter {
+    fn new() -> Self {
+        Self { data: vec![] }
+    }
+
+    pub fn push(&mut self, val: i32) {
+        if let Some(stack_top) = self.data.last() {
+            self.data.push((val, stack_top.1.min(val)));
+        } else {
+            self.data.push((val, val));
+        }
+    }
+
+    pub fn pop(&mut self) {
+        self.data.pop();
+    }
+
+    pub fn top(&mut self) -> i32 {
+        self.data.last().unwrap().0
+    }
+
+    pub fn get_min(&self) -> i32 {
+        self.data.last().unwrap().1
+    }
+}
+
 fn main() {
     let mut ms_1 = MinStack::new();
     println!("ms_1");
@@ -218,4 +250,13 @@ fn main() {
     println!("ms_5: {:?}", ms_5);
     ms_5.push(0);
     println!("ms_5: {:?}", ms_5);
+
+    let mut s_0 = MinStackLatter::new();
+    s_0.push(-2);
+    s_0.push(0);
+    s_0.push(-3);
+    println!("s_0.get_min(): {}", s_0.get_min());
+    s_0.pop();
+    println!("s_0.top(): {}", s_0.top());
+    println!("s_0.get_min(): {}", s_0.get_min());
 }
