@@ -91,6 +91,44 @@ class SolutionAns {
         }
 };
 
+// Rustの模範解答より
+class SolutionAnsRust {
+    public:
+        // AC
+        std::vector<std::vector<int>> three_sum(std::vector<int>& nums) {
+            std::sort(nums.begin(), nums.end());
+            std::vector<std::vector<int>> result;
+            for(int i = 0; i < nums.size(); ++i) {
+                if(i > 0 && nums[i] == nums[i - 1]) {
+                    continue;
+                }
+
+                int left = i + 1, right = nums.size() - 1;
+                while(left < right) {
+                    int sum = nums[i] + nums[left] + nums[right];
+                    if(0 < sum) {
+                        --right;
+                    } else if(sum < 0) {
+                        ++left;
+                    } else {
+                        result.push_back(std::vector{nums[i], nums[left], nums[right]});
+                        ++left;
+                        while(nums[left] == nums[left - 1] && left < right) {
+                            ++left;
+                        } 
+                        --right;
+                        while(nums[right] == nums[right + 1] && left < right) {
+                            --right;
+                        }
+                    }
+                }
+            }
+
+            return result;
+        }
+};
+
+
 void show_result(std::vector<std::vector<int>>&& result) {
     for(const auto &v: result) {
         for(const auto &w: v) {
