@@ -95,6 +95,34 @@ class SolutionAns {
         }
 };
 
+
+// 後で時間を置いて解いたときの解
+class SolutionLatter {
+    public:
+        // AC
+        bool isValid(std::string s) {
+            std::stack<char> stack;
+            for(auto& c: s) {
+                if(!stack.empty()) {
+                    auto stack_top = stack.top();
+                    if(stack_top == '(' && c == ')') {
+                        stack.pop();
+                    } else if(stack_top == '{' && c == '}') {
+                        stack.pop();
+                    } else if(stack_top == '[' && c == ']') {
+                        stack.pop();
+                    } else {
+                        stack.push(c);
+                    }
+                } else {
+                    stack.push(c);
+                }
+            }
+
+            return stack.empty();
+        }
+};
+
 int main(void) {
     auto case_1 = "()";
     auto case_2 = "()[]{}";
@@ -112,4 +140,10 @@ int main(void) {
     std::cout <<"case_2: {}" << s_ans.isValid(case_2) << std::endl;
     std::cout <<"case_3: {}" << s_ans.isValid(case_3) << std::endl;
     std::cout <<"case_4: {}" << s_ans.isValid(case_4) << std::endl;
+
+    SolutionLatter s_latter;
+    std::cout <<"case_1: {}" << s_latter.isValid(case_1) << std::endl;
+    std::cout <<"case_2: {}" << s_latter.isValid(case_2) << std::endl;
+    std::cout <<"case_3: {}" << s_latter.isValid(case_3) << std::endl;
+    std::cout <<"case_4: {}" << s_latter.isValid(case_4) << std::endl;
 }
