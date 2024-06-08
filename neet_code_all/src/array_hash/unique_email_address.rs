@@ -58,6 +58,81 @@ impl SolutionAns {
     }
 }
 
+// 後で解いたときの解
+struct SolutionLatter;
+impl SolutionLatter {
+    // 一文字ずつ読む実装
+    // AC
+    pub fn num_unique_emails(emails: Vec<String>) -> i32 {
+        let emails = emails
+            .iter()
+            .map(|s| s.chars().collect::<Vec<char>>())
+            .collect::<Vec<Vec<char>>>();
+        let mut set = HashSet::new();
+        for s in emails {
+            let mut i = 0;
+            let mut address = vec![];
+            while i < s.len() && s[i] != '@' {
+                match s[i] {
+                    '.' => {
+                        i += 1;
+                    }
+                    '+' => {
+                        while i < s.len() && s[i] != '@' {
+                            i += 1;
+                        }
+                    }
+                    _ => {
+                        address.push(s[i]);
+                        i += 1;
+                    }
+                }
+            }
+
+            while i < s.len() {
+                address.push(s[i]);
+                i += 1;
+            }
+
+            set.insert(address);
+        }
+
+        set.len() as i32
+    }
+
+    //  AC
+    // splitを使う実装
+    pub fn num_unique_emails_2(emails: Vec<String>) -> i32 {
+        let mut set = HashSet::new();
+
+        for s in emails {
+            let mut address = vec![];
+
+            let split_by_at = s.split('@').collect::<Vec<&str>>();
+            for c in split_by_at[0].chars() {
+                match c {
+                    '+' => {
+                        break;
+                    }
+                    '.' => {}
+                    _ => {
+                        address.push(c);
+                    }
+                }
+            }
+
+            address.push('@');
+            for c in split_by_at[1].chars() {
+                address.push(c);
+            }
+
+            set.insert(address);
+        }
+
+        set.len() as i32
+    }
+}
+
 // e-mail アドレス
 // @の前: local name, @の後: domain name
 // local name:
