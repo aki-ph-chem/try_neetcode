@@ -41,6 +41,36 @@ impl SolutionAns {
     }
 }
 
+// space: O(n), time: O(n) latter
+struct SolutionLatter;
+impl SolutionLatter {
+    // AC
+    pub fn trap(height: Vec<i32>) -> i32 {
+        let n = height.len();
+        if height.is_empty() {
+            return 0;
+        }
+
+        let mut max_left = vec![i32::MIN; n + 1];
+        let mut max_right = vec![i32::MIN; n + 1];
+        for i in 0..n {
+            max_left[i + 1] = max_left[i].max(height[i]);
+            max_right[n - 1 - i] = max_right[n - i].max(height[n - 1 - i]);
+        }
+
+        /*
+        println!("max_left: {:?}", max_left);
+        println!("max_right: {:?}", max_right);
+        */
+        let mut result = 0;
+        for i in 0..n {
+            result += (max_left[i + 1].min(max_right[i]) - height[i]).max(0);
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = vec![0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
     // => 6
@@ -52,4 +82,14 @@ fn main() {
     println!("case_1: {}", SolutionAns::trap(case_1.clone()));
     println!("case_2: {}", SolutionAns::trap(case_2.clone()));
     println!("case_3: {}", SolutionAns::trap(case_3.clone()));
+
+    println!("case_1: {}", SolutionLatter::trap(case_1.clone()));
+    println!("case_2: {}", SolutionLatter::trap(case_2.clone()));
+    println!("case_3: {}", SolutionLatter::trap(case_3.clone()));
+
+    println!("case_1: {}", SolutionLatter::trap_2(case_1.clone()));
+    /*
+    println!("case_2: {}", SolutionLatter::trap_2(case_2.clone()));
+    println!("case_3: {}", SolutionLatter::trap_2(case_3.clone()));
+    */
 }
