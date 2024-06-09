@@ -86,10 +86,4 @@ fn main() {
     println!("case_1: {}", SolutionLatter::trap(case_1.clone()));
     println!("case_2: {}", SolutionLatter::trap(case_2.clone()));
     println!("case_3: {}", SolutionLatter::trap(case_3.clone()));
-
-    println!("case_1: {}", SolutionLatter::trap_2(case_1.clone()));
-    /*
-    println!("case_2: {}", SolutionLatter::trap_2(case_2.clone()));
-    println!("case_3: {}", SolutionLatter::trap_2(case_3.clone()));
-    */
 }
