@@ -60,6 +60,32 @@ impl SolutionAns {
     }
 }
 
+// 部分的な別解(エッジケースの処理が違う)
+struct SolutionLatter {}
+impl SolutionLatter {
+    // 両側からはさみうち
+    pub fn max_area(height: Vec<i32>) -> i32 {
+        let (mut max_area, mut left, mut right) = (0, 0, height.len() - 1);
+
+        while left < right {
+            let area = ((right - left) as i32) * height[left].min(height[right]);
+            max_area = area.max(max_area);
+
+            if height[left] > height[right] {
+                right -= 1;
+            } else if height[left] < height[right] {
+                left += 1;
+                // エッジケース height[left] == height[right]のときの処理は両方動かす処理でもok
+            } else {
+                right -= 1;
+                left += 1;
+            }
+        }
+
+        max_area
+    }
+}
+
 fn main() {
     let case_1 = vec![1, 8, 6, 2, 5, 4, 8, 3, 7];
     let case_2 = vec![1, 1];
@@ -82,4 +108,9 @@ fn main() {
     println!("case_2: {}", SolutionAns::max_area(case_2.clone()));
     println!("case_3: {}", SolutionAns::max_area(case_3.clone()));
     println!("case_4: {}", SolutionAns::max_area(case_4.clone()));
+
+    println!("case_1: {}", SolutionLatter::max_area(case_1.clone()));
+    println!("case_2: {}", SolutionLatter::max_area(case_2.clone()));
+    println!("case_3: {}", SolutionLatter::max_area(case_3.clone()));
+    println!("case_4: {}", SolutionLatter::max_area(case_4.clone()));
 }
