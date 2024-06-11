@@ -526,4 +526,8 @@ path = "src/appendix/skip_while.rs"
 name = "closed_paren"
 path = "src/appendix/closed_paren.rs"
 
+[[bin]]
+name = "keta"
+path = "src/appendix/keta.rs"
+
 [dependencies]
