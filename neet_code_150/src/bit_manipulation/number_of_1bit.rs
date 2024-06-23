@@ -28,6 +28,26 @@ impl SolutionAns {
     }
 }
 
+// 後で解いた別解
+// AC
+struct SolutionLatter;
+impl SolutionLatter {
+    pub fn hamming_weight(n: u32) -> i32 {
+        let mut n = n;
+        let mut result = 0;
+
+        while n > 0 {
+            if n & 1 != 0 {
+                result += 1;
+            }
+
+            n = n >> 1;
+        }
+
+        result
+    }
+}
+
 // C++の模範解答
 struct SolutionAnsCpp {}
 impl SolutionAnsCpp {
@@ -35,7 +55,7 @@ impl SolutionAnsCpp {
         let mut result = 0;
 
         while n != 0 {
-            let bit =  n & 1;
+            let bit = n & 1;
             if bit == 1 {
                 result += 1;
             }
@@ -66,4 +86,8 @@ fn main() {
     println!("case_1: {}", SolutionAnsCpp::hamming_weight(case_1));
     println!("case_2: {}", SolutionAnsCpp::hamming_weight(case_2));
     println!("case_3: {}", SolutionAnsCpp::hamming_weight(case_3));
+
+    println!("case_1: {}", SolutionLatter::hamming_weight(case_1));
+    println!("case_2: {}", SolutionLatter::hamming_weight(case_2));
+    println!("case_3: {}", SolutionLatter::hamming_weight(case_3));
 }
