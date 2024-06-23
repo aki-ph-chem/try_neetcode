@@ -52,6 +52,21 @@ impl SolutionAns {
     }
 }
 
+// C++の模範解答より
+struct SolutionAnsCpp;
+impl SolutionAnsCpp {
+    // AC
+    pub fn count_bits(n: i32) -> Vec<i32> {
+        let mut result = vec![0; n as usize + 1];
+
+        for i in 1..=n {
+            result[i as usize] = result[(i >> 1) as usize] + (i & 1);
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = 2;
     // => [0,1,1]
@@ -63,4 +78,7 @@ fn main() {
 
     println!("case_1: {:?}", SolutionAns::count_bits(case_1));
     println!("case_2: {:?}", SolutionAns::count_bits(case_2));
+
+    println!("case_1: {:?}", SolutionAnsCpp::count_bits(case_1));
+    println!("case_2: {:?}", SolutionAnsCpp::count_bits(case_2));
 }
