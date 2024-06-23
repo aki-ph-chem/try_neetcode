@@ -1,4 +1,5 @@
 #include <iostream>
+#include <variant>
 #include <vector>
 
 class Solution {
@@ -27,6 +28,19 @@ class Solution {
         }
 };
 
+// 模範解答
+class SolutionAns {
+    public:
+        std::vector<int> countBits(int n) {
+            std::vector<int> result(n + 1, 0);
+            for(int i = 1; i <= n; ++i) {
+                result[i] = result[i >> 1] + (i & 1);
+            }
+
+            return result;
+        }
+};
+
 int main(void) {
     int case_1 = 2;
     // => [0,1,1]
@@ -42,6 +56,20 @@ int main(void) {
     }
     std::cout << std::endl;
     for(auto& v: res_2) {
+        std::cout << v << " ";
+    }
+    std::cout << std::endl;
+
+    SolutionAns s_ans;
+
+    auto res_ans_1 = s_1.countBits(case_1);
+    auto res_ans_2 = s_1.countBits(case_2);
+
+    for(auto& v: res_ans_1) {
+        std::cout << v << " ";
+    }
+    std::cout << std::endl;
+    for(auto& v: res_ans_2) {
         std::cout << v << " ";
     }
     std::cout << std::endl;
