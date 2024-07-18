@@ -97,6 +97,31 @@ class SolutionLatter {
 
             return result;
         }
+
+        std::vector<int> topKFrequent2(std::vector<int>& nums, int k) {
+            std::unordered_map<int,int> map;
+            for(auto& n : nums) {
+                ++map[n];
+            }
+
+            std::vector<std::vector<int>> table(nums.size() + 1);
+            for(auto &[key, v]: map) {
+                table[v].push_back(key);
+            }
+            std::vector<int> result;
+            for(int i = table.size() - 1; i >= 0; --i) {
+                if(!table[i].empty()) {
+                    int j = 0;
+                    while(k > 0 && j < table[i].size()) {
+                        result.push_back(table[i][j]);
+                        --k;
+                        ++j;
+                    }
+                }
+            }
+
+            return result;
+        }
 };
 
 int main(void) {
