@@ -125,6 +125,33 @@ impl SolutionAnsCpp {
 
         result
     }
+
+    fn top_k_frequent_3(nums: Vec<i32>, k: i32) -> Vec<i32> {
+        let mut k = k;
+        let mut map: HashMap<&i32, i32> = HashMap::new();
+        for n in &nums {
+            *map.entry(n).or_default() += 1;
+        }
+
+        let mut table = vec![vec![]; nums.len() + 1];
+        for (key, v) in map.iter() {
+            table[*v as usize].push(key);
+        }
+
+        let mut result = vec![];
+        for i in (0..table.len()).rev() {
+            if !table[i].is_empty() {
+                let mut j = 0;
+                while k > 0 && j < table[i].len() {
+                    result.push(**table[i][j] as i32);
+                    j += 1;
+                    k -= 1;
+                }
+            }
+        }
+
+        result
+    }
 }
 
 fn main() {
@@ -150,5 +177,14 @@ fn main() {
     println!(
         "case_2: {:?}",
         SolutionAnsCpp::top_k_frequent_2(case_2.clone(), k_case_2)
+    );
+
+    println!(
+        "case_1: {:?}",
+        SolutionAnsCpp::top_k_frequent_3(case_1.clone(), k_case_1)
+    );
+    println!(
+        "case_2: {:?}",
+        SolutionAnsCpp::top_k_frequent_3(case_2.clone(), k_case_2)
     );
 }
