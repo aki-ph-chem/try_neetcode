@@ -9,6 +9,8 @@ NeetCodeにtryする
 
 [NeetCode-150(C++)](./neet_code_150_cpp)
 
+[NeetCode-150(Go)](./neet_code_150_go)
+
 [NeetCode-All(Rust)](./neet_code_all)
 
 [NeetCode-All(C++)](./neet_code_all_cpp)
