@@ -30,21 +30,42 @@ public:
     int maxArea(std::vector<int>& height) {
         int i = 0;
         int j = height.size() - 1;
-        
+
         int curr = 0;
         int result = 0;
-        
+
         while (i < j) {
             curr = (j - i) * std::min(height[i], height[j]);
             result = std::max(result, curr);
-            
+
             if (height[i] <= height[j]) {
                 i++;
             } else {
                 j--;
             }
         }
-        
+
+        return result;
+    }
+
+    // ちょっと違う
+    // AC
+    int maxArea2(std::vector<int>& height) {
+        int left = 0, right = height.size() - 1;
+        int result = (right - left) * std::min(height[left], height[right]);
+        while(left < right) {
+            if(height[left] < height[right]) {
+                ++left;
+            } else if(height[left] > height[right]) {
+                --right;
+            } else {
+                ++left;
+                --right;
+            }
+
+            result = std::max(result, (right - left) * std::min(height[left], height[right]));
+        }
+
         return result;
     }
 };
