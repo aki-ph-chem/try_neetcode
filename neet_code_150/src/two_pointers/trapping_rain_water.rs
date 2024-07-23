@@ -69,6 +69,28 @@ impl SolutionLatter {
 
         result
     }
+
+    // AC
+    // 別
+    pub fn trap_2(height: Vec<i32>) -> i32 {
+        let mut result = 0;
+        let (mut left, mut right) = (0, height.len() - 1);
+        let (mut left_max, mut right_max) = (0, 0);
+
+        while left < right {
+            if height[left] <= height[right] {
+                left_max = left_max.max(height[left]);
+                result += left_max - height[left];
+                left += 1;
+            } else {
+                right_max = right_max.max(height[right]);
+                result += right_max - height[right];
+                right -= 1;
+            }
+        }
+
+        result
+    }
 }
 
 fn main() {
@@ -86,4 +108,8 @@ fn main() {
     println!("case_1: {}", SolutionLatter::trap(case_1.clone()));
     println!("case_2: {}", SolutionLatter::trap(case_2.clone()));
     println!("case_3: {}", SolutionLatter::trap(case_3.clone()));
+
+    println!("case_1: {}", SolutionLatter::trap_2(case_1.clone()));
+    println!("case_2: {}", SolutionLatter::trap_2(case_2.clone()));
+    println!("case_3: {}", SolutionLatter::trap_2(case_3.clone()));
 }
