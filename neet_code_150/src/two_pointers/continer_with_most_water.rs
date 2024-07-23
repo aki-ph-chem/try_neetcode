@@ -84,6 +84,28 @@ impl SolutionLatter {
 
         max_area
     }
+
+    // ちょっと違う
+    // AC
+    pub fn max_area_2(height: Vec<i32>) -> i32 {
+        let (mut left, mut right) = (0, height.len() - 1);
+        let mut result = (right - left) as i32 * height[left].min(height[right]);
+
+        while left < right {
+            if height[left] < height[right] {
+                left += 1;
+            } else if height[left] > height[right] {
+                right -= 1;
+            } else {
+                left += 1;
+                right -= 1;
+            }
+
+            result = result.max((right - left) as i32 * height[left].min(height[right]));
+        }
+
+        result
+    }
 }
 
 fn main() {
