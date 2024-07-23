@@ -82,6 +82,26 @@ impl SolutionAnsCpp {
     }
 }
 
+// 部分的な別解
+struct SolutionLatter {}
+impl SolutionLatter {
+    pub fn max_profit(prices: Vec<i32>) -> i32 {
+        let (mut left, mut right) = (0, 0);
+        let mut result = 0;
+
+        while right < prices.len() {
+            while right < prices.len() && prices[left] < prices[right] {
+                result = result.max(prices[right] - prices[left]);
+                right += 1;
+            }
+            left = right;
+            right += 1;
+        }
+
+        result
+    }
+}
+
 fn main() {
     let case_1 = vec![7, 1, 5, 3, 6, 4];
     let case_2 = vec![7, 6, 4, 3, 1];
@@ -97,4 +117,7 @@ fn main() {
 
     println!("case_1: {}", SolutionAnsCpp::max_profit(case_1.clone()));
     println!("case_2: {}", SolutionAnsCpp::max_profit(case_2.clone()));
+
+    println!("case_1: {}", SolutionLatter::max_profit(case_1.clone()));
+    println!("case_2: {}", SolutionLatter::max_profit(case_2.clone()));
 }
