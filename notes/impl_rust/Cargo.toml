@@ -61,4 +61,8 @@ path = "src/etc/kadane.rs"
 name = "rec_dec_parsing"
 path = "src/etc/rec_dec_parsing.rs"
 
+[[bin]]
+name = "edit_dist"
+path = "src/dp/edit_dist.rs"
+
 [dependencies]
