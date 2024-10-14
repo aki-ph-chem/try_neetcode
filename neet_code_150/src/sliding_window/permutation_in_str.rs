@@ -217,6 +217,50 @@ impl SolutionAnsCpp {
     }
 }
 
+struct SolutionLatter;
+impl SolutionLatter {
+    // AC
+    pub fn check_inclusion(s1: String, s2: String) -> bool {
+        let (n1, n2) = (s1.len(), s2.len());
+        if n1 > n2 {
+            return false;
+        }
+        let mut count_s1 = vec![0; 26];
+        let mut count_s2 = vec![0; 26];
+
+        let s1 = s1.as_bytes();
+        let s2 = s2.as_bytes();
+        for i in 0..n1 {
+            count_s1[(s1[i] - b'a') as usize] += 1;
+            count_s2[(s2[i] - b'a') as usize] += 1;
+        }
+        if Self::is_same_count(&count_s1, &count_s2) {
+            return true;
+        }
+
+        for i in n1..n2 {
+            count_s2[(s2[i - n1] - b'a') as usize] -= 1;
+            count_s2[(s2[i] - b'a') as usize] += 1;
+
+            if Self::is_same_count(&count_s1, &count_s2) {
+                return true;
+            }
+        }
+
+        false
+    }
+
+    fn is_same_count(count1: &Vec<i32>, count2: &Vec<i32>) -> bool {
+        for (n_1, n_2) in count1.iter().zip(count2.iter()) {
+            if n_1 != n_2 {
+                return false;
+            }
+        }
+
+        true
+    }
+}
+
 fn main() {
     let case_1 = ("ab".to_string(), "eidbaooo".to_string());
     let case_2 = ("ab".to_string(), "eidboaoo".to_string());
@@ -264,5 +308,14 @@ fn main() {
     println!(
         "case_2: {}",
         SolutionAnsCpp::check_inclusion_byte(case_2.0.clone(), case_2.1.clone())
+    );
+
+    println!(
+        "case_1: {}",
+        SolutionLatter::check_inclusion(case_1.0.clone(), case_1.1.clone())
+    );
+    println!(
+        "case_2: {}",
+        SolutionLatter::check_inclusion(case_2.0.clone(), case_2.1.clone())
     );
 }
