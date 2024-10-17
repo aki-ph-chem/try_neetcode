@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
@@ -38,6 +39,25 @@ public:
     }
 };
 
+// 後で解いたときの別解
+class SolutionAnsLatter {
+    public:
+        int maxProfit(std::vector<int>& prices) {
+            std::vector<int> min_list(prices.size());
+            min_list[0] = prices[0];
+            for(int i = 1; i < prices.size(); ++i) {
+                min_list[i] = std::min(min_list[i - 1], prices[i]);
+            }
+
+            int result = -1;
+            for(int i = 0; i < prices.size(); ++i) {
+                result = std::max(result, prices[i] - min_list[i]);
+            }
+
+            return result;
+        }
+};
+
 int main(void) {
     auto case_1 = std::vector{7, 1, 5, 3, 6, 4};
     auto case_2 = std::vector{7, 6, 4, 3, 1};
@@ -49,4 +69,8 @@ int main(void) {
     SolutionAns s_ans;
     std::cout << s_ans.maxProfit(case_1) << std::endl;
     std::cout << s_ans.maxProfit(case_2) << std::endl;
+
+    SolutionAnsLatter s_ans_latter;
+    std::cout << s_ans_latter.maxProfit(case_1) << std::endl;
+    std::cout << s_ans_latter.maxProfit(case_2) << std::endl;
 }
