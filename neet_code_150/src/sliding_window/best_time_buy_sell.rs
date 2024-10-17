@@ -100,6 +100,24 @@ impl SolutionLatter {
 
         result
     }
+
+    // 後でGoで解いていて思いついた別解
+    // AC
+    pub fn max_profit2(prices: Vec<i32>) -> i32 {
+        let mut result = -1;
+        let mut min_list = vec![0; prices.len()];
+        min_list[0] = prices[0];
+
+        for i in 1..prices.len() {
+            min_list[i] = min_list[i - 1].min(prices[i]);
+        }
+
+        for (m, p) in min_list.iter().zip(prices.iter()) {
+            result = result.max(p - m);
+        }
+
+        result
+    }
 }
 
 fn main() {
