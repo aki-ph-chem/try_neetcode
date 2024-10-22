@@ -27,6 +27,42 @@ func topKFrequent(nums []int, k int) []int {
 	return result
 }
 
+// 部分的な別解
+func topKFrequent2(nums []int, k int) []int {
+	// value:countなmap
+	map_n := make(map[int]int)
+	for _, n := range nums {
+		map_n[n]++
+	}
+
+	// count:[vlaue]に直す
+	map_i := make([][]int, len(nums)+1)
+	for key, n := range map_n {
+		if len(map_i[n]) != 0 {
+			map_i[n] = append(map_i[n], key)
+		} else {
+			map_i[n] = []int{key}
+		}
+	}
+
+	result := []int{}
+	for i := len(map_i) - 1; i >= 0; i-- {
+		if k == 0 {
+			break
+		}
+
+		if len(map_i[i]) != 0 {
+			for j := 0; j < len(map_i[i]) && k > 0; j++ {
+				result = append(result, map_i[i][j])
+				k--
+			}
+		}
+
+	}
+
+	return result
+}
+
 func topKFrequentAns(nums []int, k int) (res []int) {
 	countMap := map[int]int{}
 	countSlice := make([][]int, len(nums)+1)
