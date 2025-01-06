@@ -5,7 +5,7 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-## Arrays & Hashing 
+## Arrays & Hashing
 [[bin]]
 name = "contains_duplicate"
 path = "src/array_hash/contains_duplicate.rs"
@@ -38,7 +38,7 @@ path = "src/array_hash/valid_sudoku.rs"
 name = "longest_consecutive"
 path = "src/array_hash/longest_consecutive_sequence.rs"
 
-## Two & Pointers 
+## Two & Pointers
 [[bin]]
 name = "valid_palindrome"
 path = "src/two_pointers/valid_palindrome.rs"
@@ -62,7 +62,7 @@ path = "src/two_pointers/trapping_rain_water.rs"
 ## Sliding Window
 [[bin]]
 name = "buy_sell"
-path = "src/sliding_window/best_time_buy_sell.rs" 
+path = "src/sliding_window/best_time_buy_sell.rs"
 
 [[bin]]
 name = "longest_substr_no_repeat"
@@ -77,11 +77,11 @@ name = "permutation_str"
 path = "src/sliding_window/permutation_in_str.rs"
 
 [[bin]]
-name = "minimum_window_substr" 
+name = "minimum_window_substr"
 path = "src/sliding_window/minimum_window_substr.rs"
 
 [[bin]]
-name = "sliding_window_max" 
+name = "sliding_window_max"
 path = "src/sliding_window/sliding_window_max.rs"
 
 ## Stack
@@ -151,6 +151,12 @@ path = "src/linked_list/rev_list.rs"
 [[bin]]
 name = "merge_sorted_list"
 path = "src/linked_list/merge_sorted_list.rs"
+
+## Trees
+
+[[bin]]
+name = "invert_binary_tree"
+path = "src/trees/invert_binary_tree.rs"
 
 ## Heap / Priority Queue
 
