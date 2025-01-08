@@ -170,6 +170,10 @@ path = "src/trees/diameter_binary_tree.rs"
 name = "blanced_binary_tree"
 path = "src/trees/blanced_binary_tree.rs"
 
+[[bin]]
+name = "same_tree"
+path = "src/trees/same_tree.rs"
+
 ## Heap / Priority Queue
 
 [[bin]]
