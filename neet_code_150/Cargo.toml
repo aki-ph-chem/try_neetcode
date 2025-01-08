@@ -162,6 +162,10 @@ path = "src/trees/invert_binary_tree.rs"
 name = "max_depth_binary_tree"
 path = "src/trees/max_depth_binary_tree.rs"
 
+[[bin]]
+name = "diameter_binary_tree"
+path = "src/trees/diameter_binary_tree.rs"
+
 ## Heap / Priority Queue
 
 [[bin]]
