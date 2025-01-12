@@ -54,7 +54,13 @@ impl Solution {
     ) -> bool {
         match (root, sub_root) {
             (None, _) => false,
-            (_, None) => false,
+
+            (Some(node_root), None) => {
+                let mut node_root_ref = node_root.borrow_mut();
+                Self::is_subtree(node_root_ref.left.take(), None)
+                    || Self::is_subtree(node_root_ref.right.take(), None)
+            }
+
             (Some(node_root), Some(node_sub_root)) => {
                 if Self::is_same(Some(Rc::clone(&node_root)), Some(Rc::clone(&node_sub_root))) {
                     return true;
